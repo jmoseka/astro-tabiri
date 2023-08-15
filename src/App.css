@@ -43,3 +43,13 @@
     transform: rotate(360deg);
   }
 }
+
+.body-gradient-bg {
+  background-image: linear-gradient(
+  0deg,
+  hsl(202deg 80% 8%) 0%,
+  hsl(216deg 73% 6%) 36%,
+  hsl(216deg 73% 6%) 75%,
+  hsl(202deg 80% 8%) 100%
+);
+}
