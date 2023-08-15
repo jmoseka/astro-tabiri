@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background : gray;
+
 }
 
 .App-logo {
@@ -9,15 +9,6 @@
   
 }
 
-.virgo {
-  stroke: red;
-  font-size: 8rem;
-  width: 2rem;
-}
-
-.star {
-  width: 8rem;
-}
 
 .App-logo:hover {
   fill: red;
