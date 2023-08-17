@@ -1,40 +1,32 @@
-/* .grid-prediction {
+.grid-prediction {
     display: grid;
-    grid-template-columns: 0.5fr 1.4fr 1.8fr 0.5fr; 
-  grid-template-rows: 4fr 1.4fr 1.8fr 1fr; 
-} */
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+} 
 
 .const-body {
-  @apply absolute flex flex-col justify-center items-center text-xs text-strongBlueShade1 cursor-pointer p-0;
-}
-
-
-.aries {
-  left: 32%;
-  top:0;
+  @apply  flex flex-col justify-center items-center gap-1 text-xs text-strongBlueShade1 cursor-pointer p-0;
 }
 
 .pisces {
-  left: 14%;
-  top:7%;
+
 }
 
-.gemini {
-  left: 2%;
-  top:30%;
-}
+
 
 .constelation {
   /*strongBlueShade1*/
-  width: 4rem;
-  height:4rem;
+  width: 2.8rem;
+  height:2.8rem;
   fill: #999ba1;
-  transform: scale(1.3);
+
 }
 
 .constelation path {
   fill: #999ba1;
 }
+
+
 
 .const-title {
   font-size: .55rem;
