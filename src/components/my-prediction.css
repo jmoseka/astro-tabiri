@@ -5,11 +5,11 @@
 }
 
 .const-body {
-  @apply flex flex-col justify-center items-center gap-4 text-xs text-strongBlueShade1 cursor-pointer p-0;
+  @apply flex flex-col  text-xs text-strongBlueShade1 cursor-pointer p-0;
 }
 
 .middleGrid {
-  grid-template-rows: 1.3fr 1.3fr 1fr;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
 }
 
 .pisces {
@@ -43,10 +43,10 @@
 
 .circle {
   z-index: 10;
-  top: 8rem;
-  left: 55%;
-  width: 600px;
-  height: 400px;
+  top: 2rem;
+  left: 18%;
+  width: 1000px;
+  height: 800px;
   border-radius: 50%;
   position: relative;
   background-color: #f59e0b;
