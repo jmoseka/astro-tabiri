@@ -19,11 +19,13 @@ import './my-prediction.css'
 function Prediction() {
   return (
     <div className="container mx-auto h-full w-full">
-      <div className='pt-12  '>
+      <div className='pt-12 relative '>
+
 
         <div className='mx-auto h-[35rem] border w-5/7 '>
+        
 
-          <div className=' grid relative grid-cols-4 firstGrid w-3/4 mx-auto'>
+          <div className=' grid relative grid-cols-4 firstGrid w-4/5 mx-auto'>
 
             <div className="const-body  text-white text-sm">
               <Pisces className='constelation  text-white' />
@@ -69,9 +71,75 @@ function Prediction() {
           </div>
 
 
+          <div className='middleGrid grid grid-rows-3 grid-cols-4'>
+
+          <div className="const-body  text-white text-sm">
+              <Pisces className='constelation  text-white' />
+              <div>
+                <p className='const-title uppercase'>Pisces</p>
+                <p className='const-date'>Aug 23 - Sept 23</p>
+              </div>
+            </div>
+
+
+            <div className="const-body  text-white text-sm col-span-2 row-span-3">
+              <Pisces className='constelation  text-white' />
+              <div>
+                <p className='const-title uppercase'>Pisces</p>
+                <p className='const-date'>Aug 23 - Sept 23</p>
+              </div>
+            </div>
+
+            <div className="const-body  text-white text-sm">
+              <Pisces className='constelation  text-white' />
+              <div>
+                <p className='const-title uppercase'>Pisces</p>
+                <p className='const-date'>Aug 23 - Sept 23</p>
+              </div>
+            </div>
+
+            <div className=''>
+            <div className="const-body mr-24   text-white text-sm">
+              <Pisces className='constelation  text-white' />
+              <div>
+                <p className='const-title uppercase'>Virgo</p>
+                <p className='const-date'>Aug 23 - Sept 23</p>
+              </div>
+            </div>
+            </div>
+
+            <div className="const-body  text-white text-sm">
+              <Pisces className='constelation  text-white' />
+              <div>
+                <p className='const-title uppercase'>Pisces</p>
+                <p className='const-date'>Aug 23 - Sept 23</p>
+              </div>
+            </div>
+
+            <div className="const-body border  text-white text-sm">
+              <Pisces className='constelation  text-white' />
+              <div>
+                <p className='const-title uppercase'>Pisces</p>
+                <p className='const-date'>Aug 23 - Sept 23</p>
+              </div>
+            </div>
+
+            <div className="const-body  text-white text-sm">
+              <Pisces className='constelation  text-white' />
+              <div>
+                <p className='const-title uppercase'>Pisces</p>
+                <p className='const-date'>Aug 23 - Sept 23</p>
+              </div>
+            </div>
+
+  
+
+
+
+          </div>
+
+
         </div>
-
-
 
       </div>
     </div>
