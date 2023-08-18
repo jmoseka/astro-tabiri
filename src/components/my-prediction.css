@@ -1,0 +1,67 @@
+.grid-prediction {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.const-body {
+  @apply flex flex-col  text-xs text-strongBlueShade1 cursor-pointer p-0;
+}
+
+.middleGrid {
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+
+.pisces {
+}
+
+.constelation {
+  /*strongBlueShade1*/
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: #999ba1;
+}
+
+.constelation path {
+  fill: #999ba1;
+}
+
+.const-title {
+  font-size: 0.58rem;
+  letter-spacing: 0.1rem;
+}
+
+.const-date {
+  font-size: 0.67rem;
+  letter-spacing: 0.04rem;
+  opacity: 0.8;
+}
+
+.circ {
+  position: absolute;
+}
+
+.circle {
+  z-index: 10;
+  top: 2rem;
+  left: 18%;
+  width: 1000px;
+  height: 800px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #f59e0b;
+  overflow: hidden;
+}
+
+.section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 50%, 100% 0%, 100% 100%);
+  transform-origin: 100% 100%;
+}
+
+.section:nth-child(even) {
+  background-color: #10b981;
+  transform: rotate(25.7142857deg);
+}

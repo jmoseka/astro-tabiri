@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  background : gray;
+  font-family: 'Oxygen', sans-serif;
+
 }
 
 .App-logo {
@@ -9,15 +10,6 @@
   
 }
 
-.virgo {
-  stroke: red;
-  font-size: 8rem;
-  width: 2rem;
-}
-
-.star {
-  width: 8rem;
-}
 
 .App-logo:hover {
   fill: red;
@@ -51,4 +43,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.body-gradient-bg {
+  background-image: linear-gradient(
+  0deg,
+  hsl(202deg 80% 8%) 0%,
+  hsl(216deg 73% 6%) 36%,
+  hsl(216deg 73% 6%) 75%,
+  hsl(202deg 80% 8%) 100%
+);
 }
