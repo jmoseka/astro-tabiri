@@ -18,10 +18,10 @@ import './my-prediction.css'
 function Prediction() {
   return (
     <div className="container mx-auto h-full w-full">
-      <div className='pt-12 relative '>
+      <div className='pt-8 relative '>
 
 
-        <div className='mx-auto h-[35rem] border w-5/7 grid grid-cols-1 grid-rows-4'>
+        <div className='mx-auto h-[35rem] w-5/7 grid grid-cols-1 grid-rows-4'>
 
           <div className=' grid grid-cols-4 firstGrid w-4/5 mx-auto'>
 
@@ -82,11 +82,14 @@ function Prediction() {
             </div>
 
 
-            <div className="w-full const-body items-center justify-center text-white text-sm col-span-2 row-span-3">
-              <Pisces className='constelation  text-white' />
+            <div className="w-full const-body items-center  text-white text-sm col-span-2 row-span-3">
               <div>
-                <p className='const-title uppercase'></p>
-                <p className='const-date'>Aug 23 - Sept 23</p>
+                <p className='zodiac-title text-5xl mt-6'>Capricorn</p>
+                <p className='zodiac-prediction text-base mt-6 px-20'>Today, your cosmic vitality is at its peak! 
+                Embrace the energy of the stars to embark on invigorating health routines. 
+                Engage in activities that connect you with nature and recharge your spirit.
+                 Take a moment to meditate and find harmony within the swirling cosmic energies. 
+                Your body and mind will thank you for the cosmic self-care!</p>
               </div>
             </div>
 
