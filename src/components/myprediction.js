@@ -2,26 +2,28 @@ import { ReactComponent as Virgo } from '../images/SVG/virgo.svg';
 import { ReactComponent as Pisces } from '../images/SVG/pisces.svg';
 import { ReactComponent as Aries } from '../images/SVG/aries.svg';
 import { ReactComponent as Gemini } from '../images/SVG/gemini.svg';
-import {ReactComponent as Leo} from '../images/SVG/leo.svg';
-import {ReactComponent as Sagitarus} from '../images/SVG/sagittarius.svg';
+import { ReactComponent as Leo } from '../images/SVG/leo.svg';
+import { ReactComponent as Sagitarus } from '../images/SVG/sagittarius.svg';
 import { ReactComponent as Cancer } from '../images/SVG/cancer.svg';
-import {ReactComponent as Taurus} from '../images/SVG/taurus.svg';
+import { ReactComponent as Taurus } from '../images/SVG/taurus.svg';
 import { ReactComponent as Capricorn } from '../images/SVG/capricorn.svg';
-import {ReactComponent as Libra} from '../images/SVG/libra.svg';
-import {ReactComponent as Scorpio} from '../images/SVG/scorpio.svg';
-import {ReactComponent as Aquarius} from '../images/SVG/aquarius.svg';
+import { ReactComponent as Libra } from '../images/SVG/libra.svg';
+import { ReactComponent as Scorpio } from '../images/SVG/scorpio.svg';
+import { ReactComponent as Aquarius } from '../images/SVG/aquarius.svg';
 
 import './my-prediction.css'
 
-import './my-prediction.css'
 
 function Prediction() {
+
+
+
   return (
     <div className="container mx-auto h-full w-full">
-      <div className='pt-8 relative '>
+      <div className='pt-1 relative '>
 
 
-        <div className='mx-auto h-[35rem] w-5/7 grid grid-cols-1 grid-rows-4'>
+        <div className='mx-auto mt-20 border   h-[30rem] w-5/6 grid grid-cols-1 grid-rows-4'>
 
           <div className=' grid grid-cols-4 firstGrid w-4/5 mx-auto'>
 
@@ -82,29 +84,29 @@ function Prediction() {
             </div>
 
 
-            <div className="w-full const-body items-center  text-white text-sm col-span-2 row-span-3">
+            <div className="w-full flex flex-col items-center col-span-2 row-span-3">
               <div>
-                <p className='zodiac-title text-5xl mt-6'>Capricorn</p>
-                <p className='zodiac-prediction text-base mt-6 px-20'>Today, your cosmic vitality is at its peak! 
-                Embrace the energy of the stars to embark on invigorating health routines. 
-                Engage in activities that connect you with nature and recharge your spirit.
-                 Take a moment to meditate and find harmony within the swirling cosmic energies. 
-                Your body and mind will thank you for the cosmic self-care!</p>
+                <p className='zodiac-title text-5xl mt-6 text-yellow'>Capricorn</p>
+                <p className='zodiac-prediction mt-6 px-20 text-lightYellow'>Today, your cosmic vitality is at its peak!
+                  Embrace the energy of the stars to embark on invigorating health routines.
+                  Engage in activities that connect you with nature and recharge your spirit.
+                  Take a moment to meditate and find harmony within the swirling cosmic energies.
+                  Your body and mind will thank you for the cosmic self-care!</p>
               </div>
             </div>
 
 
             <div className='flex flex-col items-start'>
-            <div className="const-body items-center  text-white text-sm">
-              <Aquarius className='constelation  text-white' />
-              <div>
-                <p className='const-title uppercase'>Aquarius</p>
-                <p className='const-date'>Aug 23 - Sept 23</p>
+              <div className="const-body items-center  text-white text-sm">
+                <Aquarius className='constelation  text-white' />
+                <div>
+                  <p className='const-title uppercase'>Aquarius</p>
+                  <p className='const-date'>Aug 23 - Sept 23</p>
+                </div>
               </div>
             </div>
-            </div>
 
-            
+
 
             <div className="const-body justify-center items-center mb-3  text-white text-sm">
               <Virgo className='constelation  text-white' />
@@ -124,26 +126,26 @@ function Prediction() {
 
 
             <div className='flex flex-col justify-end items-end'>
-            <div className="const-body items-center  text-white text-sm">
-              <Leo className='constelation  text-white' />
-              <div>
-                <p className='const-title uppercase'>Leo</p>
-                <p className='const-date'>Aug 23 - Sept 23</p>
+              <div className="const-body items-center  text-white text-sm">
+                <Leo className='constelation  text-white' />
+                <div>
+                  <p className='const-title uppercase'>Leo</p>
+                  <p className='const-date'>Aug 23 - Sept 23</p>
+                </div>
               </div>
-            </div>
             </div>
 
             <div className='flex flex-col justify-end items-start'>
-            <div className="const-body items-center text-white text-sm">
-              <Gemini className='constelation  text-white' />
-              <div>
-                <p className='const-title uppercase'>Gemini</p>
-                <p className='const-date'>Aug 23 - Sept 23</p>
+              <div className="const-body items-center text-white text-sm">
+                <Gemini className='constelation  text-white' />
+                <div>
+                  <p className='const-title uppercase'>Gemini</p>
+                  <p className='const-date'>Aug 23 - Sept 23</p>
+                </div>
               </div>
             </div>
-            </div>
 
-            
+
 
 
 
