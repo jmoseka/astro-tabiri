@@ -13,9 +13,11 @@ import { ReactComponent as Aquarius } from '../images/SVG/aquarius.svg';
 
 import './my-prediction.css'
 
-
 function Prediction() {
-  
+
+  const axios = require('axios');
+  const cheerio = require('cheerio');
+const url = 'https://www.horoscope.com/us/horoscopes/general/horoscope-general-daily-today.aspx?sign=6';
 
   return (
     <div className="container mx-auto h-full w-full">
