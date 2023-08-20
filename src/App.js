@@ -9,6 +9,7 @@ function App() {
       <div className='max-w-[1800px] mx-auto h-full'>
         <div className='body-gradient-bg h-full' >
           <Prediction />
+        
         </div>
 
       </div>

@@ -15,8 +15,7 @@ import './my-prediction.css'
 
 
 function Prediction() {
-
-
+  
 
   return (
     <div className="container mx-auto h-full w-full">

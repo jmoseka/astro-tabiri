@@ -6,7 +6,6 @@
 
 .const-body {
   @apply flex flex-col font-light text-lightYellow text-xs cursor-pointer p-0;
-  opacity: 0.7;
 }
 
 .middleGrid {
@@ -24,19 +23,21 @@
 
 .constelation path {
   fill: #FFF;
-  opacity: 0.7;
+  opacity: 0.8;
+  
 }
 
 .const-title {
   font-size: 0.58rem;
   letter-spacing: 0.1rem;
   font-weight: 300;
+  opacity: 0.7;
 }
 
 .const-date {
   font-size: 0.67rem;
   letter-spacing: 0.04rem;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 
