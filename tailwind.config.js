@@ -20,7 +20,7 @@ module.exports = {
         strongBlueShade2: '#b3b4b8',
         blue: '#041925',
         yellow: '#FCDA54',
-        lightYellow: '#DFDAC7',
+        lightYellow: '#fffbee',
        
       },
     },

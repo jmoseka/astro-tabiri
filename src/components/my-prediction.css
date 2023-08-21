@@ -5,7 +5,7 @@
 }
 
 .const-body {
-  @apply flex flex-col  text-xs text-strongBlueShade1 cursor-pointer p-0;
+  @apply flex flex-col font-light text-lightYellow text-xs cursor-pointer p-0;
 }
 
 .middleGrid {
@@ -19,22 +19,38 @@
   /*strongBlueShade1*/
   width: 2.4rem;
   height: 2.4rem;
-  fill: #999ba1;
 }
 
 .constelation path {
-  fill: #999ba1;
+  fill: #FFF;
+  opacity: 0.8;
+  
 }
 
 .const-title {
   font-size: 0.58rem;
   letter-spacing: 0.1rem;
+  font-weight: 300;
+  opacity: 0.7;
 }
 
 .const-date {
   font-size: 0.67rem;
   letter-spacing: 0.04rem;
-  opacity: 0.8;
+  opacity: 0.7;
+}
+
+
+.zodiac-title {
+  font-family: 'Oleo Script', cursive;
+}
+
+.zodiac-prediction {
+letter-spacing: .026rem;
+font-weight: 300;
+opacity: 0.8;
+
+
 }
 
 .circ {

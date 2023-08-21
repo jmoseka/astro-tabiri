@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  font-family: 'Oxygen', sans-serif;
+  font-weight: 400;
 
 }
 
@@ -46,11 +46,6 @@
 }
 
 .body-gradient-bg {
-  background-image: linear-gradient(
-  0deg,
-  hsl(202deg 80% 8%) 0%,
-  hsl(216deg 73% 6%) 36%,
-  hsl(216deg 73% 6%) 75%,
-  hsl(202deg 80% 8%) 100%
-);
+  background: rgb(4,24,36);
+  background: linear-gradient(0deg, rgba(4,24,36,1) 0%, rgba(5,31,55,1) 29%, rgba(1,4,19,1) 71%, rgba(4,25,37,1) 100%);
 }
