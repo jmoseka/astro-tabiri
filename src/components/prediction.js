@@ -64,10 +64,10 @@ function Prediction() {
   return (
     <div className="container mx-auto h-full w-full">
 
-      <nav className='text-lightYellow'>
+      {/* <nav className='text-lightYellow'>
         <a>Daily Horoscope</a>
         <a>My Zodiac</a>
-      </nav>
+      </nav> */}
 
       <div className='pt-1 relative '>
 

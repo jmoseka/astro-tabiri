@@ -1,5 +1,5 @@
 import './App.css';
-import Prediction from './components/myprediction';
+import Prediction from './components/prediction';
 // import {ReactComponent as Virgo} from './SVG/virgo.svg';
 
 
