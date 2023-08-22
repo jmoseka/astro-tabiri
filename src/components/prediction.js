@@ -52,7 +52,7 @@ function Prediction() {
 
         // Now you can continue with other actions that depend on the result
       } catch (error) {
-        console.error(error); // Handle any errors that occurred
+        //console.error(error); // Handle any errors that occurred
       }
     }
 
