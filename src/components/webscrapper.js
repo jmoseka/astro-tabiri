@@ -1,7 +1,5 @@
-import axios from 'https://cdn.jsdelivr.net/npm/axios@1.3.5/+esm';
-import cheerio from 'https://cdn.jsdelivr.net/npm/cheerio@1.0.0-rc.12/+esm';
-
-
+const axios = await import('https://cdn.jsdelivr.net/npm/axios@1.3.5/+esm');
+const cheerio = await import('https://cdn.jsdelivr.net/npm/cheerio@1.0.0-rc.12/+esm');
 
 export const webscrapper = (no) => {
     const url = `https://www.horoscope.com/us/horoscopes/general/horoscope-general-daily-today.aspx?sign=${no}`
