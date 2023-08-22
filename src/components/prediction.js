@@ -50,11 +50,12 @@ function Prediction() {
         const result = await webscrapper(index); // Wait for the webscrapper function to complete
         setdailyPrediction(result)
         setDailyZodiacSign(zodiac)
-        console.log(result);
+        return result;
 
         // Now you can continue with other actions that depend on the result
       } catch (error) {
         //console.error(error); // Handle any errors that occurred
+        return error;
       }
     }
 
