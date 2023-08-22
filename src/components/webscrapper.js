@@ -2,11 +2,12 @@ import axios from 'axios';
 import cheerio from 'cheerio';
 
 export const webscrapper = (no) => {
-    const url = `https://www.horoscope.com/us/horoscopes/general/horoscope-general-daily-today.aspx?sign=${no}`
+    // const url = `https://www.horoscope.com/us/horoscopes/general/horoscope-general-daily-today.aspx?sign=${no}`
+    const url = `https://www.horoscope.com/us/horoscopes/general/horoscope-general-daily-today.aspx?sign=${no}`;
     const API_KEY = '28b8c4c656f8580b825afcab3fe9dba7'
     const render = 'true'
 
-    return axios('http://api.scraperapi.com/', {
+    return axios('https://api.scraperapi.com/', {
         params: {
             'url': url,
             'api_key': API_KEY,
