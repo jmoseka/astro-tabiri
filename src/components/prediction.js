@@ -37,7 +37,6 @@ function Prediction() {
   const [dailyZodiacSign, setDailyZodiacSign] = useState('Daily Horoscope');
 
   const displayHoroscope = (index) => {
-    console.log('clicked,', index);
     const key = `key${index}`;
 
     const zodiac = horoMap[key].value1;

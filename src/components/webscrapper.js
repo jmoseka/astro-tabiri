@@ -17,7 +17,6 @@ export const webscrapper = (no) => {
         .then(response => {
             // get the unstructured html page 
             const html = response.data;
-            console.log(html);
 
             // parse through "cheerio" library for easy manipulation
             const $ = cheerio.load(html);
