@@ -11,7 +11,6 @@ import { ReactComponent as Libra } from '../images/SVG/libra.svg';
 import { ReactComponent as Scorpio } from '../images/SVG/scorpio.svg';
 import { ReactComponent as Aquarius } from '../images/SVG/aquarius.svg';
 import { webscrapper } from './webscrapper';
-
 import './my-prediction.css'
 import { useState } from 'react';
 
