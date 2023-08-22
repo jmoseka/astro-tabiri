@@ -38,6 +38,7 @@ function Prediction() {
   const [dailyZodiacSign, setDailyZodiacSign] = useState('Daily Horoscope');
 
   const displayHoroscope = (index) => {
+    console.log('clicked,', index);
     const key = `key${index}`;
 
     const zodiac = horoMap[key].value1;
@@ -49,6 +50,7 @@ function Prediction() {
         const result = await webscrapper(index); // Wait for the webscrapper function to complete
         setdailyPrediction(result)
         setDailyZodiacSign(zodiac)
+        console.log(result);
 
         // Now you can continue with other actions that depend on the result
       } catch (error) {
