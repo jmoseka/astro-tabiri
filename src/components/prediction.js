@@ -11,10 +11,13 @@ import { ReactComponent as Libra } from '../images/SVG/libra.svg';
 import { ReactComponent as Scorpio } from '../images/SVG/scorpio.svg';
 import { ReactComponent as Aquarius } from '../images/SVG/aquarius.svg';
 import { webscrapper } from './webscrapper';
+import { getBee } from './beescrapper';
 import './my-prediction.css'
 import { useState } from 'react';
 
+
 function Prediction() {
+  getBee();
 
   const horoMap = {
     key1: { value1: 'Aries', value2: 'March 21 - April 19' },
