@@ -1,6 +1,5 @@
 import axios from 'axios';
 import cheerio from 'cheerio';
-
 export const webscrapper = (no) => {
     // const url = `https://www.horoscope.com/us/horoscopes/general/horoscope-general-daily-today.aspx?sign=${no}`
     const url = `https://www.horoscope.com/us/horoscopes/general/horoscope-general-daily-today.aspx?sign=${no}`;
