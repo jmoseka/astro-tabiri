@@ -1,4 +1,3 @@
-import scrapingbee from 'scrapingbee';
 import axios  from 'axios';
 
 export async function getBee() {
