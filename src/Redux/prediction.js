@@ -1,4 +1,3 @@
-
 import axios from 'axios';
 
 const GET_PREDICTION = 'ARIES'
