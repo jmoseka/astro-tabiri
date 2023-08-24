@@ -10,7 +10,7 @@ import { ReactComponent as Capricorn } from '../images/SVG/capricorn.svg';
 import { ReactComponent as Libra } from '../images/SVG/libra.svg';
 import { ReactComponent as Scorpio } from '../images/SVG/scorpio.svg';
 import { ReactComponent as Aquarius } from '../images/SVG/aquarius.svg';
-import { getBee } from './beescrapper';
+import { webscrapper } from './webscrapper';
 import './my-prediction.css'
 import { useState } from 'react';
 
@@ -47,7 +47,7 @@ function Prediction() {
 
     async function fetchHoroscope(index) {
       try {
-        const result = await getBee(index); // Wait for the webscrapper function to complete
+        const result = await webscrapper(index); // Wait for the webscrapper function to complete
         
         setdailyPrediction(result)
         setDailyZodiacSign(zodiac)
