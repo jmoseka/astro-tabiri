@@ -46,6 +46,13 @@
 }
 
 .body-gradient-bg {
-  background: rgb(4,24,36);
-  background: linear-gradient(0deg, rgba(4,24,36,1) 0%, rgba(5,31,55,1) 29%, rgba(1,4,19,1) 71%, rgba(4,25,37,1) 100%);
+  background: hsla(203, 80%, 8%, 1);
+
+  background: linear-gradient(270deg, hsla(203, 80%, 8%, 1) 0%, hsla(209, 83%, 12%, 1) 20%, hsla(230, 90%, 4%, 1) 66%, hsla(202, 80%, 8%, 1) 100%);
+  
+  background: -moz-linear-gradient(270deg, hsla(203, 80%, 8%, 1) 0%, hsla(209, 83%, 12%, 1) 20%, hsla(230, 90%, 4%, 1) 66%, hsla(202, 80%, 8%, 1) 100%);
+  
+  background: -webkit-linear-gradient(270deg, hsla(203, 80%, 8%, 1) 0%, hsla(209, 83%, 12%, 1) 20%, hsla(230, 90%, 4%, 1) 66%, hsla(202, 80%, 8%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#041824", endColorstr="#051F37", GradientType=1 );
 }
