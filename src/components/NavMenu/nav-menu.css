@@ -1,0 +1,26 @@
+#menu-btn {
+  width: 2.35rem;
+  height: 2.35rem;
+  cursor: pointer;
+}
+
+.humberger {
+  .top,
+  .bottom,
+  .middle {
+    @apply absolute bg-lightYellow;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.127rem;
+  }
+
+  .middle {
+    transform: translateY(12px);
+  }
+
+  .bottom {
+    transform: translateY(24px);
+  }
+}
