@@ -73,10 +73,10 @@ function NavMenu({ updateOverlayState }) {
                     </div>
 
 
-                    <div className='z-20 ml-auto order-first md:order-last'>
-                        {/* <div className='order-first md:hidden'>
+                    <div className='z-20 md:ml-auto order-first md:order-last flex justify-between'>
+                        <div className='order-first md:hidden'>
                     <h1 className='p-4 text-white border'>LOGO</h1>
-                </div> */}
+                </div>
 
                         <button onClick={() => dropMenu()} typeof='button' id='nav-btn'
                             className='  ml-auto  nav-button cursor-pointer h-auto bg-cyan-500'>
