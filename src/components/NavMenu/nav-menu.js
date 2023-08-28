@@ -18,20 +18,24 @@ function NavMenu({ updateOverlayState }) {
     }
 
     return (
-        <header className={`border text-lightYellow w-full header mx-auto ${isHeaderPresent ? 'header-present' : ''}
+        <header className={`border bg-orange-900 text-lightYellow min-w-full header
+         ${isHeaderPresent ? 'header-present' : ''}
           h-full md:h-24 absolute `}>
 
-            <div className='container  header-container mx-auto pt-6 flex'>
+            <div className='container left-0 top-0  h-full md:h-auto header-container mx-auto pt-6 flex'>
 
                 <div className='order-first'>
-                    <h1 className='p-4 bg-orange-800 text-white border'>LOGO</h1>
+                    <h1 className='p-4 hidden md:block bg-orange-800 text-white '>LOGO</h1>
                 </div>
 
 
                 <nav className={`w-full h-auto bg-yellow-400 nav-links 
-                flex border items-center justify-end  text-sm`}>
+                flex border flex-col md:flex-row md:items-center gap-8 text-sm`}>
 
-                    <div className={`nav-menu-links flex bg-cyan-700 ${isHeaderPresent ? 'block' : 'hidden'} `}>
+                    <div className={`nav-menu-links w-full h-1/6 md:h-auto
+                     border border-cyan-400 ${isHeaderPresent ? 'flex ' : 'hidden'} 
+                     flex-col justify-between md:flex-row md:justify-end md:gap-6`}>
+
                         <div className='zodiac-signs relative'>
                             <a className='uppercase zod-link' href='./m'>Zodiac signs</a>
                             <div className='zod-overlay  absolute p-7'></div>
@@ -69,7 +73,7 @@ function NavMenu({ updateOverlayState }) {
                     </div>
 
 
-                    <div className='z-20 ml-auto'>
+                    <div className='z-20 ml-auto order-first md:order-last'>
                         {/* <div className='order-first md:hidden'>
                     <h1 className='p-4 text-white border'>LOGO</h1>
                 </div> */}
