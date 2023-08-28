@@ -1,14 +1,48 @@
 .header {
-    background: #041629;
-    /* background: #03111e; */
+  background: rgba(4, 22, 41, 0);
+  
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  /* background: #03111e; */
 }
-#menu-btn {
-  width: 2.35rem;
-  height: 2.35rem;
-  cursor: pointer;
+
+.header-present {
+  background: rgba(4, 22, 41, 0.7);
+  width: 100%;
+  z-index:10;
+
+  /*.header-container {
+    @apply h-full md:h-auto;
+  }
+   */
+}
+
+.nav-btn {
+
+height: auto;
+
+}
+
+#nav-btn:hover {
+  .circle-btn {
+    @apply border;
+  }
+}
+
+#nav-btn:active {
+  .circle-btn {
+    transform: translateY(6px);
+  }
+}
+
+.circle-present {
+  @apply border;
 }
 
 .humberger {
+  width: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .top,
   .bottom,
   .middle {
@@ -21,10 +55,70 @@
   }
 
   .middle {
-    transform: translateY(12px);
+    transform: translateY(9px);
   }
 
   .bottom {
-    transform: translateY(24px);
+    transform: translateY(18px);
+  }
+}
+
+.open {
+  .top {
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+  }
+
+  .middle {
+    display: none;
+  }
+
+  .bottom {
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  }
+}
+
+.zod-overlay {
+  width: 19rem;
+  opacity: 0;
+
+}
+.zod-card {
+  display: none;
+  @apply  rounded-lg bg-white text-base text-strongBlue;
+  position: absolute;
+  left: 0.1%;
+  width: 19rem;
+  overflow: hidden;
+}
+
+.zodiac-signs:hover {
+  .zod-card {
+    display: flex;
+  }
+
+  .zod-overlay {
+    display: flex;
+    cursor:pointer;
+  }
+}
+
+.zod-card:hover {
+  display: flex;
+}
+
+.zod-btn-container {
+  flex: 1;
+}
+
+.zod-btn {
+  @apply border-b;
+  width: 100%;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+@media (max-width: 1000px) {
+  .zod-card {
+    right: 0%;
   }
 }

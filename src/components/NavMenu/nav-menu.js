@@ -1,48 +1,100 @@
+import { useState } from 'react';
 import './nav-menu.css'
 
-function NavMenu() {
+function NavMenu({ updateOverlayState }) {
+
+    const [isCircleOpen, setIsCircleOpen] = useState(false);
+    const [isHeaderPresent, setIsHeaderPresent] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+    const [isOverlayOpen, setIsOverlayOpen] = useState(false);
+
+    const dropMenu = () => {
+        setIsCircleOpen(!isCircleOpen)
+        setIsHeaderPresent(!isHeaderPresent)
+        setIsOpen(!isOpen);
+        setIsOverlayOpen(!isOverlayOpen);
+        updateOverlayState(!isOverlayOpen)
+
+    }
 
     return (
-        <header className="header absolute  h-28 w-full opacity-80 z-10">
-            <div className='container h-full w-full mx-auto flex items-center'>
-                <div className='flex gap-32'>
-                    <button className='relative humberger' id="menu-btn" type="button">
-                        <span className="top"></span>
-                        <span className="middle "></span>
-                        <span className="bottom"></span>
-                    </button>
+        <header className={`border text-lightYellow w-full header mx-auto ${isHeaderPresent ? 'header-present' : ''}
+          h-full md:h-24 absolute `}>
 
-                    <nav className='nav-links flex gap-28 text-lightYellow text-xl'>
-                        <a href='./j'>Daily Horoscope</a>
-                        <div>
-                            <a href='./m'>Zodiac</a>
+            <div className='container  header-container mx-auto pt-6 flex'>
 
-                            <div className='absolute rounded-lg py-2 bg-white text-base text-strongBlue flex'>
-                                <ul className='px-4'>
-                                    <li>Pisces</li>
-                                    <li>Aries</li>
-                                    <li>Capricorn</li>
-                                    <li>Gemini</li>
-                                    <li>Libra</li>
-                                    <li>Taurus</li>
+                <div className='order-first'>
+                    <h1 className='p-4 bg-orange-800 text-white border'>LOGO</h1>
+                </div>
 
-                                </ul>
 
-                                <ul className='px-4'>
-                                    <li>Cancer</li>
-                                    <li>Virgo</li>
-                                    <li>Scorpio</li>
-                                    <li>Leo</li>
-                                    <li>Sagittarius</li>
-                                    <li>Aquarius</li>
-                                </ul>
+                <nav className={`w-full h-auto bg-yellow-400 nav-links 
+                flex border items-center justify-end  text-sm`}>
+
+                    <div className={`nav-menu-links flex bg-cyan-700 ${isHeaderPresent ? 'block' : 'hidden'} `}>
+                        <div className='zodiac-signs relative'>
+                            <a className='uppercase zod-link' href='./m'>Zodiac signs</a>
+                            <div className='zod-overlay  absolute p-7'></div>
+
+                            <div className='zod-card mt-6'>
+                                <div className='zod-btn-container flex flex-col items-start'>
+                                    <button type='button' className='zod-btn'>Pisces</button>
+                                    <button type='button' className='zod-btn'>Aries</button>
+                                    <button type='button' className='zod-btn'>Capricorn</button>
+                                    <button type='button' className='zod-btn'>Gemini</button>
+
+
+                                </div>
+
+                                <div className='zod-btn-container flex flex-col items-start border-x'>
+                                    <button type='button' className='zod-btn'>Cancer</button>
+                                    <button type='button' className='zod-btn'>Virgo</button>
+                                    <button type='button' className='zod-btn'>Scorpio</button>
+                                    <button type='button' className='zod-btn'>Leo</button>
+
+                                </div>
+
+                                <div className='zod-btn-container flex flex-col items-start'>
+                                    <button type='button' className='zod-btn'>Libra</button>
+                                    <button type='button' className='zod-btn'>Taurus</button>
+                                    <button type='button' className='zod-btn'>Sagittarius</button>
+                                    <button type='button' className='zod-btn'>Aquarius</button>
+                                </div>
                             </div>
 
 
                         </div>
 
-                    </nav>
-                </div>
+                        <a className='uppercase' href='./j'>Daily Horoscope</a>
+                    </div>
+
+
+                    <div className='z-20 ml-auto'>
+                        {/* <div className='order-first md:hidden'>
+                    <h1 className='p-4 text-white border'>LOGO</h1>
+                </div> */}
+
+                        <button onClick={() => dropMenu()} typeof='button' id='nav-btn'
+                            className='  ml-auto  nav-button cursor-pointer h-auto bg-cyan-500'>
+                            <div className={`circle-btn rounded-full flex-col items-center p-4 w-[3.7rem] h-[3.7rem]`}>
+                                <div className={`relative humberger ${isOpen ? 'open' : ''}`} id="menu-btn" type="button">
+                                    <span className="top"></span>
+                                    <span className="middle "></span>
+                                    <span className="bottom"></span>
+                                </div>
+                            </div>
+
+                        </button>
+                    </div>
+
+
+
+
+
+                </nav>
+
+
+
             </div>
         </header>
     )
