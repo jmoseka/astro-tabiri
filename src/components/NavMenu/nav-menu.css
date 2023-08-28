@@ -1,6 +1,6 @@
 .header {
   background: rgba(4, 22, 41, 0);
-  
+
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   /* background: #03111e; */
 }
@@ -8,7 +8,7 @@
 .header-present {
   background: rgba(4, 22, 41, 0.7);
   width: 100%;
-  z-index:10;
+  z-index: 10;
 
   /*.header-container {
     @apply h-full md:h-auto;
@@ -17,9 +17,7 @@
 }
 
 .nav-btn {
-
-height: auto;
-
+  height: auto;
 }
 
 #nav-btn:hover {
@@ -79,14 +77,17 @@ height: auto;
 
 .zod-overlay {
   width: 19rem;
-  opacity: 0;
-
+  opacity: 1;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .zod-card {
-  display: none;
-  @apply  rounded-lg bg-white text-base text-strongBlue;
+  background: red;
+  display: flex;
+  @apply rounded-lg bg-white text-base text-strongBlue;
   position: absolute;
-  left: 0.1%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 19rem;
   overflow: hidden;
 }
@@ -98,7 +99,6 @@ height: auto;
 
   .zod-overlay {
     display: flex;
-    cursor:pointer;
   }
 }
 

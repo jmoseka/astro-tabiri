@@ -17,7 +17,7 @@ function App() {
     <div className="App relative h-screen w-screen">
       <div className='max-w-[1800px] mx-auto h-full'>
         <div className={`body-gradient-bg h-full w-full relative`}>
-          {/* <div className={`${overlayOpen ? 'overlay' : ''}`}></div> */}
+          <div className={`${overlayOpen ? 'overlay' : ''}`}></div>
           <NavMenu updateOverlayState={setOverlayOpen} />
           <Prediction />
         

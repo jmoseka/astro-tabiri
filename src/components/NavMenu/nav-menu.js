@@ -34,13 +34,13 @@ function NavMenu({ updateOverlayState }) {
 
                     <div className={`nav-menu-links w-full h-1/6 md:h-auto
                      border border-cyan-400 ${isHeaderPresent ? 'flex ' : 'hidden'} 
-                     flex-col justify-between md:flex-row md:justify-end md:gap-6`}>
+                     flex-col justify-between md:flex-row md:justify-end md:gap-20`}>
 
-                        <div className='zodiac-signs relative'>
-                            <a className='uppercase zod-link' href='./m'>Zodiac signs</a>
-                            <div className='zod-overlay  absolute p-7'></div>
+                        <div className='zodiac-signs relative order-last md:order-first'>
+                            <a className='uppercase zod-link ' href='./m'>Zodiac signs</a>
+                            <div className='zod-overlay  absolute p-1'></div>
 
-                            <div className='zod-card mt-6'>
+                            <div className='zod-card mt-1 '>
                                 <div className='zod-btn-container flex flex-col items-start'>
                                     <button type='button' className='zod-btn'>Pisces</button>
                                     <button type='button' className='zod-btn'>Aries</button>
@@ -50,7 +50,7 @@ function NavMenu({ updateOverlayState }) {
 
                                 </div>
 
-                                <div className='zod-btn-container flex flex-col items-start border-x'>
+                                <div className='zod-btn-container flex flex-col items-start '>
                                     <button type='button' className='zod-btn'>Cancer</button>
                                     <button type='button' className='zod-btn'>Virgo</button>
                                     <button type='button' className='zod-btn'>Scorpio</button>
