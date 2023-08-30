@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
 import './nav-menu.css'
 
@@ -18,6 +18,7 @@ function NavMenu({ updateOverlayState, isOverlayClick }) {
             setIsZodiacListOpen(!isZodiacListOpen);
             updateOverlayState(!isOverlayOpen);
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isOverlayClick]);
 
     const dropMenu = () => {
