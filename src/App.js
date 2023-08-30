@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import NavMenu from './components/NavMenu/nav-menu';
 import Prediction from './components/prediction';
