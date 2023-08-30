@@ -18,17 +18,6 @@
   height: auto;
 }
 
-#nav-btn:hove {
-  .circle-bt {
-    @apply border;
-  }
-}
-
-#nav-btn:activ {
-  .circle-btn {
-    /* transform: translateY(6px); */
-  }
-}
 
 .circle-present {
   @apply border;
@@ -95,15 +84,6 @@
   overflow: hidden;
 }
 
-.zodiac-signs:hover {
-  /* .zod-card {
-    display: flex;
-  }
-
-  .zod-overla {
-    display: flex;
-  } */
-}
 
 .zod-card:hover {
   display: flex;

@@ -18,8 +18,8 @@ function NavMenu({ updateOverlayState, isOverlayClick }) {
             setIsZodiacListOpen(!isZodiacListOpen);
             updateOverlayState(!isOverlayOpen);
         }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [isOverlayClick]);
+
+    }, [isHeaderPresent, isOpen, isOverlayClick, isOverlayOpen, isZodiacListOpen, updateOverlayState]);
 
     const dropMenu = () => {
         setIsCircleOpen(!isCircleOpen)
