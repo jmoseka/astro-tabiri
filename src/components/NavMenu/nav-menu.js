@@ -19,7 +19,7 @@ function NavMenu({ updateOverlayState, isOverlayClick }) {
             updateOverlayState(!isOverlayOpen);
         }
 
-    }, [isHeaderPresent, isOpen, isOverlayClick, isOverlayOpen, isZodiacListOpen, updateOverlayState]);
+    }, [isOverlayClick]);
 
     const dropMenu = () => {
         setIsCircleOpen(!isCircleOpen)
