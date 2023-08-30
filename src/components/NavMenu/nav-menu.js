@@ -19,6 +19,7 @@ function NavMenu({ updateOverlayState, isOverlayClick }) {
             updateOverlayState(!isOverlayOpen);
         }
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isOverlayClick]);
 
     const dropMenu = () => {
