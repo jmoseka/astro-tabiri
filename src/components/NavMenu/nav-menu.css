@@ -1,0 +1,103 @@
+.header {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  /* background: #03111e; */
+}
+
+.header-present {
+  background: rgba(4, 22, 41, 0.7);
+  width: 100%;
+  z-index: 10;
+
+  /*.header-container {
+    @apply h-full md:h-auto;
+  }
+   */
+}
+
+.nav-btn {
+  height: auto;
+}
+
+.circle-present {
+  @apply border;
+}
+
+.humberger {
+  width: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.humberger .top,
+.humberger .bottom,
+.humberger .middle {
+  @apply absolute bg-lightYellow;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.127rem;
+}
+
+.humberger .middle {
+  transform: translateY(9px);
+  background: #fff;
+}
+
+.humberger .bottom {
+  transform: translateY(18px);
+}
+
+.open .top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .middle {
+  display: none;
+}
+
+.open .bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+.zod-overlay {
+  width: 19rem;
+  opacity: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.zod-card-open {
+  @apply md:absolute md:-translate-x-1/2;
+  left: 50%;
+  display: flex;
+}
+
+.zod-card {
+  @apply rounded-lg bg-white text-base text-strongBlue;
+  width: 19rem;
+  overflow: hidden;
+}
+
+.zod-card:hover {
+  display: flex;
+}
+
+.zod-btn-container {
+  flex: 1;
+}
+
+.zod-btn {
+  @apply border-b hover:bg-lightBlue;
+  width: 100%;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+@media (max-width: 1000px) {
+  .zod-card {
+    right: 0%;
+  }
+}

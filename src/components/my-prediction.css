@@ -5,7 +5,7 @@
 }
 
 .const-body {
-  @apply flex flex-col font-light text-lightYellow text-xs cursor-pointer p-0;
+  @apply flex flex-col font-light text-lightYellow text-xs cursor-pointer p-0 hover:text-yellow;
 }
 
 .middleGrid {
