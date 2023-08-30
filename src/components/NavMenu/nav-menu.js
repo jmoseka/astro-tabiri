@@ -1,12 +1,27 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
 import './nav-menu.css'
 
-function NavMenu({ updateOverlayState }) {
+function NavMenu({ updateOverlayState, isOverlayClick }) {
 
     const [isCircleOpen, setIsCircleOpen] = useState(false);
     const [isHeaderPresent, setIsHeaderPresent] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const [isOverlayOpen, setIsOverlayOpen] = useState(false);
+    const [isZodiacListOpen, setIsZodiacListOpen] = useState(false);
+
+
+    console.log('overlay open?', isOverlayOpen);
+
+    useEffect(() => {
+        if (isOverlayOpen) {
+            setIsOpen(!isOpen);
+            setIsHeaderPresent(!isHeaderPresent);
+            setIsOverlayOpen(!isOverlayOpen);
+            setIsZodiacListOpen(!isZodiacListOpen);
+            updateOverlayState(!isOverlayOpen);
+        }
+    }, [isOverlayClick]);
 
     const dropMenu = () => {
         setIsCircleOpen(!isCircleOpen)
@@ -15,32 +30,48 @@ function NavMenu({ updateOverlayState }) {
         setIsOverlayOpen(!isOverlayOpen);
         updateOverlayState(!isOverlayOpen)
 
+
+        if (isOpen === false) {
+            setIsZodiacListOpen(false)
+        }
+
+    }
+
+    const displayZodiac = () => {
+        setIsZodiacListOpen(!isZodiacListOpen);
     }
 
     return (
-        <header className={`border bg-orange-900 text-lightYellow min-w-full header
+        <header className={` text-lightYellow min-w-full header
          ${isHeaderPresent ? 'header-present' : ''}
-          h-full md:h-24 absolute `}>
+         py-4 absolute `}>
 
-            <div className='container left-0 top-0  h-full md:h-auto header-container mx-auto pt-6 flex'>
+            <div className='container py-2 left-0 top-0 flex 
+             header-container mx-auto '>
 
-                <div className='order-first'>
-                    <h1 className='p-4 hidden md:block bg-orange-800 text-white '>LOGO</h1>
+                <div className='order-first self-center'>
+                    <h1 className='p-3 hidden md:block border text-white '>LOGO</h1>
                 </div>
 
 
-                <nav className={`w-full h-auto bg-yellow-400 nav-links 
-                flex border flex-col md:flex-row md:items-center gap-8 text-sm`}>
+                <nav className={`w-full nav-links 
+                flex flex-col md:flex-row md:items-center gap-12 text-[.8rem]`}>
 
-                    <div className={`nav-menu-links w-full h-1/6 md:h-auto
-                     border border-cyan-400 ${isHeaderPresent ? 'flex ' : 'hidden'} 
-                     flex-col justify-between md:flex-row md:justify-end md:gap-20`}>
+                    <div className={`nav-menu-links md:w-full h-full md:h-auto
+                      ${isHeaderPresent ? 'flex ' : 'hidden'} 
+                     flex-col gap-8 items-center md:flex-row md:justify-end md:gap-20`}>
 
-                        <div className='zodiac-signs relative order-last md:order-first'>
-                            <a className='uppercase zod-link ' href='./m'>Zodiac signs</a>
-                            <div className='zod-overlay  absolute p-1'></div>
+                        {/* FIRST LINK ZODIAC SIGNS */}
 
-                            <div className='zod-card mt-1 '>
+                        <div className='zodiac-signs relative  md:order-first '>
+                            <button onClick={() => displayZodiac()} className={`p-2 hover:text-yellow w-full flex justify-center items-center 
+                            gap-1 ${isZodiacListOpen ? 'border rounded-md text-yellow border-yellow' : ''}
+                            `}>
+                                <p className='uppercase zod-link '>Zodiac signs</p>
+                                <MdOutlineKeyboardArrowDown className='text-[1.4rem]' />
+                            </button>
+
+                            <div className={`zod-card  ${isZodiacListOpen ? 'zod-card-open' : 'hidden'} mt-2`}>
                                 <div className='zod-btn-container flex flex-col items-start'>
                                     <button type='button' className='zod-btn'>Pisces</button>
                                     <button type='button' className='zod-btn'>Aries</button>
@@ -65,23 +96,30 @@ function NavMenu({ updateOverlayState }) {
                                     <button type='button' className='zod-btn'>Aquarius</button>
                                 </div>
                             </div>
+                            {/* <div className='zod-overla absolute p-1'></div> */}
 
 
                         </div>
 
-                        <a className='uppercase' href='./j'>Daily Horoscope</a>
+
+                        {/* SECOND LINK DAILY HOROSCOPE */}
+
+                        <div className='p-2 hover:text-yellow'>
+                            <a className='uppercase' href='./j'>Daily Horoscope</a>
+                        </div>
                     </div>
 
+                    {/* BUTTON */}
 
-                    <div className='z-20 md:ml-auto order-first md:order-last flex justify-between'>
+                    <div className='z-20  md:ml-auto order-first md:order-last flex justify-between'>
                         <div className='order-first md:hidden'>
-                    <h1 className='p-4 text-white border'>LOGO</h1>
-                </div>
+                            <h1 className='p-4 text-white border'>LOGO</h1>
+                        </div>
 
                         <button onClick={() => dropMenu()} typeof='button' id='nav-btn'
-                            className='  ml-auto  nav-button cursor-pointer h-auto bg-cyan-500'>
-                            <div className={`circle-btn rounded-full flex-col items-center p-4 w-[3.7rem] h-[3.7rem]`}>
-                                <div className={`relative humberger ${isOpen ? 'open' : ''}`} id="menu-btn" type="button">
+                            className='  ml-auto  nav-button cursor-pointer h-auto'>
+                            <div className={`flex flex-col items-center p-4 w-[3.7rem] h-[3.7rem]`}>
+                                <div className={`relative humberger ${isOpen ? 'open' : ''}`} id="menu-btn">
                                     <span className="top"></span>
                                     <span className="middle "></span>
                                     <span className="bottom"></span>
@@ -90,15 +128,7 @@ function NavMenu({ updateOverlayState }) {
 
                         </button>
                     </div>
-
-
-
-
-
                 </nav>
-
-
-
             </div>
         </header>
     )

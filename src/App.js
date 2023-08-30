@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import NavMenu from './components/NavMenu/nav-menu';
 import Prediction from './components/prediction';
@@ -7,20 +7,23 @@ import Prediction from './components/prediction';
 
 function App() {
   const [overlayOpen, setOverlayOpen] = useState(false);
-  console.log(overlayOpen);
+  const [overlayClicked, setOverlayClicked] = useState(false)
 
-  const updateOverlay = (value) => {
-    setOverlayOpen(value);
-  };
+  const handleOverlayClick = () => {
+    setOverlayClicked(!overlayClicked)
+    setOverlayOpen(!overlayOpen)
+  }
+
 
   return (
     <div className="App relative h-screen w-screen">
       <div className='max-w-[1800px] mx-auto h-full'>
         <div className={`body-gradient-bg h-full w-full relative`}>
-          <div className={`${overlayOpen ? 'overlay' : ''}`}></div>
-          <NavMenu updateOverlayState={setOverlayOpen} />
+          <div onClick={() => handleOverlayClick()}
+            className={`${overlayOpen ? 'overlay' : ''}`}></div>
+          <NavMenu isOverlayClick={overlayClicked} updateOverlayState={setOverlayOpen} />
           <Prediction />
-        
+
         </div>
 
       </div>
