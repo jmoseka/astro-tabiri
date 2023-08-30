@@ -1,10 +1,9 @@
-// postcss.config.js
-  module.exports = {
-    plugins: {
-      'postcss-import': {},
-      'postcss-nested': {},    // Enable nested CSS
-      tailwindcss: {},
-      autoprefixer: {},
-    }
-  }
-  
+/** @type {import('postcss-load-config').Config} */
+const config = {
+    plugins: [
+        require('autoprefixer'),
+        require('postcss-nested')
+    ]
+}
+
+module.exports = config
