@@ -10,9 +10,6 @@ function NavMenu({ updateOverlayState, isOverlayClick }) {
     const [isOverlayOpen, setIsOverlayOpen] = useState(false);
     const [isZodiacListOpen, setIsZodiacListOpen] = useState(false);
 
-
-    console.log('overlay open?', isOverlayOpen);
-
     useEffect(() => {
         if (isOverlayOpen) {
             setIsOpen(!isOpen);
@@ -57,7 +54,7 @@ function NavMenu({ updateOverlayState, isOverlayClick }) {
                 <nav className={`w-full nav-links 
                 flex flex-col md:flex-row md:items-center gap-12 text-[.8rem]`}>
 
-                    <div className={`nav-menu-links md:w-full h-full md:h-auto
+                    <div className={`nav-menu-links w-auto md:w-full h-full md:h-auto
                       ${isHeaderPresent ? 'flex ' : 'hidden'} 
                      flex-col gap-8 items-center md:flex-row md:justify-end md:gap-20`}>
 
@@ -113,7 +110,7 @@ function NavMenu({ updateOverlayState, isOverlayClick }) {
 
                     <div className='z-20  md:ml-auto order-first md:order-last flex justify-between'>
                         <div className='order-first md:hidden'>
-                            <h1 className='p-4 text-white border'>LOGO</h1>
+                            <h1 className='p-4 ml-2 text-white border'>LOGO</h1>
                         </div>
 
                         <button onClick={() => dropMenu()} typeof='button' id='nav-btn'
