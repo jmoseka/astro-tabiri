@@ -18,7 +18,6 @@
   height: auto;
 }
 
-
 .circle-present {
   @apply border;
 }
@@ -28,11 +27,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative ;
+  position: relative;
+}
 
-  .top,
-  .bottom,
-  .middle {
+  .humberger .top,
+  .humberger .bottom,
+  .humberger .middle {
     @apply absolute bg-lightYellow;
     display: block;
     top: 0;
@@ -41,29 +41,27 @@
     height: 0.127rem;
   }
 
-  .middle {
+  .humberger .middle {
     transform: translateY(9px);
     background: #fff;
   }
 
-  .bottom {
+  .humberger .bottom {
     transform: translateY(18px);
   }
-}
 
-.open {
-  .top {
+.open .top {
     transform: rotate(45deg) translateY(6px) translateX(6px);
   }
 
-  .middle {
+ .open .middle {
     display: none;
   }
 
-  .bottom {
+  .open .bottom {
     transform: rotate(-45deg) translateY(6px) translateX(-6px);
   }
-}
+
 
 .zod-overlay {
   width: 19rem;
@@ -84,7 +82,6 @@
   overflow: hidden;
 }
 
-
 .zod-card:hover {
   display: flex;
 }
@@ -98,7 +95,6 @@
   width: 100%;
   justify-content: center;
   padding: 0.5rem;
-  
 }
 
 @media (max-width: 1000px) {
