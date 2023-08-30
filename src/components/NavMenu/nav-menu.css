@@ -30,38 +30,37 @@
   position: relative;
 }
 
-  .humberger .top,
-  .humberger .bottom,
-  .humberger .middle {
-    @apply absolute bg-lightYellow;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0.127rem;
-  }
+.humberger .top,
+.humberger .bottom,
+.humberger .middle {
+  @apply absolute bg-lightYellow;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.127rem;
+}
 
-  .humberger .middle {
-    transform: translateY(9px);
-    background: #fff;
-  }
+.humberger .middle {
+  transform: translateY(9px);
+  background: #fff;
+}
 
-  .humberger .bottom {
-    transform: translateY(18px);
-  }
+.humberger .bottom {
+  transform: translateY(18px);
+}
 
 .open .top {
-    transform: rotate(45deg) translateY(6px) translateX(6px);
-  }
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
 
- .open .middle {
-    display: none;
-  }
+.open .middle {
+  display: none;
+}
 
-  .open .bottom {
-    transform: rotate(-45deg) translateY(6px) translateX(-6px);
-  }
-
+.open .bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
 
 .zod-overlay {
   width: 19rem;
