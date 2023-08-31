@@ -5,52 +5,62 @@
 }
 
 .const-body {
-  @apply flex flex-col font-light text-lightYellow text-xs cursor-pointer p-0 hover:text-yellow;
+  @apply flex flex-col items-center justify-between gap-4
+   text-lightBlue cursor-pointer
+   p-0 hover:text-yellow;
 }
 
-.middleGrid {
+.const-body-special {
+  @apply md:flex md:flex-col md:items-center md:justify-between md:gap-4
+  md:text-lightBlue cursor-pointer
+  md:p-0 md:hover:text-yellow;
+}
+
+.constelation {
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+.constelation path {
+  @apply fill-lightBlue1;
+}
+
+.const-title {
+  font-size: 0.5rem;
+  letter-spacing: 0.05rem;
+  font-weight: 400;
+}
+
+.const-date {
+  @apply text-lightBlue1 font-thin p-[0.07rem];
+  font-size: 0.44rem;
+  letter-spacing: 0.03rem;
+}
+
+/* DESKTOP VERSIONS */
+
+.middlegrid {
+  
   grid-template-columns: 1fr 2fr 2fr 1fr;
 }
+
+.horoscope-board-desktop {
+  @apply md:flex md:w-full  md:flex-col md:items-center md:col-span-2 md:row-span-3;
+}
+
+/* ///// */
 
 .pisces {
 }
 
-.constelation {
-  /*strongBlueShade1*/
-  width: 2.4rem;
-  height: 2.4rem;
-}
-
-.constelation path {
-  fill: #FFF;
-  opacity: 0.8;
-  
-}
-
-.const-title {
-  font-size: 0.58rem;
-  letter-spacing: 0.1rem;
-  font-weight: 300;
-  opacity: 0.7;
-}
-
-.const-date {
-  font-size: 0.67rem;
-  letter-spacing: 0.04rem;
-  opacity: 0.7;
-}
-
-
 .zodiac-title {
-  font-family: 'Oleo Script', cursive;
+  font-family: "Oleo Script", cursive;
 }
 
 .zodiac-prediction {
-letter-spacing: .026rem;
-font-weight: 300;
-opacity: 0.8;
-
-
+  letter-spacing: 0.026rem;
+  font-weight: 300;
+  opacity: 0.8;
 }
 
 .circ {

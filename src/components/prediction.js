@@ -29,7 +29,7 @@ function Prediction() {
     key9: { value1: 'Sagittarius', value2: 'Nov 22 – Dec 21' },
     key10: { value1: 'Capricorn', value2: 'Dec 22 - Jan 19' },
     key11: { value1: 'Aquarius', value2: 'Jan 20 - Feb 18' },
-    key12: { value1: 'Pisces', value2: 'Feb 19 - March 20' },
+    key12: { value1: 'Pisces', value2: 'Feb 19 - Mar 20' },
 
   };
 
@@ -43,12 +43,10 @@ function Prediction() {
     const zodiac = horoMap[key].value1;
     // const date = horoMap.key.value2;
 
-
-
     async function fetchHoroscope(index) {
       try {
         const result = await webscrapper(index); // Wait for the webscrapper function to complete
-        
+
         setdailyPrediction(result)
         setDailyZodiacSign(zodiac)
         return result;
@@ -66,155 +64,230 @@ function Prediction() {
 
 
   return (
-    <div className="container mx-auto h-full w-full">
-
-      {/* <nav className='text-lightYellow'>
-        <a>Daily Horoscope</a>
-        <a>My Zodiac</a>
-      </nav> */}
+    <div className="container mx-auto w-full">
 
       <div className='pt-1 relative '>
 
-        <div className='mx-auto mt-20   h-[30rem] w-5/6 grid grid-cols-1 grid-rows-4'>
+        <div className='mx-auto mt-28 border grid grid-cols-1 grid-rows-4 gap-2
+        md:grid-rows-3
+        '>
 
-          <div className=' grid grid-cols-4 firstGrid w-4/5 mx-auto'>
+          {/************* FIRST GRID *********************
+           * First grid with a hidden class for the last button
+          Small screen: 3 grids
+          */}
 
-            <button onClick={() => displayHoroscope('12')} className="const-body items-center  text-white text-sm">
-              <Pisces className='constelation  text-white' />
-              <div>
+          <div className='border w-full grid grid-cols-3 firstgrid
+          md:grid-cols-6 gap-3
+          '>
+
+            <div className='border hidden md:block'></div>
+
+            <button onClick={() => displayHoroscope('12')} className="border const-body">
+              <Pisces className='constelation' />
+              <div className='w-full'>
                 <p className='const-title uppercase'>Pisces</p>
                 <p className='const-date'>{horoMap[`key${12}`].value2}</p>
               </div>
             </button>
 
-            <button onClick={() => displayHoroscope('1')} className="const-body  items-center aries text-white text-sm">
-              <Aries className='constelation  text-white' />
+            <button onClick={() => displayHoroscope('1')} className="border const-body">
+              <Aries className='constelation  ' />
               <div>
                 <p className='const-title uppercase'>aries</p>
                 <p className='const-date'>{horoMap[`key${1}`].value2}</p>
               </div>
             </button>
 
-            <button className="const-body  items-center sagittarius text-white text-sm">
-              <Sagitarus onClick={() => displayHoroscope('9')} className='constelation  text-white' />
+            <button onClick={() => displayHoroscope('9')} className="border const-body sagittarius">
+              <Sagitarus className='constelation' />
               <div>
                 <p className='const-title uppercase'>{horoMap[`key${9}`].value1}</p>
                 <p className='const-date'>{horoMap[`key${9}`].value2}3</p>
               </div>
             </button>
 
-
-            <button onClick={() => displayHoroscope('7')} className="const-body  items-center libra text-white text-sm">
-              <Libra className='constelation  text-white' />
+            <button onClick={() => displayHoroscope('7')} className="border libra hidden
+             md:flex md:flex-col md:items-center md:justify-between md:gap-4
+             md:text-lightBlue cursor-pointer md:p-0 md:hover:text-yellow">
+              <Libra className='constelation' />
               <div>
                 <p className='const-title uppercase'>{horoMap[`key${7}`].value1}</p>
                 <p className='const-date'>{horoMap[`key${7}`].value2}</p>
               </div>
             </button>
+
+            <div className='border hidden md:block'></div>
           </div>
 
 
-          <div className='middleGrid row-span-3 grid grid-rows-3 grid-cols-4'>
 
-            <div className='flex flex-col items-end'>
-              <button onClick={() => displayHoroscope('10')} className="const-body items-center  text-white text-sm">
-                <Capricorn className='constelation  text-white' />
+
+
+
+          {/********************* MIDDLE GRID *******************
+          1. Made up of two sub grid
+          2. SM: grid grid-cols-3. For the first grid subgrid: col-span-2
+          */}
+
+          <div className='border grid grid-cols-3 lastgrid
+          md:grid-cols-4
+          '>
+
+            <div className='col-span-2 sublastgrid-1 grid grid-cols-2 
+            md:grid-cols-1 md:grid-row-2
+            '>
+
+              <button onClick={() => displayHoroscope('4')} className="border const-body">
+                <Cancer className='constelation' />
+                <div>
+                  <p className='const-title uppercase'>cancer</p>
+                  <p className='const-date'>Aug 23 - Sept 23</p>
+                </div>
+              </button>
+
+              <button onClick={() => displayHoroscope('2')} className="border const-body">
+                <Taurus className='constelation' />
+                <div>
+                  <p className='const-title uppercase'>taurus</p>
+                  <p className='const-date'>Aug 23 - Sept 23</p>
+                </div>
+              </button>
+
+            </div>
+
+
+
+
+
+
+
+            <div className='sublastgrid-2 grid grid-cols-1
+            md:col-span-2 md:grid-row-2
+            '>
+
+              <button onClick={() => displayHoroscope('10')} className="border const-body">
+                <Capricorn className='constelation' />
                 <div>
                   <p className='const-title uppercase'>Capricorn</p>
                   <p className='const-date'>Aug 23 - Sept 23</p>
                 </div>
               </button>
+
+              <button onClick={() => displayHoroscope('6')} className="border hidden virgo
+              md:flex md:flex-col md:items-center md:justify-between md:gap-4
+             md:text-lightBlue cursor-pointer md:p-0 md:hover:text-yellow">
+
+                <Virgo className='constelation ' />
+                <div>
+                  <p className='const-title uppercase'>{horoMap[`key${6}`].value1}</p>
+                  <p className='const-date'>{horoMap[`key${6}`].value2}</p>
+                </div>
+              </button>
+
             </div>
 
 
-            <div className="w-full flex flex-col items-center col-span-2 row-span-3">
-              <div>
-                <p className='zodiac-title text-5xl mt-6 text-yellow'>{dailyZodiacSign}</p>
-                <p className='zodiac-prediction mt-6 px-8 text-lightYellow'>{dailyPrediction}</p>
-              </div>
+
+
+
+
+          </div>
+
+
+          {/******************* LAST GRID ***********************/}
+
+          <div className='border grid grid-cols-3 lastgrid
+          md:grid-cols-4
+          '>
+
+            <div className='col-span-2 sublastgrid-1 grid grid-cols-2 
+            md:grid-cols-1 md:grid-row-2
+            '>
+
+              <button onClick={() => displayHoroscope('8')} className="const-body col-span-1">
+                <Scorpio className='constelation  text-white' />
+                <div>
+                  <p className='const-title uppercase'>{horoMap[`key${8}`].value1}</p>
+                  <p className='const-date'>{horoMap[`key${8}`].value2}</p>
+                </div>
+              </button>
+
+              <button onClick={() => displayHoroscope('5')} className="const-body col-span-1">
+                <Leo className='constelation text-white' />
+                <div>
+                  <p className='const-title uppercase'>{horoMap[`key${5}`].value1}</p>
+                  <p className='const-date'>{horoMap[`key${5}`].value2}</p>
+                </div>
+              </button>
+
             </div>
 
+            <div className='sublastgrid-2 grid grid-cols-1
+            md:col-span-2 md:grid-row-2
+            '>
 
-            <div className='flex flex-col items-start'>
-              <button onClick={() => displayHoroscope('11')} className="const-body items-center  text-white text-sm">
-                <Aquarius className='constelation  text-white' />
+              <button onClick={() => displayHoroscope('11')} className="const-body">
+                <Aquarius className='constelation  ' />
                 <div>
                   <p className='const-title uppercase'>{horoMap[`key${11}`].value1}</p>
                   <p className='const-date'>{horoMap[`key${12}`].value2}</p>
                 </div>
               </button>
+
+              <button className="hidden
+              md:flex md:flex-col md:items-center md:justify-between md:gap-4
+              md:text-lightBlue cursor-pointer md:p-0 md:hover:text-yellow
+              ">
+                <Gemini onClick={() => displayHoroscope('3')} className='constelation' />
+                <div>
+                  <p className='const-title uppercase'>{horoMap[`key${3}`].value1}</p>
+                  <p className='const-date'>{horoMap[`key${3}`].value2}</p>
+                </div>
+              </button>
+
             </div>
 
 
 
-            <button onClick={() => displayHoroscope('6')} className="const-body justify-center items-center mb-3  text-white text-sm">
-              <Virgo className='constelation  text-white' />
+
+
+
+          </div>
+
+
+
+
+          {/** SPECIAL CLASS */}
+
+          <div className='border grid grid-cols-3 special-grid md:hidden'>
+
+            <button onClick={() => displayHoroscope('7')} className="libra const-body">
+              <Libra className='constelation' />
+              <div>
+                <p className='const-title uppercase'>{horoMap[`key${7}`].value1}</p>
+                <p className='const-date'>{horoMap[`key${7}`].value2}</p>
+              </div>
+            </button>
+
+
+            <button onClick={() => displayHoroscope('6')} className="virgo const-body">
+              <Virgo className='constelation ' />
               <div>
                 <p className='const-title uppercase'>{horoMap[`key${6}`].value1}</p>
                 <p className='const-date'>{horoMap[`key${6}`].value2}</p>
               </div>
             </button>
 
-            <button onClick={() => displayHoroscope('8')} className="const-body justify-center items-center  text-white text-sm">
-              <Scorpio className='constelation  text-white' />
+            <button onClick={() => displayHoroscope('3')} className='gemini const-body'>
+              <Gemini className='constelation' />
               <div>
-                <p className='const-title uppercase'>{horoMap[`key${8}`].value1}</p>
-                <p className='const-date'>{horoMap[`key${8}`].value2}</p>
+                <p className='const-title uppercase'>{horoMap[`key${3}`].value1}</p>
+                <p className='const-date'>{horoMap[`key${3}`].value2}</p>
               </div>
             </button>
-
-
-            <div className='flex flex-col justify-end items-end'>
-
-              <button onClick={() => displayHoroscope('5')} className="const-body items-center  text-white text-sm">
-                <Leo className='constelation  text-white' />
-                <div>
-                  <p className='const-title uppercase'>{horoMap[`key${5}`].value1}</p>
-                  <p className='const-date'>{horoMap[`key${5}`].value2}</p>
-                </div>
-              </button>
-            </div>
-
-            <div className='flex flex-col justify-end items-start'>
-              <button className="const-body items-center text-white text-sm">
-                <Gemini onClick={() => displayHoroscope('3')} className='constelation  text-white' />
-                <div>
-                  <p className='const-title uppercase'>{horoMap[`key${3}`].value1}</p>
-                  <p className='const-date'>{horoMap[`key${3}`].value2}</p>
-                </div>
-              </button>
-            </div>
-
-
 
           </div>
-
-
-          <div className=' grid grid-cols-2 firstGrid w-4/5 mx-auto'>
-
-            <button onClick={() => displayHoroscope('4')} className="const-body items-center  text-white text-sm">
-              <Cancer className='constelation  text-white' />
-              <div>
-                <p className='const-title uppercase'>cancer</p>
-                <p className='const-date'>Aug 23 - Sept 23</p>
-              </div>
-            </button>
-
-            <button onClick={() => displayHoroscope('2')} className="const-body items-center aries text-white text-sm">
-              <Taurus className='constelation  text-white' />
-              <div>
-                <p className='const-title uppercase'>taurus</p>
-                <p className='const-date'>Aug 23 - Sept 23</p>
-              </div>
-            </button>
-
-
-
-          </div>
-
-
-
-
 
         </div>
 
