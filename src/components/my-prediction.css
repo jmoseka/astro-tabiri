@@ -1,30 +1,27 @@
-
-
 .const-body {
-  @apply flex flex-col items-center justify-between gap-4
-   text-lightBlue cursor-pointer
+  @apply flex flex-col items-center gap-4  h-fit
+   text-lightBlue2 cursor-pointer
    p-0 hover:text-yellow;
-   height: fit-content;
 }
 
 .constelation {
-  width: 2.6rem;
-  height: 2.6rem;
+  @apply w-[2.6rem] h-[2.6rem] md:w-[2.9rem] md:h-[2.9rem];
 }
 
 .constelation path {
   @apply fill-lightBlue1;
+  opacity: 0.76;
 }
 
 .const-title {
-  font-size: 0.5rem;
+  @apply text-[0.5rem] md:text-[0.7rem];
   letter-spacing: 0.05rem;
   font-weight: 400;
 }
 
 .const-date {
-  @apply text-lightBlue1 font-thin p-[0.07rem];
-  font-size: 0.44rem;
+  @apply  font-thin p-[0.07rem] text-[0.44rem] 
+  md:text-[0.6rem] md:p-0;
   letter-spacing: 0.03rem;
 }
 
@@ -36,7 +33,9 @@
 
 /* ///// */
 
-.pisces {
+.aquarius {
+  position: absolute;
+  right: 50%;
 }
 
 .zodiac-title {
