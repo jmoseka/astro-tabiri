@@ -64,11 +64,12 @@ function Prediction() {
 
 
   return (
-    <div className="container mx-auto w-full">
+    <div className=" mx-auto w-full">
 
       <div className='pt-1  '>
 
-        <div className='main-grid  mt-28 md:mt-8
+        <div className='main-grid border mx-auto  rounded-[10rem]  md:w-[75%]
+         mt-24 md:mt-18
         
         '>
 
@@ -80,44 +81,69 @@ function Prediction() {
           Small screen: 3 grids
           */}
 
-          <div className=" grid grid-rows-1 grid-cols-3 md:grid-cols-6">
+          <div className=" grid grid-rows-1 grid-cols-3 md:grid-cols-6 md:gap-4">
 
 
             <div className='hidden md:block'></div>
 
-            <button onClick={() => displayHoroscope('12')} className="  const-body items-center">
-              <Pisces className='constelation' />
-              <div className='w-full'>
-                <p className='const-title uppercase'>Pisces</p>
-                <p className='const-date'>{horoMap[`key${12}`].value2}</p>
-              </div>
-            </button>
 
-            <button onClick={() => displayHoroscope('1')} className="const-body items-center">
-              <Aries className='constelation  ' />
-              <div>
-                <p className='const-title uppercase'>aries</p>
-                <p className='const-date'>{horoMap[`key${1}`].value2}</p>
-              </div>
-            </button>
+            <div className=' flex justify-center items-center md:items-start
+            md:justify-start  md:-translate-x-8
+            '>
+              <button onClick={() => displayHoroscope('12')} className="  const-body 
+            md:-translate-y-7
+            ">
+                <Pisces className='constelation' />
+                <div className='w-full'>
+                  <p className='const-title uppercase'>Pisces</p>
+                  <p className='const-date'>{horoMap[`key${12}`].value2}</p>
+                </div>
+              </button>
+            </div>
 
-            <button onClick={() => displayHoroscope('9')} className=" const-body sagittarius items-center">
-              <Sagitarus className='constelation' />
-              <div>
-                <p className='const-title uppercase'>{horoMap[`key${9}`].value1}</p>
-                <p className='const-date'>{horoMap[`key${9}`].value2}3</p>
-              </div>
-            </button>
 
-            <button onClick={() => displayHoroscope('7')} className=" libra hidden
+            <div className='flex justify-center items-center md:items-start'>
+              <button onClick={() => displayHoroscope('1')} className="const-body
+             md:-translate-y-7 md:-translate-x-6">
+                <Aries className='constelation  ' />
+                <div>
+                  <p className='const-title uppercase'>aries</p>
+                  <p className='const-date'>{horoMap[`key${1}`].value2}</p>
+                </div>
+              </button>
+            </div>
+
+
+            <div className='flex justify-center items-center md:items-start'>
+
+              <button onClick={() => displayHoroscope('9')} className=" const-body 
+            sagittarius md:-translate-y-7 md:translate-x-6">
+                <Sagitarus className='constelation' />
+                <div>
+                  <p className='const-title uppercase'>{horoMap[`key${9}`].value1}</p>
+                  <p className='const-date'>{horoMap[`key${9}`].value2}3</p>
+                </div>
+              </button>
+            </div>
+
+
+            <div className='flex justify-center items-center md:justify-end
+             md:items-start'>
+              <button onClick={() => displayHoroscope('7')} className="
+               libra hidden
+               md:-translate-y-7 md:translate-x-4
             md:flex md:flex-col md:items-center md:justify-between md:gap-4
             md:text-lightBlue2 cursor-pointer md:p-0 md:hover:text-yellow">
-              <Libra className='constelation' />
-              <div>
-                <p className='const-title uppercase'>{horoMap[`key${7}`].value1}</p>
-                <p className='const-date'>{horoMap[`key${7}`].value2}</p>
-              </div>
-            </button>
+                <Libra className='constelation' />
+                <div>
+                  <p className='const-title uppercase'>{horoMap[`key${7}`].value1}</p>
+                  <p className='const-date'>{horoMap[`key${7}`].value2}</p>
+                </div>
+              </button>
+            </div>
+
+
+
 
             <div className=' hidden md:block'></div>
 
@@ -137,17 +163,18 @@ function Prediction() {
           */}
 
           <div className='grid grid-rows-2 grid-cols-1 lastgrid
-          md:grid-cols-5  md:grid-rows-[23rem] 
+          md:grid-cols-6  md:grid-rows-[18rem] 
           '>
 
-            <div className='submiddlegrid-1 grid grid-cols-3
+            <div className=' submiddlegrid-1 grid grid-cols-3
             md:grid-cols-1 
             '>
 
               <div className='flex justify-center items-center
-              md:justify-center '
+              md:justify-start md:items-start md:translate-x-4'
               >
-                <button onClick={() => displayHoroscope('4')} className="const-body items-center
+                <button onClick={() => displayHoroscope('4')} className="const-body
+                
               ">
                   <Cancer className='constelation' />
                   <div>
@@ -158,8 +185,8 @@ function Prediction() {
               </div>
 
 
-              <div className=' flex justify-center items-center
-              md:items-end md:-translate-x-1 md:translate-y-6
+              <div className='flex justify-center items-center
+               md:justify-start  md:translate-y-8
               '>
                 <button onClick={() => displayHoroscope('2')} className="const-body">
                   <Taurus className='constelation' />
@@ -170,10 +197,10 @@ function Prediction() {
                 </button>
               </div>
 
-              <div className='flex justify-center items-center
-               md:justify-center md:items-end md:relative'>
+              <div className=' flex justify-center items-center
+               md:justify-start md:items-end md:translate-x-2  md:translate-y-24'>
                 <button onClick={() => displayHoroscope('6')} className="const-body
-                md:translate-y-[5.5rem] ">
+                 ">
 
                   <Virgo className='constelation ' />
                   <div>
@@ -188,10 +215,10 @@ function Prediction() {
             {/* horscope board */}
 
             <div className="horoscope-board hidden 
-            md:block md:col-span-3 ">
+            md:block md:col-span-4 ">
               <div>
-                <p className='zodiac-title text-5xl mt-12  text-yellow'>{dailyZodiacSign}</p>
-                <p className='zodiac-prediction mt-6  px-12 text-lightYellow'>{dailyPrediction}</p>
+                <p className='zodiac-title text-5xl mt-6  text-yellow'>{dailyZodiacSign}</p>
+                <p className='border zodiac-prediction mt-4 text-lightYellow'>{dailyPrediction}</p>
               </div>
             </div>
 
@@ -201,7 +228,7 @@ function Prediction() {
             '>
 
               <div className='flex justify-center  items-center
-               md:justify-center
+               md:justify-end md:items-start md:-translate-x-4
               '>
 
                 <button onClick={() => displayHoroscope('10')} className=" const-body">
@@ -214,10 +241,13 @@ function Prediction() {
 
               </div>
 
-              <div className='flex justify-center items-center
-              md:items-end  md:translate-x-4 md:translate-y-6
+              <div className=' flex justify-center items-center
+              md:justify-end  md:translate-y-8
               '>
-                <button onClick={() => displayHoroscope('8')} className="const-body col-span-1 items-center">
+
+                <button onClick={() => displayHoroscope('8')} className="const-body 
+                
+                ">
                   <Scorpio className='constelation  text-white' />
                   <div>
                     <p className='const-title uppercase'>{horoMap[`key${8}`].value1}</p>
@@ -226,10 +256,12 @@ function Prediction() {
                 </button>
               </div>
 
-              <div className='flex  justify-center items-center md:items-end
-              md:translate-y-[5rem]  
+              <div className=' flex  justify-center items-center
+              md:justify-end md:items-end md:translate-y-24 md:translate-x-2
               '>
-                <button onClick={() => displayHoroscope('5')} className="const-body">
+                <button onClick={() => displayHoroscope('5')} className="const-body
+                   
+                ">
                   <Leo className='constelation text-white' />
                   <div>
                     <p className='const-title uppercase'>{horoMap[`key${5}`].value1}</p>
@@ -267,13 +299,18 @@ function Prediction() {
           {/******************* LAST GRID ***********************/}
 
           <div className='grid grid-rows-1 grid-cols-3 lastgrid
-          md:grid-cols-3
+          md:grid-cols-4
           '>
 
+            <div className='hidden md:block '></div>
 
 
-            <div className=' flex justify-center md:justify-end items-center'>
+
+            <div className=' flex justify-center items-center
+            md:items-end md:justify-start
+            '>
               <button onClick={() => displayHoroscope('11')} className=" const-body 
+               md:translate-y-5 md:translate-x-2
               ">
                 <Aquarius className='constelation  ' />
                 <div>
@@ -283,11 +320,14 @@ function Prediction() {
               </button>
             </div>
 
-            <div className='hidden md:block'></div>
+            
 
-            <div className=' flex justify-center md:justify-start items-center'>
+            <div className='flex justify-center items-center
+             md:justify-end md:items-end
+             '>
 
               <button className="const-body gemini
+               md:translate-y-5 md:-translate-x-2
               ">
                 <Gemini onClick={() => displayHoroscope('3')} className='constelation items-center' />
                 <div>
@@ -299,6 +339,7 @@ function Prediction() {
             </div>
 
 
+            <div className='hidden md:block'></div>
 
 
             <button onClick={() => displayHoroscope('7')} className=" libra 

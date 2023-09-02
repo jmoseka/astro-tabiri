@@ -1,11 +1,11 @@
 .const-body {
-  @apply flex flex-col items-center gap-4  h-fit
+  @apply flex flex-col items-center gap-3  h-fit
    text-lightBlue2 cursor-pointer
-   p-0 hover:text-yellow;
+   p-0 hover:text-yellow md:gap-1;
 }
 
 .constelation {
-  @apply w-[2.6rem] h-[2.6rem] md:w-[2.9rem] md:h-[2.9rem];
+  @apply w-[2.6rem] h-[2.6rem] md:w-[2.76rem] md:h-[2.76rem];
 }
 
 .constelation path {
@@ -14,13 +14,13 @@
 }
 
 .const-title {
-  @apply text-[0.5rem] md:text-[0.7rem];
+  @apply text-[0.5rem] md:text-[0.66rem];
   letter-spacing: 0.05rem;
   font-weight: 400;
 }
 
 .const-date {
-  @apply  font-thin p-[0.07rem] text-[0.44rem] 
+  @apply font-thin p-[0.07rem] text-[0.44rem] 
   md:text-[0.6rem] md:p-0;
   letter-spacing: 0.03rem;
 }
@@ -33,11 +33,6 @@
 
 /* ///// */
 
-.aquarius {
-  position: absolute;
-  right: 50%;
-}
-
 .zodiac-title {
   font-family: "Oleo Script", cursive;
 }
@@ -46,4 +41,13 @@
   letter-spacing: 0.026rem;
   font-weight: 300;
   opacity: 0.8;
+}
+
+
+@media (max-width: 1000px) {
+
+  .main-grid {
+    width: 90%;
+
+  }
 }
