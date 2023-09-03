@@ -48,7 +48,7 @@ function NavMenu({ updateOverlayState, isOverlayClick }) {
             <div className='container py-2 left-0 top-0 flex 
              header-container mx-auto '>
 
-                <div className='order-first self-center'>
+                <div className='hidden order-first self-center'>
                     <h1 className='p-3 hidden md:block border text-white '>LOGO</h1>
                 </div>
 

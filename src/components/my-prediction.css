@@ -1,11 +1,11 @@
 .const-body {
   @apply flex flex-col items-center gap-3  h-fit
    text-lightBlue2 cursor-pointer
-   p-0 hover:text-yellow md:gap-1;
+   p-0 hover:text-yellow md:gap-1 h-fit;
 }
 
 .constelation {
-  @apply w-[2.6rem] h-[2.6rem] md:w-[2.76rem] md:h-[2.76rem];
+  @apply w-[2.6rem] h-[2.6rem] md:w-[2.5rem] md:h-[2.5rem];
 }
 
 .constelation path {
@@ -14,7 +14,7 @@
 }
 
 .const-title {
-  @apply text-[0.5rem] md:text-[0.66rem];
+  @apply text-[0.5rem] md:text-[0.6rem];
   letter-spacing: 0.05rem;
   font-weight: 400;
 }
@@ -38,7 +38,7 @@
 }
 
 .zodiac-prediction {
-  letter-spacing: 0.026rem;
+  letter-spacing: 0.04rem;
   font-weight: 300;
   opacity: 0.8;
 }
@@ -48,6 +48,9 @@
 
   .main-grid {
     width: 90%;
+  }
 
+  .zodiac-prediction {
+    font-size: 0.95rem;
   }
 }
