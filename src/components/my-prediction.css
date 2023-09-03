@@ -54,3 +54,9 @@
     font-size: 0.95rem;
   }
 }
+
+@media (max-width: 500px) {
+  .zodiac-prediction {
+    font-size: 0.8rem;
+  }
+}

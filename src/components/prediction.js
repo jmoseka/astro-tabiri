@@ -69,9 +69,20 @@ function Prediction() {
       <div className='pt-1  '>
 
         <div className='main-grid mx-auto rounded-[10rem] md:w-[80%]
-         mt-24 md:mt-18
+         mt-28 md:mt-18
         
         '>
+
+
+          {/* horscope board */}
+
+          <div className="horoscope-board mb-12
+            md:hidden ">
+            <div>
+              <p className='zodiac-title text-[2rem] md:text-[2.8rem]  text-yellow'>{dailyZodiacSign}</p>
+              <p className=' zodiac-prediction text-[1.4rem] text-lightBlue'>{dailyPrediction}</p>
+            </div>
+          </div>
 
           {/* grid grid-cols-1 grid-rows-4
          md:grid-rows-3 */}
