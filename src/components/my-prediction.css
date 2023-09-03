@@ -14,7 +14,7 @@
 }
 
 .const-title {
-  @apply text-[0.95rem] md:text-[0.6rem];
+  @apply text-[1.7rem] md:text-[0.6rem];
   letter-spacing: 0.05rem;
   font-weight: 400;
 }
@@ -59,13 +59,13 @@
   }
 
   .zodiac-prediction-desc {
-    @apply text-[1.04rem] px-2;
+    @apply text-[.87rem] px-2;
   }
 }
 
 @media (max-width: 500px) {
   .const-title {
-    @apply text-[0.4rem];
+    @apply text-[0.6rem];
   }
 
   .const-date {

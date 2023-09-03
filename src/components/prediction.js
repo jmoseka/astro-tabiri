@@ -79,7 +79,7 @@ function Prediction() {
           <div className="horoscope-board mb-2
             md:hidden ">
             <div>
-              <p className='zodiac-title text-[2.75rem] md:text-[2.8rem]  text-yellow'>{dailyZodiacSign}</p>
+              <p className='zodiac-title text-[2.4rem] md:text-[2.8rem]  text-yellow'>{dailyZodiacSign}</p>
               <p className=' zodiac-prediction-desc text-lightBlue'>{dailyPrediction}</p>
             </div>
           </div>
