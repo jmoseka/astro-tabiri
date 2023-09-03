@@ -14,13 +14,13 @@
 }
 
 .const-title {
-  @apply text-[0.68rem] md:text-[0.6rem];
+  @apply text-[0.78rem] md:text-[0.6rem];
   letter-spacing: 0.05rem;
   font-weight: 400;
 }
 
 .const-date {
-  @apply font-thin p-[0.07rem] text-[0.48rem] 
+  @apply font-thin p-[0.03rem] text-[0.5rem] 
   md:text-[0.6rem] md:p-0;
   letter-spacing: 0.03rem;
 }
@@ -54,13 +54,12 @@
 }
 
 @media (max-width: 768px) {
-
   .horoscope-board {
-    @apply  mb-8;
+    @apply mb-8;
   }
 
   .zodiac-prediction-desc {
-    @apply  text-[.8rem] px-4;
+    @apply text-[.8rem] px-4;
   }
 }
 
