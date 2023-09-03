@@ -43,20 +43,37 @@
   opacity: 0.8;
 }
 
-
 @media (max-width: 1000px) {
-
   .main-grid {
     width: 90%;
   }
 
-  .zodiac-prediction {
-    font-size: 0.95rem;
+  .constelation {
+    @apply w-[2.6rem] h-[2.6rem];
+  }
+}
+
+@media (max-width: 768px) {
+
+  .horoscope-board {
+    @apply  mb-8;
+  }
+
+  .zodiac-prediction-desc {
+    @apply  text-[.8rem] px-4;
   }
 }
 
 @media (max-width: 500px) {
   .zodiac-prediction {
     font-size: 0.8rem;
+  }
+
+  .const-title {
+    @apply text-[0.4rem];
+  }
+
+  .const-date {
+    @apply font-thin p-[0.07rem] text-[0.48rem];
   }
 }
