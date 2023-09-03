@@ -68,7 +68,7 @@ function Prediction() {
 
       <div className='pt-1  '>
 
-        <div className='main-grid mx-auto rounded-[10rem]  md:w-[80%]
+        <div className='main-grid mx-auto rounded-[10rem] md:w-[80%]
          mt-24 md:mt-18
         
         '>
@@ -81,13 +81,13 @@ function Prediction() {
           Small screen: 3 grids
           */}
 
-          <div className=" md:-translate-y-7 grid grid-rows-1 grid-cols-3 md:grid-cols-6">
+          <div className=" md:-translate-y-7 mb-5 md:mb-0 grid grid-rows-1 grid-cols-3 md:grid-cols-6">
 
 
             <div className='hidden md:block'></div>
 
 
-            <div className=' flex justify-center items-center md:items-start
+            <div className='  flex justify-center items-center md:items-start
             md:justify-start  md:-translate-x-[2rem]
             '>
               <button onClick={() => displayHoroscope('12')} className="  const-body 
@@ -127,10 +127,10 @@ function Prediction() {
             </div>
 
 
-            <div className='flex justify-center items-center md:justify-end
-             md:items-start md:-translate-y-7 md:translate-x-6'>
+            <div className=' flex justify-center items-center
+              md:justify-end md:items-start md:translate-x-[2rem]'>
               <button onClick={() => displayHoroscope('7')} className="
-               libra hidden
+               md:-translate-y-6 libra hidden
                
             md:flex md:flex-col md:items-center md:justify-between md:gap-1
             md:text-lightBlue2 cursor-pointer md:p-0 md:hover:text-yellow">
@@ -162,11 +162,11 @@ function Prediction() {
           2. SM: grid grid-cols-3. For the first grid subgrid: col-span-2
           */}
 
-          <div className='grid grid-rows-2 grid-cols-1 lastgrid
+          <div className='mb-5 md:mb-0 grid grid-rows-2 grid-cols-1 lastgrid
           md:grid-cols-6  md:grid-rows-[18rem] 
           '>
 
-            <div className=' submiddlegrid-1 grid grid-cols-3
+            <div className=' mb-5 md:mb-0 submiddlegrid-1 grid grid-cols-3
             md:grid-cols-1 
             '>
 
@@ -221,7 +221,7 @@ function Prediction() {
             md:block md:col-span-4 ">
               <div>
                 <p className='zodiac-title text-[2.8rem]  text-yellow'>{dailyZodiacSign}</p>
-                <p className=' zodiac-prediction  text-lightYellow'>{dailyPrediction}</p>
+                <p className=' zodiac-prediction  text-lightBlue'>{dailyPrediction}</p>
               </div>
             </div>
 
