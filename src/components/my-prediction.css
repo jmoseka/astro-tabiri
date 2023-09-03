@@ -20,7 +20,7 @@
 }
 
 .const-date {
-  @apply font-thin p-[0.03rem] text-[0.5rem] 
+  @apply font-thin p-[0.03rem] text-[0.6rem] 
   md:text-[0.6rem] md:p-0;
   letter-spacing: 0.03rem;
 }
@@ -49,7 +49,7 @@
   }
 
   .constelation {
-    @apply w-[2.9rem] h-[2.9rem];
+    @apply w-[3.4rem] h-[3.4rem];
   }
 }
 
@@ -59,15 +59,11 @@
   }
 
   .zodiac-prediction-desc {
-    @apply text-[.8rem] px-4;
+    @apply text-[1.15rem] px-2;
   }
 }
 
 @media (max-width: 500px) {
-  .zodiac-prediction {
-    font-size: 0.8rem;
-  }
-
   .const-title {
     @apply text-[0.4rem];
   }
