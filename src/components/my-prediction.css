@@ -43,6 +43,21 @@
   opacity: 0.8;
 }
 
+.horoscope-board-btn {
+  outline: none;
+  
+}
+
+.horoscope-board-btn:hover {
+  border-color: #CCFDFD;
+  box-shadow: 0 0 6px #456788;  
+}
+
+.horoscope-board-btn:active {
+  border-color: #CCFDFD;
+  box-shadow: 0 0 6px #456788;  
+}
+
 @media (max-width: 1000px) {
   .main-grid {
     width: 90%;
@@ -59,7 +74,7 @@
   }
 
   .zodiac-prediction-desc {
-    @apply text-[.87rem] px-2;
+    @apply text-[.95rem] px-2;
   }
 }
 
