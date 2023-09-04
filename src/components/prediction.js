@@ -79,7 +79,7 @@ function Prediction() {
           <div className="horoscope-board mb-3
             md:hidden ">
             <div className='flex flex-col gap-3'>
-              <p className='zodiac-title text-[2.4rem] md:text-[2.8rem]  text-yellow'>{dailyZodiacSign}</p>
+              <p className='zodiac-title text-[2.4rem] md:text-[2.8rem] text-start  text-yellow'>{dailyZodiacSign}</p>
               <div className='horoscope-btn-container flex gap-3 justify-center
                flex-wrap'>
                 <button type='button' className='horoscope-board-btn py-[0.3rem] text-[.87rem] px-3 text-lightBlue1 border rounded-md'>Horoscope</button>
@@ -88,7 +88,7 @@ function Prediction() {
                 <button type='button' className='horoscope-board-btn py-[0.3rem] text-[.87rem] px-3 text-lightBlue1 border rounded-md'>Health</button>
                 <button type='button' className='horoscope-board-btn py-[0.3rem] text-[.87rem] px-3 text-lightBlue1 border rounded-md'>Love</button>
               </div>
-              <p className=' zodiac-prediction-desc text-lightBlue'>{dailyPrediction}</p>
+              <p className=' zodiac-prediction-desc text-start text-lightBlue'>{dailyPrediction}</p>
             </div>
           </div>
 
