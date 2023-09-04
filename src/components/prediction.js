@@ -80,11 +80,13 @@ function Prediction() {
             md:hidden ">
             <div className='flex flex-col gap-3'>
               <p className='zodiac-title text-[2.4rem] md:text-[2.8rem]  text-yellow'>{dailyZodiacSign}</p>
-              <div className='flex justify-center gap-4 '>
-                <button type='button' className='horoscope-board-btn py-[0.24rem] text-[.87rem] px-3 text-lightBlue1 border rounded-md'>Horoscope</button>
-                <button type='button' className='horoscope-board-btn py-[0.24rem] text-[.87rem] px-4 text-lightBlue1 border rounded-md'>Career</button>
-                <button type='button' className='horoscope-board-btn py-[0.24rem] text-[.87rem] px-4 text-lightBlue1 border rounded-md'>Money</button>
-                <button type='button' className='horoscope-board-btn py-[0.24rem] text-[.87rem] px-4 text-lightBlue1 border rounded-md'>Health</button>
+              <div className='horoscope-btn-container flex gap-3 justify-center
+               flex-wrap'>
+                <button type='button' className='horoscope-board-btn py-[0.3rem] text-[.87rem] px-3 text-lightBlue1 border rounded-md'>Horoscope</button>
+                <button type='button' className='horoscope-board-btn py-[0.3rem] text-[.87rem] px-3 text-lightBlue1 border rounded-md'>Career</button>
+                <button type='button' className='horoscope-board-btn py-[0.3rem] text-[.87rem] px-3 text-lightBlue1 border rounded-md'>Money</button>
+                <button type='button' className='horoscope-board-btn py-[0.3rem] text-[.87rem] px-3 text-lightBlue1 border rounded-md'>Health</button>
+                <button type='button' className='horoscope-board-btn py-[0.3rem] text-[.87rem] px-3 text-lightBlue1 border rounded-md'>Love</button>
               </div>
               <p className=' zodiac-prediction-desc text-lightBlue'>{dailyPrediction}</p>
             </div>
