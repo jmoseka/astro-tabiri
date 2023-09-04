@@ -85,6 +85,16 @@
   .const-date {
     @apply font-thin p-[0.07rem] text-[0.48rem];
   }
+
+  .zodiac-title {
+    text-align: start;
+  }
+
+  .zodiac-prediction-desc {
+    text-align: start;
+    padding: 0;
+  }
+
   .horoscope-btn-container {
     justify-content: start;
   }

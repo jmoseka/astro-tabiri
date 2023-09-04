@@ -111,7 +111,7 @@ function NavMenu({ updateOverlayState, isOverlayClick }) {
                     {/* BUTTON */}
 
                     <div className='z-20  md:ml-auto order-first md:order-last flex justify-between'>
-                        <div className='order-first md:hidden'>
+                        <div className='order-first hidden md:hidden'>
                             <h1 className='p-4 ml-2 text-white border'>LOGO</h1>
                         </div>
 
