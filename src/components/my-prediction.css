@@ -1,7 +1,7 @@
 .const-body {
   @apply flex flex-col items-center gap-3  h-fit
-   text-lightBlue2 cursor-pointer
-   p-0 hover:text-yellow md:gap-1 h-fit;
+   text-lightBlue1 cursor-pointer
+   p-0 hover:text-yellow md:gap-1;
 }
 
 .constelation {
@@ -27,9 +27,7 @@
 
 /* DESKTOP VERSIONS */
 
-.horoscope-board-desktop {
-  @apply md:flex md:w-full  md:flex-col md:items-center md:col-span-2 md:row-span-3;
-}
+
 
 /* ///// */
 
@@ -76,6 +74,8 @@
     @apply text-[.95rem] px-2;
   }
 }
+
+
 
 @media (max-width: 500px) {
   .const-title {
