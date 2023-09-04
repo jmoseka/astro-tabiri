@@ -54,6 +54,7 @@ function Prediction() {
 
         setdailyPrediction(result)
         setDailyZodiacSign(zodiac)
+        setHoroscopeChoices(true)
         return result;
 
         // Now you can continue with other actions that depend on the result
@@ -73,7 +74,6 @@ function Prediction() {
         const result = await webscrapper(index, cat); // Wait for the webscrapper function to complete
 
         setdailyPrediction(result)
-        setHoroscopeChoices(true)
         return result;
 
         // Now you can continue with other actions that depend on the result
@@ -95,7 +95,7 @@ function Prediction() {
       <div className='pt-1  '>
 
         <div className='main-grid mx-auto rounded-[10rem] md:w-[80%]
-         mt-20 pb-4 md:mt-18 relative
+         mt-[4.5rem] pb-4 md:mt-18 relative
         
         '>
 

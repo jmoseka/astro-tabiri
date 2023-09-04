@@ -45,7 +45,7 @@ function NavMenu({ updateOverlayState, isOverlayClick }) {
          ${isHeaderPresent ? 'header-present' : ''}
          py-4 absolute `}>
 
-            <div className='container py-2 left-0 top-0 flex 
+            <div className='container py-1 md:py-2 left-0 top-0 flex 
              header-container mx-auto '>
 
                 <div className='hidden order-first self-center'>
