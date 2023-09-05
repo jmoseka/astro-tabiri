@@ -40,7 +40,7 @@ function Prediction() {
   const [dailyZodiacSign, setDailyZodiacSign] = useState('Daily Horoscope');
   const [horscopeIndex, setHoroscopeIndex] = useState(0);
   const [horoscopeChoices, setHoroscopeChoices] = useState(false);
-  const [disableBtn, setDisableBtn] = useState(false)
+  // const [disableBtn, setDisableBtn] = useState(false)
 
   const displayHoroscope = (index) => {
     setHoroscopeIndex(index);

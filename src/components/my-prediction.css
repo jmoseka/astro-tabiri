@@ -118,5 +118,7 @@
 
   .horoscope-btn-container {
     justify-content: start;
+    overflow: auto;
   }
+
 }
