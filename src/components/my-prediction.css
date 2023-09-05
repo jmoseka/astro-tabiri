@@ -13,6 +13,10 @@
   opacity: 0.76;
 }
 
+.constelation-disable path {
+  opacity: 0.56;
+}
+
 .const-title {
   @apply text-[0.7rem] md:text-[0.6rem];
   letter-spacing: 0.05rem;
@@ -27,8 +31,6 @@
 
 /* DESKTOP VERSIONS */
 
-
-
 /* ///// */
 
 .zodiac-title {
@@ -38,7 +40,7 @@
 .zodiac-prediction {
   letter-spacing: 0.04rem;
   font-weight: 300;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .horoscope-board-btn {
@@ -58,6 +60,12 @@
 @media (max-width: 1000px) {
   .main-grid {
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .horoscope-board {
   }
 
   .constelation {
@@ -65,13 +73,23 @@
   }
 }
 
+/* TABLET LAYOUT */
+
 @media (max-width: 768px) {
   .horoscope-board {
     @apply mb-8;
   }
 
-  .zodiac-prediction-desc {
-    @apply text-[.95rem] px-2;
+  .horoscope-board-btn {
+    @apply text-[.95rem]
+  }
+  .zodiac-prediction {
+    @apply text-[.95rem] px-2 border h-[8rem];
+    display: flex;
+    flex-grow: 1; /* Allow the container to grow and take available space */
+    border: 1px solid #ccc; /* Add borders or styling as needed */
+    overflow: auto; /* Add scrollbars if the content overflows */
+    
   }
 }
 
@@ -90,9 +108,12 @@
     text-align: start;
   }
 
-  .zodiac-prediction-desc {
+  .zodiac-prediction {
     text-align: start;
     padding: 0;
+    display: flex;
+    height: 10rem;
+    
   }
 
   .horoscope-btn-container {
