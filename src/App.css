@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   font-weight: 400;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .App-logo {
@@ -75,9 +76,7 @@
 .overlay {
   width: 100%;
   height: 100%;
-  z-index:3;
+  z-index: 3;
   background: rgba(4, 22, 41, 0.95);
   position: absolute;
 }
-
-

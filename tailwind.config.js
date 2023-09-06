@@ -25,7 +25,8 @@ module.exports = {
         blue: '#041925',
         yellow: '#FCDA54',
         lightYellow: '#fffbee',
-        darkBlue: '#364751',
+        darkBlue: '#041721',
+        tagColor: 'rgb(29 56 72)'
 
       },
     },
