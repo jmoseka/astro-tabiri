@@ -1,6 +1,6 @@
 ::-webkit-scrollbar {
-  width: .4rem; /* THIS WILL RESET THE DEFAULT SCORLLBAR STYLING */
-  height: 0.1rem;
+  width: .3rem; /* THIS WILL RESET THE DEFAULT SCORLLBAR STYLING */
+  height: 0.3rem;
   }
 
 /* TO STYLE THE SCROLLBAR THUMB */
@@ -60,7 +60,7 @@
 }
 
 .horoscope-board-btn:hover {
-  border-color: #ccfdfd;
+  
   box-shadow: 0 0 6px #456788;
 }
 
@@ -95,10 +95,10 @@
     @apply text-[.95rem];
   }
   .zodiac-prediction {
-    @apply text-[.95rem] px-2 border h-[8rem];
+    @apply text-[.95rem] px-2 h-[8rem];
     display: flex;
     flex-grow: 1; /* Allow the container to grow and take available space */
-    border: 1px solid #ccc; /* Add borders or styling as needed */
+     /* Add borders or styling as needed */
     overflow-y: auto; /* Add scrollbars if the content overflows */
   }
 }
@@ -125,6 +125,18 @@
 
   .horoscope-btn-container {
     justify-content: start;
+    white-space: nowrap;
+    transition: transform 0.3s ease; /* Smooth sliding transition */
     overflow: auto;
+   
   }
+
+  .scroll-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
 }
