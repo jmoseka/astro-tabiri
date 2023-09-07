@@ -53,5 +53,6 @@
   height: 100%;
   z-index: 3;
   background: rgba(4, 22, 41, 0.95);
+  
   position: absolute;
 }
