@@ -24,10 +24,11 @@ module.exports = {
         lightBlue2: '#b3b4b8',
         blue: '#041925',
         yellow: '#FCDA54',
-        lightYellow: '#fffbee',
+        lightYellow: '#fef8de',
         darkBlue: '#041721',
         tagColor: 'rgb(29 56 72)',
-        textLightGold: '#fdf1bd'
+        textLightGold: '#fdf1bd',
+        btnBgColor: '#645824'
 
       },
     },

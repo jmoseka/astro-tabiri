@@ -58,7 +58,7 @@
   @apply text-textLightGold;
   letter-spacing: 0.04rem;
   font-weight: 400;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .horoscope-btn-container {
@@ -76,11 +76,15 @@
   /* border-image: linear-gradient(90deg, #0c4982, #0f6cbf, #0b467b); */
   /* border-image-slice: 1; */
 }
-
+/* 
 .horoscope-board-btn:hover {
   /* box-shadow: 0 0 6px rgba(99, 99, 99, 0.7); */
-  box-shadow: none;
-  border: 1px solid rgba(252,218,84, 0.85)
+  /* box-shadow: none;
+  border: 1px solid rgba(252,218,84, 0.85) */
+/* } */ 
+
+.active-horoscope-btn {
+  @apply rounded-md text-[#fef8de] py-[0.3rem] text-[.87rem] px-3 bg-[#645824];
 }
 
 .horoscope-board-btn:active {

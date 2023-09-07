@@ -41,7 +41,7 @@ function NavMenu({ updateOverlayState, isOverlayClick }) {
     }
 
     return (
-        <header className={` text-lightYellow min-w-full header
+        <header className={` text-textLightGold min-w-full header
          ${isHeaderPresent ? 'header-present' : ''}
          py-4 absolute `}>
 
@@ -116,7 +116,7 @@ function NavMenu({ updateOverlayState, isOverlayClick }) {
                         </div>
 
                         <button onClick={() => dropMenu()} typeof='button' id='nav-btn'
-                            className='  ml-auto  nav-button cursor-pointer h-auto'>
+                            className='  ml-auto nav-button cursor-pointer h-auto'>
                             <div className={`flex flex-col items-center p-4 w-[3.7rem] h-[3.7rem]`}>
                                 <div className={`relative humberger ${isOpen ? 'open' : ''}`} id="menu-btn">
                                     <span className={`top`}></span>

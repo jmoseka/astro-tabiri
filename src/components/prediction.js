@@ -40,8 +40,11 @@ function Prediction() {
   const [dailyZodiacSign, setDailyZodiacSign] = useState('Daily Horoscope');
   const [horscopeIndex, setHoroscopeIndex] = useState(0);
   const [horoscopeChoices, setHoroscopeChoices] = useState(false);
+  const [activeHoroscopeBtn, setActiveHoroscopeBtn] = useState(null);
 
   // const [disableBtn, setDisableBtn] = useState(false)
+
+
 
 
   const displayHoroscope = (index) => {
@@ -71,13 +74,16 @@ function Prediction() {
 
   }
 
-  const displayHoroscopeOption = (cat, index) => {
-    
+  const displayHoroscopeOption = (cat) => {
+
+
+
     async function fetchHoroscope(index) {
       try {
         const result = await webscrapper(index, cat); // Wait for the webscrapper function to complete
 
         setdailyPrediction(result)
+        setActiveHoroscopeBtn(cat)
         return result;
 
         // Now you can continue with other actions that depend on the result
@@ -110,18 +116,18 @@ function Prediction() {
           <div className="horoscope-board
             md:hidden ">
             <div className='flex flex-col'>
-              <p className='zodiac-title text-[2.4rem] md:text-[2.8rem]   text-lightBlue1'>{dailyZodiacSign}</p>
+              <p className='zodiac-title text-[2.4rem] md:text-[2.8rem] text-lightBlue1'>{dailyZodiacSign}</p>
 
               <div>
-              <div className={`mt-1 gap-2 py-3 horoscope-btn-container  ${horoscopeChoices ? 'flex justify-center flex-wrap' : 'hidden'}`}
-              
-              >
-                <button onClick={() => displayHoroscopeOption('general')} type='button' className='horoscope-board-btn '>Horoscope</button>
-                <button onClick={() => displayHoroscopeOption('career')} type='button' className='horoscope-board-btn '>Career</button>
-                <button onClick={() => displayHoroscopeOption('money')} type='button' className='horoscope-board-btn '>Money</button>
-                <button onClick={() => displayHoroscopeOption('wellness')} type='button' className='horoscope-board-btn'>Health</button>
-                <button onClick={() => displayHoroscopeOption('love')} type='button' className='horoscope-board-btn'>Love</button>
-              </div>
+                <div className={`mt-1 gap-2 py-3 horoscope-btn-container  ${horoscopeChoices ? 'flex justify-center flex-wrap' : 'hidden'}`}
+
+                >
+                  <button onClick={() => displayHoroscopeOption('general')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'general' ? 'bg-[#645824]' : 'bg-transparent'}`}>Horoscope</button>
+                  <button onClick={() => displayHoroscopeOption('career')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'career' ? 'bg-[#645824]' : 'bg-transparent'}`}>Career</button>
+                  <button onClick={() => displayHoroscopeOption('money')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'money' ? 'bg-[#645824]' : 'bg-transparent'}`}>Money</button>
+                  <button onClick={() => displayHoroscopeOption('wellness')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'wellness' ? 'bg-[#645824]' : 'bg-transparent'}`}>Health</button>
+                  <button onClick={() => displayHoroscopeOption('love')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'love' ? 'bg-[#645824]' : 'bg-transparent'}`}>Love</button>
+                </div>
 
 
               </div>
@@ -281,13 +287,13 @@ function Prediction() {
               <div>
                 <p className='zodiac-title text-lightBlue1 text-[2.8rem] md:leading-[3.8rem] '>{dailyZodiacSign}</p>
                 <div className={`mt-1 md:mt-0 gap-2 py-3 horoscope-btn-container text-blue ${horoscopeChoices ? 'flex justify-center flex-wrap' : 'hidden'}`}
-              >
-                <button onClick={() => displayHoroscopeOption('general')} type='button' className='horoscope-board-btn '>Horoscope</button>
-                <button onClick={() => displayHoroscopeOption('career')} type='button' className='horoscope-board-btn '>Career</button>
-                <button onClick={() => displayHoroscopeOption('money')} type='button' className='horoscope-board-btn '>Money</button>
-                <button onClick={() => displayHoroscopeOption('wellness')} type='button' className='horoscope-board-btn'>Health</button>
-                <button onClick={() => displayHoroscopeOption('love')} type='button' className='horoscope-board-btn'>Love</button>
-              </div>
+                >
+                  <button onClick={() => displayHoroscopeOption('general')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'general' ? 'bg-[#645824]' : 'bg-transparent'}`}>Horoscope</button>
+                  <button onClick={() => displayHoroscopeOption('career')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'career' ? 'bg-[#645824]' : 'bg-transparent'}`}>Career</button>
+                  <button onClick={() => displayHoroscopeOption('money')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'money' ? 'bg-[#645824]' : 'bg-transparent'}`}>Money</button>
+                  <button onClick={() => displayHoroscopeOption('wellness')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'wellness' ? 'bg-[#645824]' : 'bg-transparent'}`}>Health</button>
+                  <button onClick={() => displayHoroscopeOption('love')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'love' ? 'bg-[#645824]' : 'bg-transparent'}`}>Love</button>
+                </div>
                 <p className=' zodiac-prediction  text-lightBlue'>{dailyPrediction}</p>
               </div>
             </div>

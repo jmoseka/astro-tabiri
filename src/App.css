@@ -45,6 +45,7 @@
 
 .body-gradient-bg {
   background-image: linear-gradient(to right bottom, #020b1d, #041021, #051525, #05182a, #041c2e, #071d2f, #091d2f, #0c1e30, #111c2d, #141a2a, #171826, #181623);
+  /* background-image: linear-gradient(to right bottom, #022134, #091f31, #0f1c2f, #131a2b, #161828, #151726, #151524, #141422, #111221, #0d1020, #080e1e, #020b1d); */
 }
 
 .overlay {
