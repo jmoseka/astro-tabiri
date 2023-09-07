@@ -101,7 +101,7 @@ function Prediction() {
       <div className='pt-1  '>
 
         <div className='main-grid mx-auto rounded-[10rem] md:w-[80%]
-         mt-[4.5rem] pb-4 md:mt-[5.7rem] relative
+         mt-[3.2rem] pb-4 md:mt-[5.7rem] relative
         
         '>
 
@@ -110,10 +110,10 @@ function Prediction() {
           <div className="horoscope-board
             md:hidden ">
             <div className='flex flex-col'>
-              <p className='zodiac-title text-[2.4rem] md:text-[2.8rem]   text-yellow'>{dailyZodiacSign}</p>
+              <p className='zodiac-title text-[2.4rem] md:text-[2.8rem]   text-lightBlue1'>{dailyZodiacSign}</p>
 
               <div>
-              <div className={`mt-1 gap-2 py-3 horoscope-btn-container text-blue ${horoscopeChoices ? 'flex justify-center flex-wrap' : 'hidden'}`}
+              <div className={`mt-1 gap-2 py-3 horoscope-btn-container  ${horoscopeChoices ? 'flex justify-center flex-wrap' : 'hidden'}`}
               
               >
                 <button onClick={() => displayHoroscopeOption('general')} type='button' className='horoscope-board-btn '>Horoscope</button>
@@ -126,7 +126,7 @@ function Prediction() {
 
               </div>
 
-              <p className='zodiac-prediction text-lightBlue'>{dailyPrediction}</p>
+              <p className='zodiac-prediction'>{dailyPrediction}</p>
 
 
             </div>
@@ -192,7 +192,7 @@ function Prediction() {
                md:-translate-y-6 libra hidden
                
             md:flex md:flex-col md:items-center md:justify-between md:gap-1
-            md:text-lightBlue1 cursor-pointer md:p-0 md:hover:text-yellow">
+            md:text-lightBlue1 cursor-pointer md:p-0 ">
                 <Libra className='constelation' />
                 <div>
                   <p className='const-title uppercase'>{horoMap[`key${7}`].value1}</p>
@@ -279,7 +279,7 @@ function Prediction() {
             <div className="horoscope-board hidden 
             md:block md:col-span-4 ">
               <div>
-                <p className='zodiac-title text-[2.8rem] md:leading-[3.8rem] text-yellow'>{dailyZodiacSign}</p>
+                <p className='zodiac-title text-lightBlue1 text-[2.8rem] md:leading-[3.8rem] '>{dailyZodiacSign}</p>
                 <div className={`mt-1 md:mt-0 gap-2 py-3 horoscope-btn-container text-blue ${horoscopeChoices ? 'flex justify-center flex-wrap' : 'hidden'}`}
               >
                 <button onClick={() => displayHoroscopeOption('general')} type='button' className='horoscope-board-btn '>Horoscope</button>
@@ -419,7 +419,7 @@ function Prediction() {
             <button onClick={() => displayHoroscope('7', general)} className=" libra 
               flex flex-col items-center justify-between gap-4 h-fit
               text-lightBlue cursor-pointer
-              p-0 hover:text-yellow
+              p-0 
               md:hidden
               ">
               <Libra className='constelation' />

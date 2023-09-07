@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   font-weight: 400;
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Inter Tight', sans-serif;
 }
 
 .App-logo {
@@ -44,33 +44,7 @@
 }
 
 .body-gradient-bg {
-  background: hsla(203, 80%, 8%, 1);
-
-  background: linear-gradient(
-    270deg,
-    hsla(203, 80%, 8%, 1) 0%,
-    hsla(209, 83%, 12%, 1) 20%,
-    hsla(230, 90%, 4%, 1) 66%,
-    hsla(202, 80%, 8%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    270deg,
-    hsla(203, 80%, 8%, 1) 0%,
-    hsla(209, 83%, 12%, 1) 20%,
-    hsla(230, 90%, 4%, 1) 66%,
-    hsla(202, 80%, 8%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    270deg,
-    hsla(203, 80%, 8%, 1) 0%,
-    hsla(209, 83%, 12%, 1) 20%,
-    hsla(230, 90%, 4%, 1) 66%,
-    hsla(202, 80%, 8%, 1) 100%
-  );
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#041824", endColorstr="#051F37", GradientType=1 );
+  background-image: linear-gradient(to right bottom, #020b1d, #041021, #051525, #05182a, #041c2e, #071d2f, #091d2f, #0c1e30, #111c2d, #141a2a, #171826, #181623);
 }
 
 .overlay {
