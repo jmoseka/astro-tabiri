@@ -13,6 +13,7 @@ import { ReactComponent as Aquarius } from '../images/SVG/aquarius.svg';
 import { webscrapper } from './webscrapper';
 import './my-prediction.css'
 import { useState } from 'react';
+import Animation from './Animation/animation';
 
 
 function Prediction() {
@@ -284,7 +285,8 @@ function Prediction() {
 
             <div className="horoscope-board hidden 
             md:block md:col-span-4 ">
-              <div>
+              
+              <div className=''>
                 <p className='zodiac-title text-lightBlue1 text-[2.8rem] md:leading-[3.8rem] '>{dailyZodiacSign}</p>
                 <div className={`mt-1 md:mt-0 gap-2 py-3 horoscope-btn-container text-blue ${horoscopeChoices ? 'flex justify-center flex-wrap' : 'hidden'}`}
                 >
@@ -294,7 +296,8 @@ function Prediction() {
                   <button onClick={() => displayHoroscopeOption('wellness')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'wellness' ? 'bg-[#645824]' : 'bg-transparent'}`}>Health</button>
                   <button onClick={() => displayHoroscopeOption('love')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'love' ? 'bg-[#645824]' : 'bg-transparent'}`}>Love</button>
                 </div>
-                <p className=' zodiac-prediction  text-lightBlue'>{dailyPrediction}</p>
+                <p className='hidden zodiac-prediction  text-lightBlue'>{dailyPrediction}</p>
+                <Animation />
               </div>
             </div>
 
