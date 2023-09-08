@@ -16,9 +16,9 @@ function App() {
 
 
   return (
-    <div className="App relative h-screen w-screen">
-      <div className='max-w-[1800px] mx-auto h-full'>
-        <div className={`body-gradient-bg h-full w-full relative`}>
+    <div className="App relative md:h-screen w-screen">
+      <div className='max-w-[1800px] mx-auto'>
+        <div className={`body-gradient-bg md:h-screen w-full relative`}>
           <div onClick={() => handleOverlayClick()}
             className={`${overlayOpen ? 'overlay' : ''}`}></div>
           <NavMenu isOverlayClick={overlayClicked} updateOverlayState={setOverlayOpen} />

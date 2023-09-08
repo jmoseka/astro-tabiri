@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   font-weight: 400;
+  font-family: 'Inter Tight', sans-serif;
 }
 
 .App-logo {
@@ -43,39 +44,15 @@
 }
 
 .body-gradient-bg {
-  background: hsla(203, 80%, 8%, 1);
-
-  background: linear-gradient(
-    270deg,
-    hsla(203, 80%, 8%, 1) 0%,
-    hsla(209, 83%, 12%, 1) 20%,
-    hsla(230, 90%, 4%, 1) 66%,
-    hsla(202, 80%, 8%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    270deg,
-    hsla(203, 80%, 8%, 1) 0%,
-    hsla(209, 83%, 12%, 1) 20%,
-    hsla(230, 90%, 4%, 1) 66%,
-    hsla(202, 80%, 8%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    270deg,
-    hsla(203, 80%, 8%, 1) 0%,
-    hsla(209, 83%, 12%, 1) 20%,
-    hsla(230, 90%, 4%, 1) 66%,
-    hsla(202, 80%, 8%, 1) 100%
-  );
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#041824", endColorstr="#051F37", GradientType=1 );
+  background-image: linear-gradient(to right bottom, #020b1d, #041021, #051525, #05182a, #041c2e, #071d2f, #091d2f, #0c1e30, #111c2d, #141a2a, #171826, #181623);
+  /* background-image: linear-gradient(to right bottom, #022134, #091f31, #0f1c2f, #131a2b, #161828, #151726, #151524, #141422, #111221, #0d1020, #080e1e, #020b1d); */
 }
 
 .overlay {
   width: 100%;
   height: 100%;
-  z-index:3;
+  z-index: 3;
   background: rgba(4, 22, 41, 0.95);
+  
   position: absolute;
 }

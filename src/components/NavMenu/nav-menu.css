@@ -33,7 +33,7 @@
 .humberger .top,
 .humberger .bottom,
 .humberger .middle {
-  @apply absolute bg-lightYellow;
+  @apply absolute bg-btnBgColor;
   display: block;
   top: 0;
   left: 0;
@@ -43,7 +43,6 @@
 
 .humberger .middle {
   transform: translateY(9px);
-  background: #fff;
 }
 
 .humberger .bottom {

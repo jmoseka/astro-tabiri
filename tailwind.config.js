@@ -19,10 +19,16 @@ module.exports = {
         strongBlue: '#010413',
         strongBlueShade1: '#999ba1',
         strongBlueShade2: '#b3b4b8',
-        lightBlue: '#cccdd0',
+        lightBlue: '#e6e6e7',
+        lightBlue1: '#fbdd59',
+        lightBlue2: '#b3b4b8',
         blue: '#041925',
         yellow: '#FCDA54',
-        lightYellow: '#fffbee',
+        lightYellow: '#fef8de',
+        darkBlue: '#041721',
+        tagColor: 'rgb(29 56 72)',
+        textLightGold: '#fdf1bd',
+        btnBgColor: '#645824'
 
       },
     },
