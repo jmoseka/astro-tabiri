@@ -16,7 +16,8 @@
 }
 
 .constelation {
-  @apply w-[2.6rem] h-[2.6rem] md:w-[2.5rem] md:h-[2.5rem];
+  @apply w-[2.6rem] h-[2.6rem] 
+  md:w-[2.5rem] md:h-[2.5rem];
 }
 
 .constelation path {
