@@ -42,7 +42,7 @@ function Prediction() {
   const [horscopeIndex, setHoroscopeIndex] = useState(0);
   const [horoscopeChoices, setHoroscopeChoices] = useState(false);
   const [activeHoroscopeBtn, setActiveHoroscopeBtn] = useState(general);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   // const [disableBtn, setDisableBtn] = useState(false)
 
