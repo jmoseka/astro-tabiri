@@ -4,7 +4,7 @@ import './animation.css'
 const Animation = () => {
 
     return (
-        <div className='  mt-8 flex flex-col justify-center '>
+        <div className=' flex flex-col justify-center '>
 
             <div>
                 <div className='loaders flex justify-center relative'>

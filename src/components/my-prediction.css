@@ -120,8 +120,14 @@
   .horoscope-board-btn {
     @apply text-[.95rem];
   }
+
+  .zodiac-prediction-container {
+    @apply flex items-center justify-center h-[10rem];
+
+  }
+  
   .zodiac-prediction {
-    @apply text-[.95rem] px-2 h-[8rem];
+    @apply  text-[.95rem] px-2 h-[8rem];
     display: flex;
     flex-grow: 1; /* Allow the container to grow and take available space */
     /* Add borders or styling as needed */
@@ -150,7 +156,11 @@
     text-align: start;
     padding: 0;
     display: flex;
-    height: 10rem;
+    
+  }
+
+  .animation-container {
+    @apply -mt-3;
   }
 
   .horoscope-btn-container {
