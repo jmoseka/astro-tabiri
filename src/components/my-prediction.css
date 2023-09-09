@@ -47,42 +47,44 @@
 
 .zodiac-title {
   font-family: "Oleo Script", cursive;
+  background-image: linear-gradient(
+    90deg,
+    rgba(100, 88, 36, 1) 0%,
+    rgba(251, 221, 89, 1) 45%,
+    rgba(152, 135, 60, 1) 77%
+  );
   text-shadow: 0 0 2vw rgba(255, 255, 255, 0.1);
-  background: -webkit-linear-gradient(45deg, #fbdd59, #fbdd59);
-  -webkit-background-clip: text; /* Doesn't work on IE*/
-  -moz-background-clip: text;
+  -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent; /* Make the text transparent so the gradient background shows through */
 }
 
 .zodiac-prediction {
   @apply text-textLightGold;
   letter-spacing: 0.04rem;
   font-weight: 400;
-  opacity: 1;
 }
 
 .horoscope-btn-container {
-  opacity: 0.94;
   font-family: "Inter Tight", sans-serif;
 }
 
 .horoscope-board-btn {
-  @apply rounded-md text-textLightGold py-[0.3rem] text-[.87rem] px-3;
+  @apply rounded-md text-textLightGold py-[0.3rem]  px-3;
   /* border-style: solid;
   border-width: 1px; */
   /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, */
-    /* rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
-  box-shadow: rgba(252,218,84, 0.15) 1.3px 1.4px 2.4px;
+  /* rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+  box-shadow: rgba(252, 218, 84, 0.15) 1.3px 1.4px 2.4px;
   /* border-image: linear-gradient(90deg, #0c4982, #0f6cbf, #0b467b); */
   /* border-image-slice: 1; */
 }
 /* 
 .horoscope-board-btn:hover {
   /* box-shadow: 0 0 6px rgba(99, 99, 99, 0.7); */
-  /* box-shadow: none;
+/* box-shadow: none;
   border: 1px solid rgba(252,218,84, 0.85) */
-/* } */ 
+/* } */
 
 .active-horoscope-btn {
   @apply rounded-md text-[#fef8de] py-[0.3rem] text-[.87rem] px-3 bg-[#645824];

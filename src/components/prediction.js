@@ -50,11 +50,12 @@ function Prediction() {
 
 
   const displayHoroscope = (index) => {
-    setIsLoading(true)
+    
     setHoroscopeIndex(index);
     const key = `key${index}`;
     const zodiac = horoMap[key].value1;
     setDailyZodiacSign(zodiac)
+    setIsLoading(true)
 
     // const date = horoMap.key.value2;
 
@@ -121,7 +122,7 @@ function Prediction() {
           <div className="horoscope-board
             md:hidden ">
             <div className='flex flex-col'>
-              <p className='zodiac-title text-[2.4rem] md:text-[2.8rem] text-lightBlue1'>{dailyZodiacSign}</p>
+              <p className='zodiac-title text-[2.4rem] md:text-[2.8rem]'>{dailyZodiacSign}</p>
 
               <div>
                 <div className={`mt-1 gap-2 py-3 horoscope-btn-container  ${horoscopeChoices ? 'flex justify-center flex-wrap' : 'hidden'}`}
@@ -293,7 +294,7 @@ function Prediction() {
 
 
               <div className=''>
-                <p className='zodiac-title text-lightBlue1 text-[2.6rem] md:leading-[3.8rem] '>{dailyZodiacSign}</p>
+                <p className='zodiac-title text-[2.6rem] md:leading-[3.8rem] '>{dailyZodiacSign}</p>
                 <div className={`mt-1 md:-mt-1 gap-2 py-3 horoscope-btn-container text-blue ${horoscopeChoices ? 'flex justify-center flex-wrap' : 'hidden'}`}
                 >
                   <button onClick={() => displayHoroscopeOption('general')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'general' ? 'bg-[#645824]' : 'bg-transparent'}`}>Horoscope</button>
@@ -302,10 +303,12 @@ function Prediction() {
                   <button onClick={() => displayHoroscopeOption('wellness')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'wellness' ? 'bg-[#645824]' : 'bg-transparent'}`}>Health</button>
                   <button onClick={() => displayHoroscopeOption('love')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'love' ? 'bg-[#645824]' : 'bg-transparent'}`}>Love</button>
                 </div>
+
+
                 {isLoading ?
                   <Animation />
                   :
-                  <p className='zodiac-prediction  text-lightBlue'>{dailyPrediction}</p>
+                  <p className='zodiac-prediction'>{dailyPrediction}</p>
                 }
               </div>
 
