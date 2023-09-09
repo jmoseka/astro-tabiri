@@ -50,7 +50,7 @@ function Prediction() {
 
 
   const displayHoroscope = (index) => {
-    
+
     setHoroscopeIndex(index);
     const key = `key${index}`;
     const zodiac = horoMap[key].value1;
@@ -64,7 +64,7 @@ function Prediction() {
         const result = await webscrapper(index, 'general'); // Wait for the webscrapper function to complete
 
         setdailyPrediction(result)
-        
+
         setHoroscopeChoices(true)
         setIsLoading(false)
         return result;
@@ -124,7 +124,7 @@ function Prediction() {
             <div className='flex flex-col'>
               <p className='zodiac-title text-[2.4rem] md:text-[2.8rem]'>{dailyZodiacSign}</p>
 
-              <div>
+              <div >
                 <div className={`mt-1 gap-2 py-3 horoscope-btn-container  ${horoscopeChoices ? 'flex justify-center flex-wrap' : 'hidden'}`}
 
                 >
@@ -138,7 +138,11 @@ function Prediction() {
 
               </div>
 
-              <p className='zodiac-prediction'>{dailyPrediction}</p>
+              {isLoading ?
+                <Animation />
+                :
+                <p className='zodiac-prediction'>{dailyPrediction}</p>
+              }
 
 
             </div>
