@@ -8,9 +8,9 @@ const Animation = () => {
 
             <div>
                 <div className='loaders flex justify-center relative'>
-                    <div className='absolute'><div className='rounded-full loader loader-1'></div></div>
-                    <div className='absolute'><div className='rounded-full loader loader-2'></div></div>
-                    <div className='absolute'><div className='rounded-full loader loader-3'></div></div>
+                    <div className='absolute'><div className=' loader loader-1'></div></div>
+                    <div className='absolute'><div className='loader loader-2'></div></div>
+                    <div className='absolute'><div className='loader loader-3'></div></div>
                 </div>
             </div>
 

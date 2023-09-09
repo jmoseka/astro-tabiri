@@ -42,7 +42,7 @@ function Prediction() {
   const [horscopeIndex, setHoroscopeIndex] = useState(0);
   const [horoscopeChoices, setHoroscopeChoices] = useState(false);
   const [activeHoroscopeBtn, setActiveHoroscopeBtn] = useState(general);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   // const [disableBtn, setDisableBtn] = useState(false)
 
@@ -122,7 +122,7 @@ function Prediction() {
           <div className="horoscope-board
             md:hidden ">
             <div className='flex flex-col'>
-              <p className='zodiac-title text-[2.4rem] md:text-[2.8rem]'>{dailyZodiacSign}</p>
+              <p className='zodiac-title'>{dailyZodiacSign}</p>
 
               <div >
                 <div className={`mt-1 gap-2 py-3 horoscope-btn-container  ${horoscopeChoices ? 'flex justify-center flex-wrap' : 'hidden'}`}
@@ -142,7 +142,7 @@ function Prediction() {
 
               <div className='zodiac-prediction-container'>
 
-                <div>
+                
                   {isLoading ?
                     <div className='animation-container'>
                       <Animation />
@@ -151,7 +151,7 @@ function Prediction() {
                     :
                     <p className='zodiac-prediction'>{dailyPrediction}</p>
                   }
-                </div>
+                
               </div>
 
 
@@ -333,7 +333,7 @@ function Prediction() {
 
 
               <div className='flex flex-col'>
-                <p className='zodiac-title text-[2.4rem] md:text-[2.8rem]'>{dailyZodiacSign}</p>
+                <p className='zodiac-title '>{dailyZodiacSign}</p>
 
                 <div >
                   <div className={`mt-1 gap-2 py-3 horoscope-btn-container  ${horoscopeChoices ? 'flex justify-center flex-wrap' : 'hidden'}`}
@@ -353,9 +353,9 @@ function Prediction() {
 
                 <div className='zodiac-prediction-container'>
 
-                  <div className=''>
+                  <div >
                     {isLoading ?
-                      <div className=''>
+                      <div className='animation-container'>
                         <Animation />
                       </div>
                       :
