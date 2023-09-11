@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
 import './nav-menu.css'
+import { Link } from 'react-router-dom';
 
 function NavMenu({ updateOverlayState, isOverlayClick }) {
 
@@ -72,7 +73,7 @@ function NavMenu({ updateOverlayState, isOverlayClick }) {
 
                             <div className={`zod-card  ${isZodiacListOpen ? 'zod-card-open' : 'hidden'} mt-2`}>
                                 <div className='zod-btn-container flex flex-col items-start'>
-                                    <button type='button' className='zod-btn'>Pisces</button>
+                                    <Link className='zod-btn' to="/zodiac">Pisces</Link>
                                     <button type='button' className='zod-btn'>Aries</button>
                                     <button type='button' className='zod-btn'>Capricorn</button>
                                     <button type='button' className='zod-btn'>Gemini</button>
@@ -104,7 +105,7 @@ function NavMenu({ updateOverlayState, isOverlayClick }) {
                         {/* SECOND LINK DAILY HOROSCOPE */}
 
                         <div className='p-2 hover:text-yellow'>
-                            <a className='uppercase' href='./j'>Daily Horoscope</a>
+                            <Link className='uppercase' to="/home">Daily Horoscope</Link>
                         </div>
                     </div>
 
