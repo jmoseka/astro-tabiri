@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
 import './nav-menu.css'
 import { Link } from 'react-router-dom';
@@ -64,7 +64,7 @@ function NavMenu() {
                             <div className={`zod-card  ${isZodiacListOpen ? 'zod-card-open' : 'hidden'} mt-2`}>
                                 <div className='zod-btn-container flex flex-col items-start'>
                                     <Link className='zod-btn' 
-                                    to= "/home/zodiac"
+                                    to= "/home/pisces"
                                     state= { {name: 'pisces' }} // Pass it as an object
                                       
 

@@ -1,6 +1,5 @@
-import { useState } from 'react';
+
 import './App.css';
-import NavMenu from './components/NavMenu/nav-menu';
 import Prediction from './components/prediction';
 import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
@@ -25,7 +24,7 @@ function App() {
 
             <Routes>
               <Route path="/home" element={<Prediction />}></Route>
-              <Route path="/home/zodiac" element={<AboutZodiac />}></Route>
+              <Route path="/home/pisces" element={<AboutZodiac />}></Route>
             </Routes>
 
 
