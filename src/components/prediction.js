@@ -14,9 +14,11 @@ import { webscrapper } from './webscrapper';
 import './my-prediction.css'
 import { useState } from 'react';
 import Animation from './Animation/animation';
+import NavMenu from './NavMenu/nav-menu';
 
 
 function Prediction() {
+  
 
   const horoMap = {
     key1: { value1: 'Aries', value2: 'March 21 - Apr 19' },
@@ -109,6 +111,7 @@ function Prediction() {
 
   return (
     <div className=" mx-auto w-full">
+      <NavMenu />
 
       <div className='pt-1  '>
 
@@ -142,16 +145,16 @@ function Prediction() {
 
               <div className='zodiac-prediction-container'>
 
-                
-                  {isLoading ?
-                    <div className='animation-container'>
-                      <Animation />
-                    </div>
 
-                    :
-                    <p className='zodiac-prediction'>{dailyPrediction}</p>
-                  }
-                
+                {isLoading ?
+                  <div className='animation-container'>
+                    <Animation />
+                  </div>
+
+                  :
+                  <p className='zodiac-prediction'>{dailyPrediction}</p>
+                }
+
               </div>
 
 

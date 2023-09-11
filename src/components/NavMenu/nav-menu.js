@@ -3,7 +3,8 @@ import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
 import './nav-menu.css'
 import { Link } from 'react-router-dom';
 
-function NavMenu({ updateOverlayState, isOverlayClick }) {
+function NavMenu() {
+    
 
     const [isCircleOpen, setIsCircleOpen] = useState(false);
     const [isHeaderPresent, setIsHeaderPresent] = useState(false);
@@ -11,24 +12,13 @@ function NavMenu({ updateOverlayState, isOverlayClick }) {
     const [isOverlayOpen, setIsOverlayOpen] = useState(false);
     const [isZodiacListOpen, setIsZodiacListOpen] = useState(false);
 
-    useEffect(() => {
-        if (isOverlayOpen) {
-            setIsOpen(!isOpen);
-            setIsHeaderPresent(!isHeaderPresent);
-            setIsOverlayOpen(!isOverlayOpen);
-            setIsZodiacListOpen(!isZodiacListOpen);
-            updateOverlayState(!isOverlayOpen);
-        }
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [isOverlayClick]);
 
     const dropMenu = () => {
         setIsCircleOpen(!isCircleOpen)
         setIsHeaderPresent(!isHeaderPresent)
         setIsOpen(!isOpen);
         setIsOverlayOpen(!isOverlayOpen);
-        updateOverlayState(!isOverlayOpen)
+       
 
 
         if (isOpen === false) {
@@ -73,7 +63,12 @@ function NavMenu({ updateOverlayState, isOverlayClick }) {
 
                             <div className={`zod-card  ${isZodiacListOpen ? 'zod-card-open' : 'hidden'} mt-2`}>
                                 <div className='zod-btn-container flex flex-col items-start'>
-                                    <Link className='zod-btn' to="/zodiac">Pisces</Link>
+                                    <Link className='zod-btn' 
+                                    to= "/home/zodiac"
+                                    state= { {name: 'pisces' }} // Pass it as an object
+                                      
+
+                                        >Pisces</Link>
                                     <button type='button' className='zod-btn'>Aries</button>
                                     <button type='button' className='zod-btn'>Capricorn</button>
                                     <button type='button' className='zod-btn'>Gemini</button>
