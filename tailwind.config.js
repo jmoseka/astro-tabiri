@@ -34,7 +34,7 @@ module.exports = {
         // light and darkmode color group
 
         lightMainColor: '#E7EBED',
-        lightSecondMainColor: '#E7EBED',
+        lightSecondMainColor: '#F7F7F8',
         darkTextGold: '#2F2B1A',
 
         darkMainColor: '#E7EBED',

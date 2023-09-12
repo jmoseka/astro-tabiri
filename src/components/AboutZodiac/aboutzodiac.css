@@ -1,3 +1,9 @@
 .lightmode {
     @apply bg-lightMainColor;
 }
+
+
+.zodiac-card {
+@apply rounded-md text-start p-8 w-fit bg-lightSecondMainColor dark:bg-darkSecondMainColor dark:text-lightYellow text-darkTextGold;
+
+}

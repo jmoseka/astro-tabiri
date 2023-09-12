@@ -1,8 +1,6 @@
 import axios from 'axios';
 
 const GET_PREDICTION = 'ARIES'
-const url = 'https://aztro.sameerkumar.website/?sign=aries&day=today';
-
 
 // ACTION
 

@@ -17,10 +17,10 @@ function App() {
 
 
   return (
-    <div className="App relative h-screen w-screen">
+    <div className="App relative h-fit w-screen">
       <BrowserRouter>
-        <div className='max-w-[1800px] mx-auto'>
-          <div className={`body-gradient-bg h-screen w-full relative`}>
+        <div className='max-w-[1800px] h-fit mx-auto'>
+          <div className={`h-screen w-full relative`}>
 
             <Routes>
               <Route path="/home" element={<Prediction />}></Route>
