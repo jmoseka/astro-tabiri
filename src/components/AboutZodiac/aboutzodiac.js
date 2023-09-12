@@ -34,9 +34,9 @@ const AboutZodiac = () => {
             <div className="mx-8">
 
 
-                <div className="about-main w-full ">
+                <div className="about-main w-full relative ">
 
-                    <div className="text-[0.95rem] p-3 h-fit rounded-lg sidebar-nav
+                    <div className="sticky top-10 text-[0.95rem] p-3 h-fit rounded-lg sidebar-nav
                       bg-lightSecondMainColor dark:bg-darkSecondMainColor
                       dark:text-lightYellow text-darkTextGold">
 
@@ -76,6 +76,7 @@ const AboutZodiac = () => {
                             <div className="sidebar-links-line"></div>
                         </div>
                     </div>
+                    
 
                     <div className="flex flex-col gap-8">
                         <div className="zodiac-card ">
