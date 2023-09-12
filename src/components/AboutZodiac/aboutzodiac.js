@@ -34,12 +34,14 @@ const AboutZodiac = () => {
             <div className="mx-8">
 
 
-                <div className="flex gap-8 w-full ">
+                <div className="about-main w-full ">
 
-                    <div className="w-1/5 text-base h-fit rounded-lg sidebar-nav
-                     p-4 bg-lightSecondMainColor dark:bg-darkSecondMainColor
+                    <div className="text-[0.95rem] p-3 h-fit rounded-lg sidebar-nav
+                      bg-lightSecondMainColor dark:bg-darkSecondMainColor
                       dark:text-lightYellow text-darkTextGold">
-                        <div className="mb-9 sidebar-links">
+
+
+                        <div className="mb-9  sidebar-links">
                             About
                             <div className="sidebar-links-line"></div>
                         </div>
@@ -81,13 +83,13 @@ const AboutZodiac = () => {
                             <p>Strengths: {strengths}</p>
                             <p>Weaknesses: {weaknesses}</p>
                         </div>
-                        <p className="zodiac-card"><h2 className="text-2xl capitalize ">About</h2> {about}</p>
-                        <p className="zodiac-card"><h2 className="text-2xl capitalize ">Career</h2>{career}</p>
-                        <p className="zodiac-card"><h2 className="text-2xl capitalize ">Love</h2>{love}</p>
-                        <p className="zodiac-card"><h2 className="text-2xl capitalize ">Health</h2>{health}</p>
-                        <p className="zodiac-card"><h2 className="text-2xl capitalize ">Man</h2>{man}</p>
-                        <p className="zodiac-card"><h2 className="text-2xl capitalize ">Woman</h2>{woman}</p>
-                        <p className="zodiac-card"><h2 className="text-2xl capitalize ">relationship</h2>{relationship}</p>
+                        <div className="zodiac-card"><h2 className="text-2xl capitalize ">About</h2> <p>{about}</p></div>
+                        <div className="zodiac-card"><h2 className="text-2xl capitalize ">Career</h2><p>{career}</p></div>
+                        <div className="zodiac-card"><h2 className="text-2xl capitalize ">Love</h2><p>{love}</p></div>
+                        <div className="zodiac-card"><h2 className="text-2xl capitalize ">Health</h2><p>{health}</p></div>
+                        <div className="zodiac-card"><h2 className="text-2xl capitalize ">Man</h2><p>{man}</p></div>
+                        <div className="zodiac-card"><h2 className="text-2xl capitalize ">Woman</h2>{woman}</div>
+                        <div className="zodiac-card"><h2 className="text-2xl capitalize ">relationship</h2><p>{relationship}</p></div>
                     </div>
                 </div>
             </div>
