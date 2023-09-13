@@ -3,7 +3,11 @@ import './aboutzodiac.css'
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { fetchZodiacSign } from "../../Redux/zodiacsign";
-
+import { BsFillPersonFill, BsFillBriefcaseFill, BsFillSunFill, BsFillMoonFill } from 'react-icons/bs';
+import { GiLoveMystery } from 'react-icons/gi'
+import { GiHealthNormal } from 'react-icons/gi'
+import { FcBusinesswoman, FcBusinessman } from 'react-icons/fc'
+import { SiHandshake } from 'react-icons/si'
 
 const AboutZodiac = () => {
     const location = useLocation();
@@ -36,47 +40,63 @@ const AboutZodiac = () => {
 
                 <div className="about-main w-full relative ">
 
-                    <div className="sticky top-10 text-[0.95rem] p-3 h-fit rounded-lg sidebar-nav
+                    <div className="fixed text-[1.6rem] left-16 cursor-pointer">
+                        <BsFillSunFill />
+                        <BsFillMoonFill className="hidden" />
+                    </div>
+
+                    <div className=" sticky top-20 p-3 h-fit rounded-lg sidebar-nav
                       bg-lightSecondMainColor dark:bg-darkSecondMainColor
                       dark:text-lightYellow text-darkTextGold">
 
 
+
+
                         <div className="mb-9  sidebar-links">
-                            About
-                            <div className="sidebar-links-line"></div>
+
+                            <span className='sidebar-links-icon'><BsFillPersonFill /></span>
+                            <span className='sidebar-links-text'>About</span>
+
                         </div>
 
                         <div className="mb-9 sidebar-links">
-                            Career
-                            <div className="sidebar-links-line"></div>
+                            <span className='sidebar-links-icon'><BsFillBriefcaseFill /></span>
+                            <span className='sidebar-links-text'>Career</span>
+
                         </div>
 
                         <div className="mb-9 sidebar-links">
-                            Love
-                            <div className="sidebar-links-line"></div>
+                            <span className='sidebar-links-icon'><GiLoveMystery /></span>
+                            <span className='sidebar-links-text'>Love</span>
+
                         </div>
 
                         <div className="mb-9 sidebar-links">
-                            Health
-                            <div className="sidebar-links-line"></div>
+
+                            <span className='sidebar-links-icon'><GiHealthNormal /></span>
+                            <span className='sidebar-links-text'>Health</span>
+
                         </div>
 
                         <div className="mb-9 sidebar-links">
-                            Man
-                            <div className="sidebar-links-line"></div>
+                            <span className='sidebar-links-icon'><FcBusinessman /></span>
+                            <span className='sidebar-links-text'>Man</span>
+
                         </div>
 
                         <div className="mb-9 sidebar-links">
-                            Woman
-                            <div className="sidebar-links-line"></div>
+                            <span className='sidebar-links-icon'><FcBusinesswoman /></span>
+                            <span className='sidebar-links-text'>Woman</span>
+
                         </div>
 
                         <div className="sidebar-links">
-                            relationship
-                            <div className="sidebar-links-line"></div>
+                            <span className='sidebar-links-icon'><SiHandshake /></span>
+                            <span className='sidebar-links-text'>relationship</span>
+
                         </div>
                     </div>
-                    
+
 
                     <div className="flex flex-col gap-8">
                         <div className="zodiac-card ">
