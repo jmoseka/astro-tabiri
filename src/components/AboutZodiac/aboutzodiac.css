@@ -26,18 +26,34 @@
 }
 
 .zodiac-card {
-  @apply rounded-md tracking-wide text-start p-8 w-full
+  @apply rounded-md tracking-wide text-start p-8 w-full;
    
-    dark:text-lightYellow text-darkTextGold;
+}
+
+.zodiac-about-title  {
+@apply text-2xl capitalize;
+}
+
+.zodiac-p {
 }
 
 @media (max-width: 768px) {
   .about-main {
-  @apply gap-1 w-full py-1 px-1;
-  display: grid;
-  grid-template-columns: 0fr 1fr;
-}
-  .sidebar-nav {
-  
+    grid-template-columns: 1fr;
   }
+
+  .zodiac-card {
+    
+  }
+  .sidebar-nav {
+    @apply hidden;
+  }
+
+  .zodiac-about-title  {
+@apply text-xl;
+}
+
+.zodiac-p {
+@apply text-[0.9rem];
+}
 }
