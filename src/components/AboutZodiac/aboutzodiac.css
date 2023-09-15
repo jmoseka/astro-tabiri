@@ -1,35 +1,43 @@
-.lightmode {
-  @apply bg-lightMainColor;
-}
-
 .about-main {
   @apply gap-8 w-full py-1 px-1;
   display: grid;
   grid-template-columns: 0fr 1fr;
 }
 
-.zodiac-card {
-  @apply rounded-md tracking-wide text-start p-8 w-full
-   bg-lightSecondMainColor dark:bg-darkSecondMainColor
-    dark:text-lightYellow text-darkTextGold;
-}
-
 .sidebar {
-
 }
 
 .sidebar-links {
-  @apply tracking-wide capitalize flex flex-col justify-center gap-1 cursor-pointer;
+  @apply tracking-wide capitalize flex flex-col items-center justify-center gap-1 cursor-pointer;
 }
 
 .sidebar-links-icon {
- @apply flex justify-center text-base;
+  @apply flex justify-center text-base;
 }
 
 .sidebar-links-text {
- @apply flex justify-center text-[0.7rem];
+  @apply flex justify-center text-[0.7rem];
 }
 
-.sidebar-links-line {
-  @apply p-[0.2px]  mt-2 mx-7 bg-slate-200;
+.modeBtn {
+}
+.icons {
+  @apply text-darkTextGold;
+}
+
+.zodiac-card {
+  @apply rounded-md tracking-wide text-start p-8 w-full
+   
+    dark:text-lightYellow text-darkTextGold;
+}
+
+@media (max-width: 768px) {
+  .about-main {
+  @apply gap-1 w-full py-1 px-1;
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+}
+  .sidebar-nav {
+  
+  }
 }

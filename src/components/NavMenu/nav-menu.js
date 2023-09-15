@@ -65,30 +65,38 @@ function NavMenu() {
                                 <div className='zod-btn-container flex flex-col items-start'>
                                     <Link className='zod-btn' 
                                     to= "/home/pisces"
-                                    state= { {name: 'pisces' }} // Pass it as an object
-                                      
-
-                                        >Pisces</Link>
-                                    <button type='button' className='zod-btn'>Aries</button>
-                                    <button type='button' className='zod-btn'>Capricorn</button>
-                                    <button type='button' className='zod-btn'>Gemini</button>
+                                    state= { {name: 'pisces' }}>Pisces</Link>
+                                    <Link className='zod-btn' to= "/home/pisces"
+                                    state= { {name: 'aries' }}>Aries</Link>
+                                    <Link className='zod-btn' to= "/home/pisces"
+                                    state= { {name: 'capricorn' }}>Capricorn</Link>
+                                    <Link className='zod-btn' to= "/home/pisces"
+                                    state= { {name: 'gemini' }}>Gemini</Link>
 
 
                                 </div>
 
                                 <div className='zod-btn-container flex flex-col items-start '>
-                                    <button type='button' className='zod-btn'>Cancer</button>
-                                    <button type='button' className='zod-btn'>Virgo</button>
-                                    <button type='button' className='zod-btn'>Scorpio</button>
-                                    <button type='button' className='zod-btn'>Leo</button>
+                                    <Link  className='zod-btn' to= "/home/pisces"
+                                    state= { {name: 'cancer' }}>Cancer</Link>
+                                    <Link  className='zod-btn' to= "/home/pisces"
+                                    state= { {name: 'virgo' }}>Virgo</Link>
+                                    <Link  className='zod-btn' to= "/home/pisces"
+                                    state= { {name: 'scorpio' }}>Scorpio</Link>
+                                    <Link  className='zod-btn' to= "/home/pisces"
+                                    state= { {name: 'leo' }}>Leo</Link>
 
                                 </div>
 
                                 <div className='zod-btn-container flex flex-col items-start'>
-                                    <button type='button' className='zod-btn'>Libra</button>
-                                    <button type='button' className='zod-btn'>Taurus</button>
-                                    <button type='button' className='zod-btn'>Sagittarius</button>
-                                    <button type='button' className='zod-btn'>Aquarius</button>
+                                    <Link  className='zod-btn' to= "/home/pisces"
+                                    state= { {name: 'libra' }}>Libra</Link>
+                                    <Link  className='zod-btn' to= "/home/pisces"
+                                    state= { {name: 'taurus' }}>Taurus</Link>
+                                    <Link  className='zod-btn' to= "/home/pisces"
+                                    state= { {name: 'sagittarius' }}>Sagittarius</Link>
+                                    <Link  className='zod-btn' to= "/home/pisces"
+                                    state= { {name: 'aquarius' }}>Aquarius</Link>
                                 </div>
                             </div>
                             {/* <div className='zod-overla absolute p-1'></div> */}
