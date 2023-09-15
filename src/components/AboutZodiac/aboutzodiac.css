@@ -46,7 +46,8 @@
     
   }
   .sidebar-nav {
-    @apply hidden;
+  @apply absolute -left-12;
+    
   }
 
   .zodiac-about-title  {
