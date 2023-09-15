@@ -46,7 +46,7 @@
     
   }
   .sidebar-nav {
-  @apply absolute -left-12;
+  @apply  fixed -left-6;
     
   }
 
