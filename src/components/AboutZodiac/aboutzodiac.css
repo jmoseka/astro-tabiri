@@ -27,15 +27,21 @@
 
 .zodiac-card {
   @apply rounded-md tracking-wide text-start p-8 w-full;
-   
 }
 
-.zodiac-about-title  {
-@apply text-2xl capitalize;
+.zodiac-about-title {
+  @apply text-2xl capitalize pb-5;
+  line-height: 0;
 }
 
 .zodiac-p {
+  @apply text-base;
 }
+
+
+
+
+
 
 @media (max-width: 768px) {
   .about-main {
@@ -43,18 +49,23 @@
   }
 
   .zodiac-card {
-    
   }
+
+  /*Sidebar styling*/
   .sidebar-nav {
-  @apply  fixed -left-6;
-    
+    @apply fixed -left-0;
+    background: rgb(255, 255, 255, 0.2);
   }
 
-  .zodiac-about-title  {
-@apply text-xl;
-}
+  .sidebar-links-text {
+    @apply hidden;
+  }
 
-.zodiac-p {
-@apply text-[0.9rem];
-}
+  .zodiac-about-title {
+    @apply text-[1.3rem];
+  }
+
+  .zodiac-p {
+    @apply text-[0.98rem];
+  }
 }

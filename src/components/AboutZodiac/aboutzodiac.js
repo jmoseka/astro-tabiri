@@ -78,7 +78,7 @@ const AboutZodiac = () => {
 
 
 
-                    <div className="flex flex-col gap-6 sticky top-20 px-2 py-4 h-fit rounded-lg sidebar-nav
+                    <div className="flex flex-col gap-6 sticky top-24 px-2 py-4 h-fit rounded-lg sidebar-nav
                       bg-lightSecondMainColor dark:bg-darkSecondMainColor
                       dark:text-lightYellow text-darkTextGold">
 
@@ -135,11 +135,11 @@ const AboutZodiac = () => {
 
 
 
-                        
+
                         <div className="zodiac-card bg-lightSecondMainColor dark:bg-darkSecondMainColor ">
-                            <h1 className="text-2xl capitalize">{name}</h1>
-                            <p>Strengths: {strengths}</p>
-                            <p>Weaknesses: {weaknesses}</p>
+                            <h1 className="zodiac-about-title">{name}</h1>
+                            <p className="zodiac-p">Strengths: {strengths}</p>
+                            <p className="zodiac-p">Weaknesses: {weaknesses}</p>
                         </div>
                         <div id="idabout" className="zodiac-card bg-lightSecondMainColor dark:bg-darkSecondMainColor "><h2 className="zodiac-about-title">About</h2> <p className="zodiac-p text-darkTextGold dark:text-lightYellow {woman}">{about}</p></div>
                         <div id="idcareer" className="zodiac-card bg-lightSecondMainColor dark:bg-darkSecondMainColor"><h2 className="zodiac-about-title">Career</h2><p className="zodiac-p {woman}">{career}</p></div>
