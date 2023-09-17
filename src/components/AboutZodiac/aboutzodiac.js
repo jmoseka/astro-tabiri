@@ -80,10 +80,11 @@ const AboutZodiac = () => {
                     </div>
 
 
-                    <div className="hidden md:block">
+                    <div className="hidden md:flex flex-col gap-3 bg-lightSecondMainColor dark:bg-darkSecondMainColor md:mt-8">
                         <div className='p-2 text-darkTextGold dark:text-lightYellow hover:text-yellow'>
                             <Link  to="/home">Daily Horoscope</Link>
                         </div>
+                        <div className="border-b mx-6"></div>
                         <ZodiacSignList  />
                     </div>
 
@@ -147,11 +148,11 @@ const AboutZodiac = () => {
 
                     <div className="ml-2 md:ml-0 flex flex-col gap-5 w-full text-darkTextGold dark:text-lightYellow ">
 
-                        <div className="flex flex-col w-full mt-6 ml-6 md:ml-0 items-start py-4">
-                            <h1 className="zodiac-about-title">{name}</h1>
-                            <div className="flex flex-col items-start justify-start">
-                                <p className="zodiac-p">Strengths: {strengths}</p>
-                                <p className="zodiac-p">Weaknesses: {weaknesses}</p>
+                        <div className="flex flex-col w-full mt-6 ml-6 md:ml-7 md:ml-0 items-start py-4">
+                            <h1 className="text-3xl capitalize">{name}</h1>
+                            <div className="flex flex-col items-start justify-start gap-2 mt-4">
+                                <span className="flex"><p className="italic">Strengths:&nbsp; </p><p className="zodiac-p">{' '+strengths}</p></span>
+                                <span className="flex"><p className="italic">Weaknesses:&nbsp; </p><p className="zodiac-p">{' '+weaknesses}</p></span>
                             </div>
                         </div>
 
