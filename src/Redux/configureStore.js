@@ -1,9 +1,9 @@
 import { combineReducers, applyMiddleware, createStore } from 'redux';
 import thunk from 'redux-thunk';
-import predictionReducer from './prediction';
+import zodiacsignReducer from './zodiacsign';
 
 const rootReducer = combineReducers({
-  predictionData: predictionReducer,
+  predictionData: zodiacsignReducer,
 });
 const store = createStore(rootReducer, applyMiddleware(thunk));
 

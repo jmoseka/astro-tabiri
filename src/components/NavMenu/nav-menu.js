@@ -1,8 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
 import './nav-menu.css'
+import { Link } from 'react-router-dom';
+import ZodiacSignList from '../ZodiacSignList/zodiacSignList';
 
-function NavMenu({ updateOverlayState, isOverlayClick }) {
+function NavMenu() {
+    
 
     const [isCircleOpen, setIsCircleOpen] = useState(false);
     const [isHeaderPresent, setIsHeaderPresent] = useState(false);
@@ -10,24 +13,13 @@ function NavMenu({ updateOverlayState, isOverlayClick }) {
     const [isOverlayOpen, setIsOverlayOpen] = useState(false);
     const [isZodiacListOpen, setIsZodiacListOpen] = useState(false);
 
-    useEffect(() => {
-        if (isOverlayOpen) {
-            setIsOpen(!isOpen);
-            setIsHeaderPresent(!isHeaderPresent);
-            setIsOverlayOpen(!isOverlayOpen);
-            setIsZodiacListOpen(!isZodiacListOpen);
-            updateOverlayState(!isOverlayOpen);
-        }
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [isOverlayClick]);
 
     const dropMenu = () => {
         setIsCircleOpen(!isCircleOpen)
         setIsHeaderPresent(!isHeaderPresent)
         setIsOpen(!isOpen);
         setIsOverlayOpen(!isOverlayOpen);
-        updateOverlayState(!isOverlayOpen)
+       
 
 
         if (isOpen === false) {
@@ -71,29 +63,7 @@ function NavMenu({ updateOverlayState, isOverlayClick }) {
                             </button>
 
                             <div className={`zod-card  ${isZodiacListOpen ? 'zod-card-open' : 'hidden'} mt-2`}>
-                                <div className='zod-btn-container flex flex-col items-start'>
-                                    <button type='button' className='zod-btn'>Pisces</button>
-                                    <button type='button' className='zod-btn'>Aries</button>
-                                    <button type='button' className='zod-btn'>Capricorn</button>
-                                    <button type='button' className='zod-btn'>Gemini</button>
-
-
-                                </div>
-
-                                <div className='zod-btn-container flex flex-col items-start '>
-                                    <button type='button' className='zod-btn'>Cancer</button>
-                                    <button type='button' className='zod-btn'>Virgo</button>
-                                    <button type='button' className='zod-btn'>Scorpio</button>
-                                    <button type='button' className='zod-btn'>Leo</button>
-
-                                </div>
-
-                                <div className='zod-btn-container flex flex-col items-start'>
-                                    <button type='button' className='zod-btn'>Libra</button>
-                                    <button type='button' className='zod-btn'>Taurus</button>
-                                    <button type='button' className='zod-btn'>Sagittarius</button>
-                                    <button type='button' className='zod-btn'>Aquarius</button>
-                                </div>
+                                <ZodiacSignList />
                             </div>
                             {/* <div className='zod-overla absolute p-1'></div> */}
 
@@ -104,7 +74,7 @@ function NavMenu({ updateOverlayState, isOverlayClick }) {
                         {/* SECOND LINK DAILY HOROSCOPE */}
 
                         <div className='p-2 hover:text-yellow'>
-                            <a className='uppercase' href='./j'>Daily Horoscope</a>
+                            <Link className='uppercase' to="/home">Daily Horoscope</Link>
                         </div>
                     </div>
 
@@ -116,8 +86,8 @@ function NavMenu({ updateOverlayState, isOverlayClick }) {
                         </div>
 
                         <button onClick={() => dropMenu()} typeof='button' id='nav-btn'
-                            className='  ml-auto nav-button cursor-pointer h-auto'>
-                            <div className={`flex flex-col items-center p-4 w-[3.7rem] h-[3.7rem]`}>
+                            className=' ml-auto nav-button cursor-pointer h-auto'>
+                            <div className={`flex curso-pointer flex-col items-center w-[3.7rem] h-[3.7rem]`}>
                                 <div className={`relative humberger ${isOpen ? 'open' : ''}`} id="menu-btn">
                                     <span className={`top`}></span>
                                     <span className="middle "></span>

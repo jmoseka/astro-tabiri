@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
 
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -24,13 +25,22 @@ module.exports = {
         lightBlue2: '#b3b4b8',
         blue: '#041925',
         yellow: '#FCDA54',
-        lightYellow: '#fef8de',
+
         darkBlue: '#041721',
         tagColor: 'rgb(29 56 72)',
         textLightGold: '#fdf1bd',
         darkGold: '#645824',
         btnBgColor: '#645824',
-        babyBlue: '#49c0d1',
+
+        // light and darkmode color group
+
+        lightMainColor: '#E7EBED',
+        lightSecondMainColor: '#F7F7F8',
+        darkTextGold: '#2F2B1A',
+
+        darkMainColor: '#0A2D42',
+        darkSecondMainColor: '#0B3249',
+        lightYellow: '#fef8de'
 
       },
     },

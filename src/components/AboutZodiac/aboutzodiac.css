@@ -1,0 +1,85 @@
+.about-main {
+  @apply gap-8 w-full py-1 px-1;
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+}
+
+.sidebar {
+}
+
+.sidebar-links {
+  @apply tracking-wide capitalize flex flex-col items-center justify-center gap-1 cursor-pointer;
+}
+
+.sidebar-links-icon {
+  @apply flex justify-center text-base;
+}
+
+.sidebar-links-text {
+  @apply flex justify-center text-[0.7rem];
+}
+
+
+.icons {
+  @apply text-darkTextGold;
+}
+
+/*nav style*/
+.zod-btn {
+  @apply text-darkTextGold dark:text-lightYellow;
+}
+
+.zodiac-card {
+  @apply rounded-md tracking-wide text-start p-8 w-full;
+}
+
+.zodiac-about-title {
+  @apply text-2xl capitalize pb-5;
+  line-height: 0;
+}
+
+.zodiac-p {
+  @apply text-start;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+
+
+  .about-main {
+    grid-template-columns: 1fr;
+  }
+
+  .zodiac-card {
+  }
+
+  
+
+  /*Sidebar styling*/
+  .modeBtn {
+    @apply text-[1.4rem] left-[0.5rem];
+  }
+
+  .sidebar-nav {
+    @apply fixed -left-0 ;
+    background: rgb(255, 255, 255, 0.2);
+  }
+
+  .sidebar-links-text {
+    @apply hidden;
+  }
+
+  .zodiac-about-title {
+    @apply text-[1.3rem];
+  }
+
+  .zodiac-p {
+    @apply text-[0.98rem];
+  }
+}
