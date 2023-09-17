@@ -30,12 +30,11 @@ const AboutZodiac = () => {
     const data = useSelector((state) => state.predictionData)
     console.log(data);
 
-    const { strengths, weaknesses, symbol, about, career, love, health, man, woman, relationship } = data;
+    const { strengths, weaknesses, about, career, love, health, man, woman, relationship } = data;
 
 
     const scrollToSection = (paragraphId) => {
         const paragraph = document.getElementById(paragraphId);
-        const divHeight = paragraph.offsetHeight;
 
         const offset = paragraph.offsetTop;
 
@@ -44,8 +43,6 @@ const AboutZodiac = () => {
             // paragraph.scrollIntoView({offset, behavior: 'smooth' });
             window.scrollTo({ top: offset, behavior: 'smooth' });
 
-            console.log(paragraph.offsetTop);
-            console.log(divHeight);
         }
         // const offset = paragraph.offsetTop + 100
         // console.log(offset + 5509500);
