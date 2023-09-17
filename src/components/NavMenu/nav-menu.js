@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
 import './nav-menu.css'
 import { Link } from 'react-router-dom';
+import ZodiacSignList from '../ZodiacSignList/zodiacSignList';
 
 function NavMenu() {
     
@@ -62,42 +63,7 @@ function NavMenu() {
                             </button>
 
                             <div className={`zod-card  ${isZodiacListOpen ? 'zod-card-open' : 'hidden'} mt-2`}>
-                                <div className='zod-btn-container flex flex-col items-start'>
-                                    <Link className='zod-btn' 
-                                    to= "/home/pisces"
-                                    state= { {name: 'pisces' }}>Pisces</Link>
-                                    <Link className='zod-btn' to= "/home/pisces"
-                                    state= { {name: 'aries' }}>Aries</Link>
-                                    <Link className='zod-btn' to= "/home/pisces"
-                                    state= { {name: 'capricorn' }}>Capricorn</Link>
-                                    <Link className='zod-btn' to= "/home/pisces"
-                                    state= { {name: 'gemini' }}>Gemini</Link>
-
-
-                                </div>
-
-                                <div className='zod-btn-container flex flex-col items-start '>
-                                    <Link  className='zod-btn' to= "/home/pisces"
-                                    state= { {name: 'cancer' }}>Cancer</Link>
-                                    <Link  className='zod-btn' to= "/home/pisces"
-                                    state= { {name: 'virgo' }}>Virgo</Link>
-                                    <Link  className='zod-btn' to= "/home/pisces"
-                                    state= { {name: 'scorpio' }}>Scorpio</Link>
-                                    <Link  className='zod-btn' to= "/home/pisces"
-                                    state= { {name: 'leo' }}>Leo</Link>
-
-                                </div>
-
-                                <div className='zod-btn-container flex flex-col items-start'>
-                                    <Link  className='zod-btn' to= "/home/pisces"
-                                    state= { {name: 'libra' }}>Libra</Link>
-                                    <Link  className='zod-btn' to= "/home/pisces"
-                                    state= { {name: 'taurus' }}>Taurus</Link>
-                                    <Link  className='zod-btn' to= "/home/pisces"
-                                    state= { {name: 'sagittarius' }}>Sagittarius</Link>
-                                    <Link  className='zod-btn' to= "/home/pisces"
-                                    state= { {name: 'aquarius' }}>Aquarius</Link>
-                                </div>
+                                <ZodiacSignList />
                             </div>
                             {/* <div className='zod-overla absolute p-1'></div> */}
 

@@ -44,6 +44,10 @@
 
 
 @media (max-width: 768px) {
+
+
+
+
   .about-main {
     grid-template-columns: 1fr;
   }
@@ -51,9 +55,15 @@
   .zodiac-card {
   }
 
+  
+
   /*Sidebar styling*/
+  .modeBtn {
+    @apply text-[1.4rem] left-[0.5rem];
+  }
+
   .sidebar-nav {
-    @apply fixed -left-0;
+    @apply fixed -left-0 ;
     background: rgb(255, 255, 255, 0.2);
   }
 

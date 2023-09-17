@@ -25,6 +25,17 @@ function App() {
             <Routes>
               <Route path="/home" element={<Prediction />}></Route>
               <Route path="/home/pisces" element={<AboutZodiac />}></Route>
+              <Route path="/home/aries" element={<AboutZodiac />}></Route>
+              <Route path="/home/gemini" element={<AboutZodiac />}></Route>
+              <Route path="/home/capricorn" element={<AboutZodiac />}></Route>
+              <Route path="/home/virgo" element={<AboutZodiac />}></Route>
+              <Route path="/home/taurus" element={<AboutZodiac />}></Route>
+              <Route path="/home/leo" element={<AboutZodiac />}></Route>
+              <Route path="/home/sagittarius" element={<AboutZodiac />}></Route>
+              <Route path="/home/aquarius" element={<AboutZodiac />}></Route>
+              <Route path="/home/cancer" element={<AboutZodiac />}></Route>
+              <Route path="/home/scorpio" element={<AboutZodiac />}></Route>
+              <Route path="/home/libra" element={<AboutZodiac />}></Route>
             </Routes>
 
 

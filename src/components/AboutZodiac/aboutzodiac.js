@@ -8,21 +8,27 @@ import { GiLoveMystery } from 'react-icons/gi'
 import { GiHealthNormal } from 'react-icons/gi'
 import { FcBusinesswoman, FcBusinessman } from 'react-icons/fc'
 import { SiHandshake } from 'react-icons/si'
+import ZodiacSignList from "../ZodiacSignList/zodiacSignList";
+import { Link } from 'react-router-dom';
 
 const AboutZodiac = () => {
     const [isMode, setIsMode] = useState(false)
     const location = useLocation();
     const { name } = location.state;
+
     const containerRef = useRef(null)
 
     const dispatch = useDispatch();
 
     useEffect(() => {
+        console.log(name);
         dispatch(fetchZodiacSign(name))
-    }, [])
+        window.scrollTo(0, 0);
+    }, [dispatch, name])
 
     // fetch data from config store
     const data = useSelector((state) => state.predictionData)
+    console.log(data);
 
     const { strengths, weaknesses, symbol, about, career, love, health, man, woman, relationship } = data;
 
@@ -59,23 +65,35 @@ const AboutZodiac = () => {
 
     return (
         <div ref={containerRef} className="h-fit w-full mx-auto bg-lightMainColor  dark:bg-darkMainColor">
-            <nav className="p-2">
-                <button type="button " onClick={() => toggleDarkLightMode()} className="modeBtn fixed text-[1.6rem] left-[4rem] cursor-pointer">
-                    {
-                        isMode ? <BsFillMoonFill className="icon text-darkTextGold dark:text-lightYellow" /> : <BsFillSunFill className="icon text-darkTextGold dark:text-lightYellow" />
-                    }
 
 
-                </button>
-                My zodiac
-                Daily Horoscope
-            </nav>
+            <div className="mx-8  about-container block md:flex gap-6 relative">
 
-            <div className="mx-8 ">
+                <nav className="p-2  nav-about-zodiac  md:order-last  text-darkTextGold dark:text-lightYellow">
+                    <button type="button " onClick={() => toggleDarkLightMode()} className="z-10 modeBtn fixed text-[1.6rem] top-8 left-[4rem] cursor-pointer">
+                        {
+                            isMode ? <BsFillMoonFill className="icon text-darkTextGold dark:text-lightYellow" /> : <BsFillSunFill className="icon text-darkTextGold dark:text-lightYellow" />
+                        }
+                    </button>
+
+                    <div className="flex justify-end items-center py-4 md:flex-col md:sticky 
+                    top-2 md:bg-lightSecondMainColor md:dark:bg-darkSecondMainColor">
+
+                        <div >
+                            <Link className='text-[0.96rem] tracking-wide' to="/home">Daily Horoscope</Link>
+                        </div>
+
+                        <div className="hidden md:block md:border md:w-12 md:my-4"></div>
+                        <div>
+                            <div className="block md:hidden">Zodiac signs</div>
+                            <div className="hidden md:block md:p-0"><ZodiacSignList className="text-[0.2rem]" /></div>
+                        </div>
+                    </div>
 
 
-                <div className="about-main w-full relative ">
+                </nav>
 
+                <div className=" about-main w-full relative ">
 
 
                     <div className="flex flex-col gap-6 sticky top-24 px-2 py-4 h-fit rounded-lg sidebar-nav
