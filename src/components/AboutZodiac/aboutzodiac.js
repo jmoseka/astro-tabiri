@@ -10,6 +10,7 @@ import { FcBusinesswoman, FcBusinessman } from 'react-icons/fc'
 import { SiHandshake } from 'react-icons/si'
 import ZodiacSignList from "../ZodiacSignList/zodiacSignList";
 import { Link } from 'react-router-dom';
+import NavMenu from "../NavMenu/nav-menu";
 
 const AboutZodiac = () => {
     const [isMode, setIsMode] = useState(false)
@@ -23,7 +24,6 @@ const AboutZodiac = () => {
     useEffect(() => {
         console.log(name);
         dispatch(fetchZodiacSign(name))
-        window.scrollTo(0, 0);
     }, [dispatch, name])
 
     // fetch data from config store
@@ -67,33 +67,32 @@ const AboutZodiac = () => {
         <div ref={containerRef} className="h-fit w-full mx-auto bg-lightMainColor  dark:bg-darkMainColor">
 
 
-            <div className="mx-8  about-container block md:flex gap-6 relative">
+            <div className="mx-8 block md:flex md:gap-6 ">
 
-                <nav className="p-2  nav-about-zodiac  md:order-last  text-darkTextGold dark:text-lightYellow">
+                <nav className="md:block order-last">
+
                     <button type="button " onClick={() => toggleDarkLightMode()} className="z-10 modeBtn fixed text-[1.6rem] top-8 left-[4rem] cursor-pointer">
                         {
                             isMode ? <BsFillMoonFill className="icon text-darkTextGold dark:text-lightYellow" /> : <BsFillSunFill className="icon text-darkTextGold dark:text-lightYellow" />
                         }
                     </button>
 
-                    <div className="flex justify-end items-center py-4 md:flex-col md:sticky 
-                    top-2 md:bg-lightSecondMainColor md:dark:bg-darkSecondMainColor">
+                    <div className="block md:hidden relative bg-pink-500" >
 
-                        <div >
-                            <Link className='text-[0.96rem] tracking-wide' to="/home">Daily Horoscope</Link>
-                        </div>
-
-                        <div className="hidden md:block md:border md:w-12 md:my-4"></div>
-                        <div>
-                            <div className="block md:hidden">Zodiac signs</div>
-                            <div className="hidden md:block md:p-0"><ZodiacSignList className="text-[0.2rem]" /></div>
-                        </div>
+                        <NavMenu />
                     </div>
 
 
+                    <div className="hidden md:block">
+                        <div className='p-2 text-darkTextGold dark:text-lightYellow hover:text-yellow'>
+                            <Link  to="/home">Daily Horoscope</Link>
+                        </div>
+                        <ZodiacSignList  />
+                    </div>
+
                 </nav>
 
-                <div className=" about-main w-full relative ">
+                <div className="about-main w-full relative ">
 
 
                     <div className="flex flex-col gap-6 sticky top-24 px-2 py-4 h-fit rounded-lg sidebar-nav
@@ -149,16 +148,17 @@ const AboutZodiac = () => {
                     </div>
 
 
-                    <div className="flex flex-col gap-8 w-full text-darkTextGold dark:text-lightYellow ">
+                    <div className="ml-2 md:ml-0 flex flex-col gap-5 w-full text-darkTextGold dark:text-lightYellow ">
 
-
-
-
-                        <div className="zodiac-card bg-lightSecondMainColor dark:bg-darkSecondMainColor ">
+                        <div className="flex flex-col w-full mt-6 ml-6 md:ml-0 items-start py-4">
                             <h1 className="zodiac-about-title">{name}</h1>
-                            <p className="zodiac-p">Strengths: {strengths}</p>
-                            <p className="zodiac-p">Weaknesses: {weaknesses}</p>
+                            <div className="flex flex-col items-start justify-start">
+                                <p className="zodiac-p">Strengths: {strengths}</p>
+                                <p className="zodiac-p">Weaknesses: {weaknesses}</p>
+                            </div>
                         </div>
+
+                        <div className="flex flex-col gap-8">
                         <div id="idabout" className="zodiac-card bg-lightSecondMainColor dark:bg-darkSecondMainColor "><h2 className="zodiac-about-title">About</h2> <p className="zodiac-p text-darkTextGold dark:text-lightYellow {woman}">{about}</p></div>
                         <div id="idcareer" className="zodiac-card bg-lightSecondMainColor dark:bg-darkSecondMainColor"><h2 className="zodiac-about-title">Career</h2><p className="zodiac-p {woman}">{career}</p></div>
                         <div id="idlove" className="zodiac-card bg-lightSecondMainColor dark:bg-darkSecondMainColor"><h2 className="zodiac-about-title">Love</h2><p className="zodiac-p {woman}">{love}</p></div>
@@ -166,6 +166,7 @@ const AboutZodiac = () => {
                         <div id="idman" className="zodiac-card bg-lightSecondMainColor dark:bg-darkSecondMainColor"><h2 className="zodiac-about-title">Man</h2><p className="zodiac-p {woman}">{man}</p></div>
                         <div id="idwoman" className="zodiac-card bg-lightSecondMainColor dark:bg-darkSecondMainColor"><h2 className="zodiac-about-title">Woman</h2><p className="zodiac-p {woman}">{woman}</p></div>
                         <div id="idrelationship" className="zodiac-card bg-lightSecondMainColor dark:bg-darkSecondMainColor"><h2 className="zodiac-about-title">relationship</h2><p className="zodiac-p {woman}">{relationship}</p></div>
+                        </div>
                     </div>
                 </div>
             </div>

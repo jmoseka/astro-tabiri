@@ -19,10 +19,14 @@
   @apply flex justify-center text-[0.7rem];
 }
 
-.modeBtn {
-}
+
 .icons {
   @apply text-darkTextGold;
+}
+
+/*nav style*/
+.zod-btn {
+  @apply text-darkTextGold dark:text-lightYellow;
 }
 
 .zodiac-card {
@@ -35,7 +39,7 @@
 }
 
 .zodiac-p {
-  @apply text-base;
+  @apply text-start;
 }
 
 

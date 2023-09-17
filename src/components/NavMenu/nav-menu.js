@@ -86,8 +86,8 @@ function NavMenu() {
                         </div>
 
                         <button onClick={() => dropMenu()} typeof='button' id='nav-btn'
-                            className='  ml-auto nav-button cursor-pointer h-auto'>
-                            <div className={`flex flex-col items-center p-4 w-[3.7rem] h-[3.7rem]`}>
+                            className=' ml-auto nav-button cursor-pointer h-auto'>
+                            <div className={`flex curso-pointer flex-col items-center w-[3.7rem] h-[3.7rem]`}>
                                 <div className={`relative humberger ${isOpen ? 'open' : ''}`} id="menu-btn">
                                     <span className={`top`}></span>
                                     <span className="middle "></span>
