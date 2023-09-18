@@ -33,14 +33,7 @@
 .humberger .top,
 .humberger .bottom,
 .humberger .middle {
-  @apply absolute;
-  background: rgb(252, 228, 122);
-  background: linear-gradient(
-    90deg,
-    rgba(252, 228, 122, 1) 0%,
-    rgba(251, 221, 89, 1) 45%,
-    rgba(252, 228, 122, 1) 77%
-  );
+  @apply absolute bg-darkGold;
   display: block;
   top: 0;
   left: 0;

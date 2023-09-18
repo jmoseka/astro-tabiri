@@ -4,6 +4,13 @@
   grid-template-columns: 0fr 1fr;
 }
 
+
+.humberger .top,
+.humberger .bottom,
+.humberger .middle {
+  @apply dark:bg-lightSecondMainColor;
+  }
+
 .sidebar {
 }
 

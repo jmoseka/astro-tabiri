@@ -89,9 +89,9 @@ function NavMenu() {
                             className=' ml-auto nav-button cursor-pointer h-auto'>
                             <div className={`flex curso-pointer flex-col items-center w-[3.7rem] h-[3.7rem]`}>
                                 <div className={`relative humberger ${isOpen ? 'open' : ''}`} id="menu-btn">
-                                    <span className={`top`}></span>
-                                    <span className="middle "></span>
-                                    <span className="bottom"></span>
+                                    <span className={`top bg-darkGold`}></span>
+                                    <span className="middle bg-darkGold "></span>
+                                    <span className="bottom bg-darkGold"></span>
                                 </div>
                             </div>
 
