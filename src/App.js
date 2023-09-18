@@ -23,7 +23,7 @@ function App() {
           <div className={`h-screen w-full relative`}>
 
             <Routes>
-              <Route path="/home" element={<Prediction />}></Route>
+              <Route path="*" element={<Prediction />}></Route>
               <Route path="/home/pisces" element={<AboutZodiac />}></Route>
               <Route path="/home/aries" element={<AboutZodiac />}></Route>
               <Route path="/home/gemini" element={<AboutZodiac />}></Route>
