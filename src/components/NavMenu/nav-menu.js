@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import ZodiacSignList from '../ZodiacSignList/zodiacSignList';
 
 function NavMenu() {
-    
+
 
     const [isCircleOpen, setIsCircleOpen] = useState(false);
     const [isHeaderPresent, setIsHeaderPresent] = useState(false);
@@ -19,7 +19,7 @@ function NavMenu() {
         setIsHeaderPresent(!isHeaderPresent)
         setIsOpen(!isOpen);
         setIsOverlayOpen(!isOverlayOpen);
-       
+
 
 
         if (isOpen === false) {
@@ -33,11 +33,11 @@ function NavMenu() {
     }
 
     return (
-        <header className={` text-textLightGold min-w-full header
+        <header className={`z-10 text-textLightGold w-full header 
          ${isHeaderPresent ? 'header-present' : ''}
          py-4 absolute `}>
 
-            <div className='container py-1 md:py-2 left-0 top-0 flex 
+            <div className='container  h-full bg-orange-600 py-1 md:py-2 left-0 top-0 flex 
              header-container mx-auto '>
 
                 <div className='hidden order-first self-center'>
@@ -45,17 +45,17 @@ function NavMenu() {
                 </div>
 
 
-                <nav className={`w-full nav-links 
+                <nav className={`w-full h-full nav-links bg-pink-500
                 flex flex-col md:flex-row md:items-center gap-12 text-[.8rem]`}>
 
                     <div className={`nav-menu-links w-auto md:w-full h-full md:h-auto
                       ${isHeaderPresent ? 'flex ' : 'hidden'} 
-                     flex-col gap-8 items-center md:flex-row md:justify-end md:gap-20`}>
+                     flex-col gap-8 items-center justify-center md:flex-row md:justify-end md:gap-20`}>
 
                         {/* FIRST LINK ZODIAC SIGNS */}
 
-                        <div className='zodiac-signs relative  md:order-first '>
-                            <button onClick={() => displayZodiac()} className={`p-2 hover:text-yellow w-full flex justify-center items-center 
+                        <div className='bg-red-500 border-4 border-green-600 flex flex-col justify-center zodiac-signs   md:order-first '>
+                            <button onClick={() => displayZodiac()} className={`py-2 hover:text-yellow  flex justify-center items-center 
                             gap-1 ${isZodiacListOpen ? 'border rounded-md text-yellow border-yellow' : ''}
                             `}>
                                 <p className='uppercase zod-link '>Zodiac signs</p>
@@ -80,7 +80,7 @@ function NavMenu() {
 
                     {/* BUTTON */}
 
-                    <div className='z-20  md:ml-auto order-first md:order-last flex justify-between'>
+                    <div className='md:ml-auto order-first md:order-last flex justify-between'>
                         <div className='order-first hidden md:hidden'>
                             <h1 className='p-4 ml-2 text-white border'>LOGO</h1>
                         </div>

@@ -4,7 +4,8 @@
 }
 
 .header-present {
-  background: rgba(4, 22, 41, 0.7);
+  background: rgba(4, 22, 41, 0.99);
+ height: 100vh;
   width: 100%;
   z-index: 10;
 
@@ -69,14 +70,14 @@
 }
 
 .zod-card-open {
-  @apply md:absolute md:-translate-x-1/2;
+  /* @apply md:absolute md:-translate-x-1/2;
   left: 50%;
-  display: flex;
+  display: flex; */
 }
 
 .zod-card {
   @apply rounded-lg bg-white text-base text-strongBlue;
-  width: 19rem;
+  width: fit-content;
   overflow: hidden;
 }
 
