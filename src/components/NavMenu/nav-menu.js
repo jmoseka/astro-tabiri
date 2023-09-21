@@ -1,17 +1,18 @@
 import { useState } from 'react';
-import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
+import { MdOutlineKeyboardArrowDown, MdOutlineKeyboardArrowUp } from 'react-icons/md'
 import './nav-menu.css'
 import { Link } from 'react-router-dom';
 import ZodiacSignList from '../ZodiacSignList/zodiacSignList';
 
 function NavMenu() {
-    
+
 
     const [isCircleOpen, setIsCircleOpen] = useState(false);
     const [isHeaderPresent, setIsHeaderPresent] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const [isOverlayOpen, setIsOverlayOpen] = useState(false);
     const [isZodiacListOpen, setIsZodiacListOpen] = useState(false);
+    // const [isPointerEnable, setIsPointerEnable] = useState(false);
 
 
     const dropMenu = () => {
@@ -19,7 +20,7 @@ function NavMenu() {
         setIsHeaderPresent(!isHeaderPresent)
         setIsOpen(!isOpen);
         setIsOverlayOpen(!isOverlayOpen);
-       
+
 
 
         if (isOpen === false) {
@@ -33,72 +34,84 @@ function NavMenu() {
     }
 
     return (
-        <header className={` text-textLightGold min-w-full header
-         ${isHeaderPresent ? 'header-present' : ''}
-         py-4 absolute `}>
+        <header className={`absolute  text-textLightGold header w-full 
+         ${isHeaderPresent ? 'header-present' : ''} flex `}>
 
-            <div className='container py-1 md:py-2 left-0 top-0 flex 
-             header-container mx-auto '>
+            <nav className=' w-[98%] md:w-[92%]  h-fit text-[.8rem] nav-menu flex justify-end gap-24  '>
 
-                <div className='hidden order-first self-center'>
-                    <h1 className='p-3 hidden md:block border text-white '>LOGO</h1>
+            <button onClick={() => dropMenu()} typeof='button' id='nav-btn'
+                    className='nav-button order-last cursor-pointer z-30 h-fit flex items-center justify-center'>
+                    <div className={`flex cursor-pointer flex-col  items-center w-[3.7rem] h-[3.7rem] `}>
+                        <div className={`relative translate-y-4 humberger ${isOpen ? 'open' : ''}`} id="menu-btn">
+                            <span className={`top bg-darkGold`}></span>
+                            <span className="middle bg-darkGold "></span>
+                            <span className="bottom bg-darkGold"></span>
+                        </div>
+                    </div>
+
+                </button>
+
+                <div className={`nav-items translate-y-5 justify-center  gap-10 
+                    ${isHeaderPresent ? 'flex ' : 'hidden'}`}>
+
+                    <div>
+
+                        <div className={`relative mx-auto}`}>
+                            {/* zodiac sign button labels */}
+
+                            <button onClick={() => displayZodiac()} className='py-1 px-6 w-full flex gap-1 justify-center items-center hover:text-yellow '>
+                                <p className='uppercase zod-link '>Zodiac signs</p>
+                                {isZodiacListOpen ? <MdOutlineKeyboardArrowUp className='text-[1.4rem]' /> :
+                                    <MdOutlineKeyboardArrowDown className='text-[1.4rem]' />}
+
+                            </button>
+
+                            <div className={` translate-y-2`}>
+
+                                <div>
+                                    {
+                                        isZodiacListOpen ?
+                                            <div className='bg-lightBlue text-[.9rem]'>
+                                                <ZodiacSignList />
+                                            </div>
+
+                                            :
+
+                                            ''
+
+                                            // <div className='opacity-0 border rounded-md text-[.9rem]'>
+                                            //     <div className='absolute w-full h-full z-40'></div>
+                                            //     <ZodiacSignList />
+                                            // </div>
+
+                                    }
+
+
+                                </div>
+                            </div>
+                            {/* <div className={`relative zod-card  ${isZodiacListOpen ? 'zod-card-open' : 'hidden'} mt-2`}>
+                            <div className=''>
+                                <ZodiacSignList />
+                            </div>
+                        </div> */}
+
+                        </div>
+
+                    </div>
+
+                    <div className='py-1 hover:text-yellow'>
+                        <Link className='uppercase' to="/home">Daily Horoscope</Link>
+                    </div>
+
+                    
+
+
                 </div>
 
 
-                <nav className={`w-full nav-links 
-                flex flex-col md:flex-row md:items-center gap-12 text-[.8rem]`}>
+                
 
-                    <div className={`nav-menu-links w-auto md:w-full h-full md:h-auto
-                      ${isHeaderPresent ? 'flex ' : 'hidden'} 
-                     flex-col gap-8 items-center md:flex-row md:justify-end md:gap-20`}>
-
-                        {/* FIRST LINK ZODIAC SIGNS */}
-
-                        <div className='zodiac-signs relative  md:order-first '>
-                            <button onClick={() => displayZodiac()} className={`p-2 hover:text-yellow w-full flex justify-center items-center 
-                            gap-1 ${isZodiacListOpen ? 'border rounded-md text-yellow border-yellow' : ''}
-                            `}>
-                                <p className='uppercase zod-link '>Zodiac signs</p>
-                                <MdOutlineKeyboardArrowDown className='text-[1.4rem]' />
-                            </button>
-
-                            <div className={`zod-card  ${isZodiacListOpen ? 'zod-card-open' : 'hidden'} mt-2`}>
-                                <ZodiacSignList />
-                            </div>
-                            {/* <div className='zod-overla absolute p-1'></div> */}
-
-
-                        </div>
-
-
-                        {/* SECOND LINK DAILY HOROSCOPE */}
-
-                        <div className='p-2 hover:text-yellow'>
-                            <Link className='uppercase' to="/home">Daily Horoscope</Link>
-                        </div>
-                    </div>
-
-                    {/* BUTTON */}
-
-                    <div className='z-20  md:ml-auto order-first md:order-last flex justify-between'>
-                        <div className='order-first hidden md:hidden'>
-                            <h1 className='p-4 ml-2 text-white border'>LOGO</h1>
-                        </div>
-
-                        <button onClick={() => dropMenu()} typeof='button' id='nav-btn'
-                            className=' ml-auto nav-button cursor-pointer h-auto'>
-                            <div className={`flex curso-pointer flex-col items-center w-[3.7rem] h-[3.7rem]`}>
-                                <div className={`relative humberger ${isOpen ? 'open' : ''}`} id="menu-btn">
-                                    <span className={`top`}></span>
-                                    <span className="middle "></span>
-                                    <span className="bottom"></span>
-                                </div>
-                            </div>
-
-                        </button>
-                    </div>
-                </nav>
-            </div>
+            </nav>
         </header>
     )
 }

@@ -45,6 +45,7 @@
 
 /*NAVIGATION MENU*/
 
+
 .zod-btn {
   @apply hover:bg-lightBlue;
   width: 100%;
@@ -137,7 +138,7 @@
   }
 
   .zodiac-prediction-container {
-    @apply flex border justify-center h-[10rem];
+    @apply flex justify-center h-[10rem];
   }
 
   .zodiac-prediction {

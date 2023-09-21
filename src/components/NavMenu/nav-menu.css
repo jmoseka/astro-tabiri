@@ -4,7 +4,8 @@
 }
 
 .header-present {
-  background: rgba(4, 22, 41, 0.7);
+  background: rgba(4, 22, 41, 0.99);
+  height: 100vh;
   width: 100%;
   z-index: 10;
 
@@ -12,10 +13,6 @@
     @apply h-full md:h-auto;
   }
    */
-}
-
-.nav-btn {
-  height: auto;
 }
 
 .circle-present {
@@ -33,14 +30,7 @@
 .humberger .top,
 .humberger .bottom,
 .humberger .middle {
-  @apply absolute;
-  background: rgb(252, 228, 122);
-  background: linear-gradient(
-    90deg,
-    rgba(252, 228, 122, 1) 0%,
-    rgba(251, 221, 89, 1) 45%,
-    rgba(252, 228, 122, 1) 77%
-  );
+  @apply absolute bg-darkGold;
   display: block;
   top: 0;
   left: 0;
@@ -76,14 +66,14 @@
 }
 
 .zod-card-open {
-  @apply md:absolute md:-translate-x-1/2;
+  /* @apply md:absolute md:-translate-x-1/2;
   left: 50%;
-  display: flex;
+  display: flex; */
 }
 
 .zod-card {
   @apply rounded-lg bg-white text-base text-strongBlue;
-  width: 19rem;
+  width: fit-content;
   overflow: hidden;
 }
 
@@ -95,9 +85,30 @@
   flex: 1;
 }
 
+.z-negative {
+  z-index: -1;
+}
 
 @media (max-width: 1000px) {
   .zod-card {
     right: 0%;
+  }
+}
+
+@media (max-width: 526px) {
+
+  /* for the nav menu */
+  .nav-menu {
+    @apply flex-col gap-14;
+  }
+  #nav-btn {
+    @apply self-end order-first;
+  }
+  .zodiac-signs {
+  }
+
+
+  .nav-items  {
+    @apply flex-col w-fit mx-auto;
   }
 }

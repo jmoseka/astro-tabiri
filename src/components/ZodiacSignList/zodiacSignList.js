@@ -6,7 +6,7 @@ const ZodiacSignList = () => {
     return (
 
 
-        <div>
+        <div className='flex'>
             <div className='zod-btn-container flex flex-col items-start'>
                 <Link className='zod-btn'
                     to="/home/pisces"
@@ -17,23 +17,20 @@ const ZodiacSignList = () => {
                     state={{ name: 'capricorn' }}>Capricorn</Link>
                 <Link className='zod-btn' to="/home/gemini"
                     state={{ name: 'gemini' }}>Gemini</Link>
+                <Link className='zod-btn' to="/home/cancer"
+                    state={{ name: 'cancer' }}>Cancer</Link>
+                <Link className='zod-btn' to="/home/virgo"
+                    state={{ name: 'virgo' }}>Virgo</Link>
 
 
             </div>
 
             <div className='zod-btn-container flex flex-col items-start '>
-                <Link className='zod-btn' to="/home/cancer"
-                    state={{ name: 'cancer' }}>Cancer</Link>
-                <Link className='zod-btn' to="/home/virgo"
-                    state={{ name: 'virgo' }}>Virgo</Link>
+
                 <Link className='zod-btn' to="/home/scorpio"
                     state={{ name: 'scorpio' }}>Scorpio</Link>
                 <Link className='zod-btn' to="/home/leo"
                     state={{ name: 'leo' }}>Leo</Link>
-
-            </div>
-
-            <div className='zod-btn-container flex flex-col items-start'>
                 <Link className='zod-btn' to="/home/libra"
                     state={{ name: 'libra' }}>Libra</Link>
                 <Link className='zod-btn' to="/home/taurus"
@@ -42,7 +39,10 @@ const ZodiacSignList = () => {
                     state={{ name: 'sagittarius' }}>Sagittarius</Link>
                 <Link className='zod-btn' to="/home/aquarius"
                     state={{ name: 'aquarius' }}>Aquarius</Link>
+
             </div>
+
+
         </div>
     )
 }

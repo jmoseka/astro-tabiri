@@ -110,10 +110,12 @@ function Prediction() {
 
 
   return (
-    <div className=" body-gradient-bg  h-screen mx-auto w-full">
-      <NavMenu />
+    <div className=" body-gradient-bg   h-screen mx-auto w-full">
+      <NavMenu  />
+      
+  
 
-      <div className='pt-1  '>
+      <div className='pt-1'>
 
         <div className='main-grid mx-auto rounded-[10rem] md:w-[80%]
          mt-[3.2rem] pb-4 md:mt-[5.7rem] relative
