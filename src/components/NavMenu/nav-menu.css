@@ -5,7 +5,7 @@
 
 .header-present {
   background: rgba(4, 22, 41, 0.99);
- height: 100vh;
+  height: 100vh;
   width: 100%;
   z-index: 10;
 
@@ -13,10 +13,6 @@
     @apply h-full md:h-auto;
   }
    */
-}
-
-.nav-btn {
-  height: auto;
 }
 
 .circle-present {
@@ -89,9 +85,30 @@
   flex: 1;
 }
 
+.z-negative {
+  z-index: -1;
+}
 
 @media (max-width: 1000px) {
   .zod-card {
     right: 0%;
+  }
+}
+
+@media (max-width: 526px) {
+
+  /* for the nav menu */
+  .nav-menu {
+    @apply flex-col gap-14;
+  }
+  #nav-btn {
+    @apply self-end order-first;
+  }
+  .zodiac-signs {
+  }
+
+
+  .nav-items  {
+    @apply flex-col w-fit mx-auto;
   }
 }
