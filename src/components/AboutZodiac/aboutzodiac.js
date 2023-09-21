@@ -80,12 +80,14 @@ const AboutZodiac = () => {
                     </div>
 
 
-                    <div className="hidden md:flex flex-col gap-3 bg-lightSecondMainColor dark:bg-darkSecondMainColor md:mt-8">
+                    <div className="hidden sticky top-4 md:flex flex-col gap-3 bg-lightSecondMainColor dark:bg-darkSecondMainColor md:mt-8">
                         <div className='p-2 text-darkTextGold dark:text-lightYellow hover:text-yellow'>
                             <Link to="/home">Daily Horoscope</Link>
                         </div>
                         <div className="border-b mx-6"></div>
-                        <ZodiacSignList />
+                        
+                            <ZodiacSignList />
+                        
                     </div>
 
                 </nav>
