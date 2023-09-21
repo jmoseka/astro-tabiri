@@ -99,7 +99,7 @@ function NavMenu() {
 
                     </div>
 
-                    <div className=' hover:text-yellow'>
+                    <div className='py-1 hover:text-yellow'>
                         <Link className='uppercase' to="/home">Daily Horoscope</Link>
                     </div>
 
