@@ -111,7 +111,7 @@ function Prediction() {
 
 
   return (
-    <div className=" body-gradient-bg   h-screen mx-auto w-full">
+    <div className=" body-gradient-bg   md:h-screen mx-auto w-full">
       <NavMenu />
 
 
@@ -178,7 +178,7 @@ function Prediction() {
             <div className='hidden md:block'></div>
 
 
-            <div className='  flex justify-center items-center md:items-start
+            <div className='const-body-container-start  flex justify-center items-center md:items-start
             md:justify-start  md:-translate-x-[2rem]
             '>
               <button onClick={() => displayHoroscope('12', general)} className="  const-body 
@@ -193,7 +193,7 @@ function Prediction() {
             </div>
 
 
-            <div className='flex justify-center items-center md:items-start'>
+            <div className='const-body-container flex justify-center items-center md:items-start'>
               <button onClick={() => displayHoroscope('1', general)} className="const-body
              md:-translate-y-7 md:-translate-x-6">
                 <Aries className='constelation  ' />
@@ -205,7 +205,7 @@ function Prediction() {
             </div>
 
 
-            <div className='flex justify-center items-center md:items-start'>
+            <div className='const-body-container-end flex justify-center items-center md:items-start'>
 
               <button onClick={() => displayHoroscope('9', general)} className=" const-body 
             sagittarius md:-translate-y-7 md:translate-x-6">
@@ -218,7 +218,7 @@ function Prediction() {
             </div>
 
 
-            <div className=' flex justify-center items-center
+            <div className='const-body-container flex justify-center items-center
               md:justify-end md:items-start md:translate-x-[2rem]'>
               <button onClick={() => displayHoroscope('7', general)} className="
                md:-translate-y-6 libra hidden
@@ -261,7 +261,7 @@ function Prediction() {
             md:grid-cols-1 
             '>
 
-              <div className='flex justify-center items-center
+              <div className='const-body-container-start flex justify-center items-center
               md:justify-start md:items-start md:-translate-y-4'
               >
                 <button onClick={() => displayHoroscope('4', general)} className="const-body
@@ -276,7 +276,7 @@ function Prediction() {
               </div>
 
 
-              <div className='flex justify-center items-center
+              <div className=' flex justify-center items-center
                md:justify-start  md:translate-y-8
               '>
                 <button onClick={() => displayHoroscope('2', general)} className="const-body
@@ -290,7 +290,8 @@ function Prediction() {
                 </button>
               </div>
 
-              <div className='flex justify-center items-center
+
+              <div className='const-body-container-end flex justify-center items-center
                md:justify-start md:items-end   md:translate-y-[5rem]'>
                 <button onClick={() => displayHoroscope('6', general)} className="const-body
                 md:-translate-x-9
@@ -308,7 +309,7 @@ function Prediction() {
 
             {/* horscope board */}
 
-            <div className="horoscope-board hidden 
+            <div className="horoscope-board hidden -translate-y-4
             md:block md:col-span-4 ">
 
 
@@ -384,7 +385,7 @@ function Prediction() {
             md:grid-cols-1
             '>
 
-              <div className='flex justify-center  items-center
+              <div className='const-body-container-start flex justify-center  items-center
                md:justify-end md:items-start md:-translate-y-4
               '>
 
@@ -400,7 +401,7 @@ function Prediction() {
 
               </div>
 
-              <div className=' flex justify-center items-center
+              <div className='flex justify-center items-center
               md:justify-end md:translate-y-8
               '>
                 <button onClick={() => displayHoroscope('8', general)} className="const-body 
@@ -414,7 +415,7 @@ function Prediction() {
                 </button>
               </div>
 
-              <div className=' flex  justify-center items-center
+              <div className='const-body-container-end flex justify-center items-center
               md:justify-end md:items-end  md:translate-y-[5rem]
               '>
                 <button onClick={() => displayHoroscope('5', general)} className="const-body
@@ -461,7 +462,7 @@ function Prediction() {
           '>
 
 
-            <div className=' flex justify-center items-center
+            <div className='const-body-container-start flex justify-center items-center
             md:items-end md:justify-end  
             '>
               <button onClick={() => displayHoroscope('11', general)} className=" const-body 
@@ -501,20 +502,22 @@ function Prediction() {
 
             <div className='hidden md:block'></div>
 
-
-
-            <button onClick={() => displayHoroscope('7', general)} className=" libra 
+            <div className='flex const-body-container-end'>
+              <button onClick={() => displayHoroscope('7', general)} className=" libra 
               flex flex-col items-center justify-between gap-4 h-fit
-              text-lightBlue cursor-pointer
+              text-lightBlue1 cursor-pointer
               p-0 
               md:hidden
               ">
-              <Libra className='constelation' />
-              <div>
-                <p className='const-title uppercase'>{horoMap[`key${7}`].value1}</p>
-                <p className='const-date'>{horoMap[`key${7}`].value2}</p>
-              </div>
-            </button>
+                <Libra className='constelation' />
+                <div>
+                  <p className='const-title uppercase'>{horoMap[`key${7}`].value1}</p>
+                  <p className='const-date'>{horoMap[`key${7}`].value2}</p>
+                </div>
+              </button>
+            </div>
+
+
 
 
 

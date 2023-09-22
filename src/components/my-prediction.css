@@ -78,6 +78,10 @@
   font-family: "Inter Tight", sans-serif;
 }
 
+.horoscope-board-btn-active {
+  @apply text-[#b0993b]
+}
+
 .horoscope-board-btn {
   @apply rounded-md text-textLightGold py-[0.3rem]  px-3;
   /* border-style: solid;
@@ -152,6 +156,13 @@
 }
 
 @media (max-width: 500px) {
+  .const-body-container-start {
+    @apply justify-start;
+  }
+  .const-body-container-end {
+    @apply justify-end;
+  }
+
   .const-title {
     @apply text-[0.6rem];
   }
