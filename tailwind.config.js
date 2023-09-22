@@ -29,8 +29,8 @@ module.exports = {
         darkBlue: '#041721',
         tagColor: 'rgb(29 56 72)',
         textLightGold: '#fdf1bd',
-        darkGold: '#645824',
-        btnBgColor: '#645824',
+        darkGold: '#b0993b',
+        btnBgColor: '#b0993b',
 
         // light and darkmode color group
 

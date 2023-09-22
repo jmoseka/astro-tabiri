@@ -71,7 +71,7 @@ function NavMenu() {
                                 <div>
                                     {
                                         isZodiacListOpen ?
-                                            <div className='bg-lightBlue text-[.9rem]'>
+                                            <div className='text-[.9rem]'>
                                                 <ZodiacSignList />
                                             </div>
 

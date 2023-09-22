@@ -18,7 +18,7 @@ import NavMenu from './NavMenu/nav-menu';
 
 
 function Prediction() {
-  
+
 
   const horoMap = {
     key1: { value1: 'Aries', value2: 'March 21 - Apr 19' },
@@ -39,8 +39,8 @@ function Prediction() {
   const general = 'general'
 
 
-  const [dailyPrediction, setdailyPrediction] = useState('Discover what the stars have in store for you each day. From love to career, our predictions guide you. Dont miss out – find your daily prediction now and seize the day with confidence.');
-  const [dailyZodiacSign, setDailyZodiacSign] = useState('Daily Horoscope');
+  const [dailyPrediction, setdailyPrediction] = useState('Are you curious about what the stars have in store for you today? Powered by data from the trusted source, Horoscope.com, our website is designed to provide you with insightful and personalized horoscope predictions to help you navigate life\'s ups and downs. A daily guide to understanding your emotions, relationships, and career prospects.');
+  const [dailyZodiacSign, setDailyZodiacSign] = useState('Your Zodiac Forecast');
   const [horscopeIndex, setHoroscopeIndex] = useState(0);
   const [horoscopeChoices, setHoroscopeChoices] = useState(false);
   const [activeHoroscopeBtn, setActiveHoroscopeBtn] = useState(general);
@@ -111,9 +111,9 @@ function Prediction() {
 
   return (
     <div className=" body-gradient-bg   h-screen mx-auto w-full">
-      <NavMenu  />
-      
-  
+      <NavMenu />
+
+
 
       <div className='pt-1'>
 
