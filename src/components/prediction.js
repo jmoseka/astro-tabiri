@@ -54,6 +54,7 @@ function Prediction() {
   const displayHoroscope = (index) => {
 
     setHoroscopeIndex(index);
+    setActiveHoroscopeBtn(general)
     const key = `key${index}`;
     const zodiac = horoMap[key].value1;
     setDailyZodiacSign(zodiac)
@@ -83,8 +84,7 @@ function Prediction() {
   }
 
   const displayHoroscopeOption = (cat) => {
-
-
+    setIsLoading(true)
 
     async function fetchHoroscope(index) {
       try {
@@ -92,6 +92,7 @@ function Prediction() {
 
         setdailyPrediction(result)
         setActiveHoroscopeBtn(cat)
+        setIsLoading(false)
         return result;
 
         // Now you can continue with other actions that depend on the result
@@ -130,7 +131,7 @@ function Prediction() {
               <p className='zodiac-title'>{dailyZodiacSign}</p>
 
               <div >
-                <div className={`mt-1 gap-2 py-3 horoscope-btn-container  ${horoscopeChoices ? 'flex justify-center flex-wrap' : 'hidden'}`}
+                <div className={`mt-1 gap-2 horoscope-btn-container  ${horoscopeChoices ? 'flex justify-center flex-wrap' : 'hidden'}`}
 
                 >
                   <button onClick={() => displayHoroscopeOption('general')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'general' ? 'bg-darkGold' : 'bg-transparent'}`}>Horoscope</button>
@@ -341,7 +342,7 @@ function Prediction() {
                 <p className='zodiac-title '>{dailyZodiacSign}</p>
 
                 <div >
-                  <div className={`mt-1 gap-2 py-3 horoscope-btn-container  ${horoscopeChoices ? 'flex justify-center flex-wrap' : 'hidden'}`}
+                  <div className={`mt-1 gap-2 horoscope-btn-container  ${horoscopeChoices ? 'flex justify-center flex-wrap' : 'hidden'}`}
 
                   >
                     <button onClick={() => displayHoroscopeOption('general')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'general' ? 'bg-darkGold' : 'bg-transparent'}`}>Horoscope</button>

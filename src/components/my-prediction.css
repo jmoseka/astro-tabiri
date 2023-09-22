@@ -74,6 +74,7 @@
 }
 
 .horoscope-btn-container {
+  @apply py-2;
   font-family: "Inter Tight", sans-serif;
 }
 
