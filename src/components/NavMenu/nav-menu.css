@@ -26,11 +26,18 @@
 .nav-menu-link {
   @apply uppercase hover:opacity-[0.8];
   letter-spacing: 0.04rem;
-} 
+}
 
 .zodiac-list-cont {
   @apply rounded-lg overflow-hidden;
-  background-image: linear-gradient(to right bottom, #fdf1bd, #d8f1cc, #c4ebdd, #c5e1e3, #ced6db);
+  background-image: linear-gradient(
+    to right bottom,
+    #fdf1bd,
+    #d8f1cc,
+    #c4ebdd,
+    #c5e1e3,
+    #ced6db
+  );
 }
 
 .humberger {
@@ -110,7 +117,6 @@
 }
 
 @media (max-width: 526px) {
-
   /* for the nav menu */
   .nav-menu {
     @apply flex-col gap-14;
@@ -121,8 +127,13 @@
   .zodiac-signs {
   }
 
-
-  .nav-items  {
+  .nav-items {
     @apply flex-col w-fit mx-auto;
+  }
+}
+
+@media (max-width: 180px) {
+  .header {
+    min-width: 190px;
   }
 }

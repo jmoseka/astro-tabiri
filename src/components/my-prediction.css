@@ -141,7 +141,7 @@
   }
 
   .zodiac-prediction-container {
-    @apply flex justify-center h-[10rem];
+    @apply flex justify-center h-[8rem];
   }
 
   .zodiac-prediction {
@@ -154,6 +154,12 @@
 
   .horoscope-btn-container {
     @apply text-[.95rem];
+  }
+}
+
+@media (max-width: 700px) {
+  .zodiac-prediction-container {
+    @apply flex justify-center h-[10rem];
   }
 }
 
@@ -204,5 +210,17 @@
 
   .animation-container {
     @apply mt-10;
+  }
+}
+
+@media(max-width: 313px) {
+  .zodiac-title {
+    line-height: 3rem;
+  }
+}
+
+@media(max-width: 290px) {
+  .body-prediction {
+    min-width: 290px;
   }
 }

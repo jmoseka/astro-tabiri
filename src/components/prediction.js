@@ -111,7 +111,7 @@ function Prediction() {
 
 
   return (
-    <div className=" body-gradient-bg   md:h-screen mx-auto w-full">
+    <div className="body-prediction body-gradient-bg   md:h-screen mx-auto w-full">
       <NavMenu />
 
 
@@ -261,11 +261,11 @@ function Prediction() {
             md:grid-cols-1 
             '>
 
-              <div className='const-body-container-start flex justify-centercursor-pointer group
+              <div className='const-body-container-start flex justify-center
               md:justify-start md:items-start md:-translate-y-4'
               >
                 <button onClick={() => displayHoroscope('4', general)} className="const-body
-                md:-translate-x-3 zodiacBtnMain group cursor-pointer
+                md:-translate-x-3 group cursor-pointer
               ">
                   <Cancer className='constelation  group-hover:opacity-[0.8]' />
                   <div>

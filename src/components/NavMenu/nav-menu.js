@@ -37,7 +37,7 @@ function NavMenu() {
         <header className={`absolute  text-textLightGold header w-full 
          ${isHeaderPresent ? 'header-present' : ''} flex `}>
 
-            <nav className=' w-[98%] md:w-[92%]  h-fit text-[.8rem] nav-menu flex justify-end gap-24  '>
+            <nav className=' w-[98%] md:w-[97%]  h-fit text-[.8rem] nav-menu flex justify-end gap-24  '>
 
                 <button onClick={() => dropMenu()} typeof='button' id='nav-btn'
                     className='nav-button order-last cursor-pointer z-30 h-fit flex items-center justify-center
@@ -60,7 +60,7 @@ function NavMenu() {
                         <div className={`relative mx-auto}`}>
                             {/* zodiac sign button labels */}
 
-                            <button onClick={() => displayZodiac()} className='nav-menu-link py-1 px-6 w-full flex gap-1 justify-center items-center'>
+                            <button onClick={() => displayZodiac()} className='zod-link nav-menu-link py-1 px-6 w-full flex gap-1 justify-center items-center'>
                                 <p>Zodiac signs</p>
                                 {isZodiacListOpen ? <MdOutlineKeyboardArrowUp className='text-[1.4rem]' /> :
                                     <MdOutlineKeyboardArrowDown className='text-[1.4rem]' />}
@@ -72,7 +72,7 @@ function NavMenu() {
                                 <div>
                                     {
                                         isZodiacListOpen ?
-                                            <div className='text-[.9rem] zod-link zodiac-list-cont'>
+                                            <div className='text-[.9rem]  zodiac-list-cont'>
                                                 <ZodiacSignList />
                                             </div>
 
