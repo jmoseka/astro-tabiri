@@ -39,11 +39,11 @@ function NavMenu() {
 
             <nav className=' w-[98%] md:w-[92%]  h-fit text-[.8rem] nav-menu flex justify-end gap-24  '>
 
-            <button onClick={() => dropMenu()} typeof='button' id='nav-btn'
+                <button onClick={() => dropMenu()} typeof='button' id='nav-btn'
                     className='nav-button order-last cursor-pointer z-30 h-fit flex items-center justify-center
-                     hover:opacity-[0.8]'>
+                     hover:opacity-[0.8] translate-y-6'>
                     <div className={`flex cursor-pointer flex-col  items-center w-[3.7rem] h-[3.7rem] `}>
-                        <div className={`relative translate-y-4 humberger ${isOpen ? 'open' : ''}`} id="menu-btn">
+                        <div className={`relative humberger ${isOpen ? 'open' : ''}`} id="menu-btn">
                             <span className={`top bg-darkGold`}></span>
                             <span className="middle bg-darkGold "></span>
                             <span className="bottom bg-darkGold"></span>
@@ -60,8 +60,8 @@ function NavMenu() {
                         <div className={`relative mx-auto}`}>
                             {/* zodiac sign button labels */}
 
-                            <button onClick={() => displayZodiac()} className='py-1 px-6 w-full flex gap-1 justify-center items-center hover:text-yellow '>
-                                <p className='uppercase zod-link '>Zodiac signs</p>
+                            <button onClick={() => displayZodiac()} className='nav-menu-link py-1 px-6 w-full flex gap-1 justify-center items-center'>
+                                <p>Zodiac signs</p>
                                 {isZodiacListOpen ? <MdOutlineKeyboardArrowUp className='text-[1.4rem]' /> :
                                     <MdOutlineKeyboardArrowDown className='text-[1.4rem]' />}
 
@@ -72,7 +72,7 @@ function NavMenu() {
                                 <div>
                                     {
                                         isZodiacListOpen ?
-                                            <div className='text-[.9rem]'>
+                                            <div className='text-[.9rem] zod-link zodiac-list-cont'>
                                                 <ZodiacSignList />
                                             </div>
 
@@ -80,10 +80,10 @@ function NavMenu() {
 
                                             ''
 
-                                            // <div className='opacity-0 border rounded-md text-[.9rem]'>
-                                            //     <div className='absolute w-full h-full z-40'></div>
-                                            //     <ZodiacSignList />
-                                            // </div>
+                                        // <div className='opacity-0 border rounded-md text-[.9rem]'>
+                                        //     <div className='absolute w-full h-full z-40'></div>
+                                        //     <ZodiacSignList />
+                                        // </div>
 
                                     }
 
@@ -100,17 +100,17 @@ function NavMenu() {
 
                     </div>
 
-                    <div className='py-1 hover:text-yellow'>
-                        <Link className='uppercase' to="/home">Daily Horoscope</Link>
+                    <div className='py-1 hover:opacity-[0.8]'>
+                        <Link className='nav-menu-link uppercase' to="/home">Daily Horoscope</Link>
                     </div>
 
-                    
+
 
 
                 </div>
 
 
-                
+
 
             </nav>
         </header>
