@@ -98,9 +98,7 @@
   overflow: hidden;
 }
 
-.zod-card:hover {
-  display: flex;
-}
+
 
 .zod-btn-container {
   flex: 1;

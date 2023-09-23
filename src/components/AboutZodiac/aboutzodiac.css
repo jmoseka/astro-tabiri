@@ -32,9 +32,9 @@
 }
 
 /*nav style*/
-.zod-btn {
+/* .zod-btn {
   @apply text-darkTextGold dark:text-lightYellow;
-}
+} */
 
 .zodiac-card {
   @apply rounded-md tracking-wide text-start p-8 w-full;

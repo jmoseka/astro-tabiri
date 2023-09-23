@@ -13,9 +13,6 @@
   @apply  cursor-pointer;
 }
 
-.hover-opacity {
-  @apply opacity-[0.8]
-}
 
 .const-body {
   @apply flex flex-col items-center gap-3  h-fit

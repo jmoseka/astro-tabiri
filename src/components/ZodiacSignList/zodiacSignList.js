@@ -7,7 +7,7 @@ const ZodiacSignList = () => {
 
 
         <div className='flex'>
-            <div className='zod-btn-container flex flex-col items-start'>
+            <div className='zod-btn-container flex flex-col '>
                 <Link className='zod-btn'
                     to="/home/pisces"
                     state={{ name: 'pisces' }}>Pisces</Link>

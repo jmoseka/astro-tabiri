@@ -85,21 +85,18 @@ const AboutZodiac = () => {
                             <Link to="/home">Daily Horoscope</Link>
                         </div>
                         <div className="border-b mx-6"></div>
-                        
-                            <ZodiacSignList />
-                        
+
+                        <ZodiacSignList />
+
                     </div>
 
                 </nav>
 
                 <div className="about-main w-full relative ">
 
-
                     <div className="flex flex-col gap-6 sticky top-24 px-2 py-4 h-fit rounded-lg sidebar-nav
                       bg-lightSecondMainColor dark:bg-darkSecondMainColor
                       dark:text-lightYellow text-darkTextGold">
-
-
 
 
                         <button type='button' onClick={() => scrollToSection('idabout')} className="sidebar-links">

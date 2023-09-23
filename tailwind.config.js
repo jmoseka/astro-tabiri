@@ -8,6 +8,10 @@ module.exports = {
 
   theme: {
     extend: {
+      backgroundImage: {
+        'darkMainColor': 'linear-gradient(to right top, #020b1d, #061223, #081828, #081d2e, #092234, #0c2335, #0f2436, #122537, #162333, #19202f, #1b1e2b, #1c1c27)',
+        // 'darkSecondMainColor': 'linear-gradient(to right top, #020b1d, #061223, #081828, #081d2e, #092234, #0c2335, #0f2436, #122537, #162333, #19202f, #1b1e2b, #1c1c27)',
+      },
       fontFamily: {
         sans: ['Barlow Semi Condensed', 'sans-serif'],
       },
@@ -38,12 +42,16 @@ module.exports = {
         lightSecondMainColor: '#F7F7F8',
         darkTextGold: '#2F2B1A',
 
-        darkMainColor: '#0A2D42',
-        darkSecondMainColor: '#0B3249',
-        lightYellow: '#fef8de'
+        // darkMainColor: '#0A2D42',
+        darkSecondMainColor: 'rgba(2, 11, 29, 0.2)',
+        lightYellow: '#fef8de',
+        lightTextGold: '#fef8de'
 
       },
     },
   }
 
+
+
 }
+
