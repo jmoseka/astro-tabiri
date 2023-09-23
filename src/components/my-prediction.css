@@ -13,6 +13,12 @@
   @apply  cursor-pointer;
 }
 
+.body-prediction {
+  .header-present {
+    @apply bg-darkOverlay;
+  }
+}
+
 
 .const-body {
   @apply flex flex-col items-center gap-3  h-fit
@@ -51,7 +57,6 @@
 /*NAVIGATION MENU*/
 
 .zod-btn {
-  @apply hover:bg-lightBlue;
   width: 100%;
   justify-content: center;
   padding: 0.5rem;

@@ -4,12 +4,17 @@
   grid-template-columns: 0fr 1fr;
 }
 
+.aboutzodiac-nav {
+  .header-present {
+    @apply bg-lightOverlay dark:bg-darkOverlay;
+  }
+}
 
 .humberger .top,
 .humberger .bottom,
 .humberger .middle {
   @apply dark:bg-lightSecondMainColor;
-  }
+}
 
 .sidebar {
 }
@@ -26,15 +31,14 @@
   @apply flex justify-center text-[0.7rem];
 }
 
-
 .icons {
   @apply text-darkTextGold;
 }
 
 /*nav style*/
-/* .zod-btn {
-  @apply text-darkTextGold dark:text-lightYellow;
-} */
+.zod-btn {
+  @apply text-darkTextGold hover:font-bold;
+}
 
 .zodiac-card {
   @apply rounded-md tracking-wide text-start p-8 w-full;
@@ -49,16 +53,7 @@
   @apply text-start;
 }
 
-
-
-
-
-
 @media (max-width: 768px) {
-
-
-
-
   .about-main {
     grid-template-columns: 1fr;
   }
@@ -66,15 +61,13 @@
   .zodiac-card {
   }
 
-  
-
   /*Sidebar styling*/
   .modeBtn {
     @apply text-[1.4rem] left-[0.5rem];
   }
 
   .sidebar-nav {
-    @apply fixed -left-0 ;
+    @apply fixed -left-0;
     background: rgb(255, 255, 255, 0.2);
   }
 

@@ -100,7 +100,7 @@ function NavMenu() {
 
                     </div>
 
-                    <div className='py-1 hover:opacity-[0.8]'>
+                    <div className='py-1 hover:opacity-[0.9]'>
                         <Link className='nav-menu-link uppercase' to="/home">Daily Horoscope</Link>
                     </div>
 

@@ -4,7 +4,7 @@
 }
 
 .header-present {
-  background: rgba(4, 22, 41, 0.93);
+  /* background: rgba(4, 22, 41, 0.93); */
   height: 100vh;
   width: 100%;
   z-index: 10;
@@ -29,7 +29,7 @@
 }
 
 .zodiac-list-cont {
-  @apply rounded-lg overflow-hidden;
+  @apply border border-transparent rounded-lg overflow-hidden ;
   background-image: linear-gradient(
     to right bottom,
     #fdf1bd,
@@ -97,7 +97,6 @@
   width: fit-content;
   overflow: hidden;
 }
-
 
 
 .zod-btn-container {
