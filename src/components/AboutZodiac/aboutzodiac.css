@@ -4,11 +4,14 @@
   grid-template-columns: 0fr 1fr;
 }
 
-.aboutzodiac-nav {
-  .header-present {
+.aboutzodiac-nav .header-present {
     @apply bg-lightOverlay dark:bg-darkOverlay;
-  }
 }
+
+.aboutzodiac-signlist .zod-btn{
+  @apply text-darkTextGold dark:text-lightYellow;
+}
+
 
 .humberger .top,
 .humberger .bottom,
