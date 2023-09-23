@@ -13,10 +13,30 @@
   @apply  cursor-pointer;
 }
 
-.body-prediction {
-  .header-present {
+.body-prediction .header-present {
     @apply bg-darkOverlay;
-  }
+}
+
+.body-prediction .header {
+  @apply fixed right-5;
+
+}
+
+.body-prediction .nav-items{
+  @apply text-lightYellow;
+
+}
+
+.body-prediction .top {
+  @apply bg-darkGold;
+}
+
+.body-prediction .middle {
+  @apply bg-darkGold;
+}
+
+.body-prediction .bottom {
+  @apply bg-darkGold;
 }
 
 

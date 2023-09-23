@@ -18,18 +18,18 @@ border: 1px solid #4e5461;
 */
 
 .loader-1 {
-  animation: rotation 4s linear infinite;
+  animation: rotation 2s linear infinite;
   
 }
 
 .loader-3 {
   width: 30px;
   height: 30px;
-  animation: fastRotation 3s linear infinite;
+  animation: fastRotation .8s linear infinite;
 }
 
 .loader-2 {
-  animation: oppositeRotation 14s linear infinite;
+  animation: oppositeRotation 10s linear infinite;
 }
 
 .loader::after {

@@ -42,10 +42,12 @@ module.exports = {
         lightSecondMainColor: '#F7F7F8',
         darkTextGold: '#2F2B1A',
         lightOverlay: 'rgba(231, 235, 237, 0.87)',
+        lightBtnOverlay: 'rgba(231, 235, 237, 0.47)',
 
         // darkMainColor: '#0A2D42',
         darkSecondMainColor: 'rgba(2, 11, 29, 0.2)',
         darkOverlay: 'rgba(2, 11, 29, 0.87)',
+        darkBtnOverlay: 'rgba(2, 11, 29, 0.37)',
         lightYellow: '#fef8de',
         lightTextGold: '#fef8de'
 

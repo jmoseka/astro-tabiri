@@ -5,13 +5,35 @@
 }
 
 .aboutzodiac-nav .header-present {
-    @apply bg-lightOverlay dark:bg-darkOverlay;
+  @apply bg-lightOverlay dark:bg-darkOverlay;
 }
 
-.aboutzodiac-signlist .zod-btn{
+.aboutzodiac-nav .header {
   @apply text-darkTextGold dark:text-lightYellow;
 }
 
+.aboutzodiac-nav .header {
+  @apply fixed right-4 z-10;
+}
+.aboutzodiac-nav .nav-button {
+  @apply z-40 bg-lightBtnOverlay dark:bg-darkBtnOverlay;
+}
+
+.aboutzodiac-nav .top {
+  @apply bg-darkOverlay dark:bg-lightOverlay;
+}
+
+.aboutzodiac-nav .middle {
+  @apply bg-darkOverlay dark:bg-lightOverlay;
+}
+
+.aboutzodiac-nav .bottom {
+  @apply bg-darkOverlay dark:bg-lightOverlay;
+}
+
+.aboutzodiac-signlist .zod-btn {
+  @apply text-darkTextGold dark:text-lightYellow;
+}
 
 .humberger .top,
 .humberger .bottom,

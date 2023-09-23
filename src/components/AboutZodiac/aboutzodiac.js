@@ -66,18 +66,24 @@ const AboutZodiac = () => {
 
             <div className="mx-8 block md:flex md:gap-6 ">
 
-                <nav className="md:block order-last">
+                <nav className="md:block order-last relative">
 
-                    <button type="button " onClick={() => toggleDarkLightMode()} className="z-10 modeBtn fixed text-[1.6rem] top-8 left-[4rem] cursor-pointer">
+                    <button type="button " onClick={() => toggleDarkLightMode()} className="z-50 modeBtn fixed text-[1.6rem] top-8 left-[4rem] cursor-pointer">
                         {
                             isMode ? <BsFillMoonFill className="icon text-darkTextGold dark:text-lightYellow" /> : <BsFillSunFill className="icon text-darkTextGold dark:text-lightYellow" />
                         }
                     </button>
 
-                    <div className="block md:hidden relative aboutzodiac-nav" >
+                   
+                        <div className="block md:hidden relative aboutzodiac-nav" >
 
-                        <NavMenu />
-                    </div>
+                            <NavMenu />
+
+                        </div>
+
+            
+
+
 
 
                     <aside className="hidden sticky top-4 md:flex flex-col gap-3 bg-lightSecondMainColor dark:bg-darkSecondMainColor md:mt-8">

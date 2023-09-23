@@ -51,7 +51,7 @@
 .humberger .top,
 .humberger .bottom,
 .humberger .middle {
-  @apply absolute bg-darkGold;
+  @apply absolute;
   display: block;
   top: 0;
   left: 0;
