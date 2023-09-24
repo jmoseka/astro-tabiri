@@ -7,7 +7,7 @@ import { BsFillPersonFill, BsFillBriefcaseFill, BsFillSunFill, BsFillMoonFill } 
 import { GiLoveMystery } from 'react-icons/gi'
 import { GiHealthNormal } from 'react-icons/gi'
 import { FcBusinesswoman, FcBusinessman } from 'react-icons/fc'
-import { SiHandshake, SiTruenas } from 'react-icons/si'
+import { SiHandshake } from 'react-icons/si'
 import ZodiacSignList from "../ZodiacSignList/zodiacSignList";
 import { Link } from 'react-router-dom';
 import NavMenu from "../NavMenu/nav-menu";

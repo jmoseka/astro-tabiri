@@ -30,14 +30,6 @@
 
 .zodiac-list-cont {
   @apply border border-transparent rounded-lg overflow-hidden;
-  background-image: linear-gradient(
-    to right bottom,
-    #fdf1bd,
-    #d8f1cc,
-    #c4ebdd,
-    #c5e1e3,
-    #ced6db
-  );
 }
 
 .humberger {
