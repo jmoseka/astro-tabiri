@@ -22,6 +22,14 @@
 
 }
 
+.body-prediction .nav-button {
+  @apply translate-x-3 ;
+}
+
+.body-prediction .header {
+  @apply z-30;
+}
+
 .body-prediction .nav-items{
   @apply text-lightYellow;
 

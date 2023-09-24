@@ -29,7 +29,7 @@
 }
 
 .zodiac-list-cont {
-  @apply border border-transparent rounded-lg overflow-hidden ;
+  @apply border border-transparent rounded-lg overflow-hidden;
   background-image: linear-gradient(
     to right bottom,
     #fdf1bd,
@@ -41,7 +41,7 @@
 }
 
 .humberger {
-  width: 1.6rem;
+  width: 1.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,13 +98,8 @@
   overflow: hidden;
 }
 
-
 .zod-btn-container {
   flex: 1;
-}
-
-.z-negative {
-  z-index: -1;
 }
 
 @media (max-width: 1000px) {

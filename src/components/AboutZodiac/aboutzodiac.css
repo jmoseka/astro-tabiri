@@ -15,8 +15,11 @@
 .aboutzodiac-nav .header {
   @apply fixed right-4 z-10;
 }
+
+.aboutzodiac-nav .nav-items {
+}
 .aboutzodiac-nav .nav-button {
-  @apply z-40 bg-lightBtnOverlay dark:bg-darkBtnOverlay;
+  @apply z-40;
 }
 
 .aboutzodiac-nav .top {

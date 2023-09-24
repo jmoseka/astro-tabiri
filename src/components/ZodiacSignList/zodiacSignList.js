@@ -28,7 +28,7 @@ const ZodiacSignList = () => {
             <div className='zod-btn-container flex flex-col items-start '>
 
                 <Link className='zod-btn' to="/home/scorpio"
-                    state={{ name: 'scorpio' }}>Scorpio</Link>
+                    state={{ name: 'scorpio'}}>Scorpio</Link>
                 <Link className='zod-btn' to="/home/leo"
                     state={{ name: 'leo' }}>Leo</Link>
                 <Link className='zod-btn' to="/home/libra"

@@ -7,13 +7,14 @@ import { BsFillPersonFill, BsFillBriefcaseFill, BsFillSunFill, BsFillMoonFill } 
 import { GiLoveMystery } from 'react-icons/gi'
 import { GiHealthNormal } from 'react-icons/gi'
 import { FcBusinesswoman, FcBusinessman } from 'react-icons/fc'
-import { SiHandshake } from 'react-icons/si'
+import { SiHandshake, SiTruenas } from 'react-icons/si'
 import ZodiacSignList from "../ZodiacSignList/zodiacSignList";
 import { Link } from 'react-router-dom';
 import NavMenu from "../NavMenu/nav-menu";
 
 const AboutZodiac = () => {
     const [isMode, setIsMode] = useState(false)
+    const [closeHeader, setCloseHeader] = useState(false);
     const location = useLocation();
     const { name } = location.state;
 
@@ -23,7 +24,10 @@ const AboutZodiac = () => {
 
     useEffect(() => {
         console.log(name);
+        setCloseHeader(true)
         dispatch(fetchZodiacSign(name))
+        window.scrollTo(0, 0);
+     
     }, [dispatch, name])
 
     // fetch data from config store
@@ -77,7 +81,7 @@ const AboutZodiac = () => {
                    
                         <div className="block md:hidden relative aboutzodiac-nav" >
 
-                            <NavMenu />
+                            <NavMenu aboutHeader={closeHeader} />
 
                         </div>
 

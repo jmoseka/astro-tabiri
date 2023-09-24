@@ -1,11 +1,12 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { MdOutlineKeyboardArrowDown, MdOutlineKeyboardArrowUp } from 'react-icons/md'
 import './nav-menu.css'
 import { Link } from 'react-router-dom';
 import ZodiacSignList from '../ZodiacSignList/zodiacSignList';
 
-function NavMenu() {
+function NavMenu({aboutHeader}) {
 
+    console.log(aboutHeader);
 
     const [isCircleOpen, setIsCircleOpen] = useState(false);
     const [isHeaderPresent, setIsHeaderPresent] = useState(false);
@@ -14,14 +15,18 @@ function NavMenu() {
     const [isZodiacListOpen, setIsZodiacListOpen] = useState(false);
     // const [isPointerEnable, setIsPointerEnable] = useState(false);
 
+    useEffect(() => {
+        if(aboutHeader === false) {
+            console.log(aboutHeader);
+        
+        }
+    }, [aboutHeader])
 
     const dropMenu = () => {
         setIsCircleOpen(!isCircleOpen)
         setIsHeaderPresent(!isHeaderPresent)
         setIsOpen(!isOpen);
         setIsOverlayOpen(!isOverlayOpen);
-
-
 
         if (isOpen === false) {
             setIsZodiacListOpen(false)
@@ -40,10 +45,10 @@ function NavMenu() {
             <nav className=' w-[98%] md:w-[97%]  h-fit text-[.8rem] nav-menu flex justify-end gap-24  '>
 
                 <button onClick={() => dropMenu()} typeof='button' id='nav-btn'
-                    className='nav-button border border-transparent rounded-lg order-last cursor-pointer z-30 h-fit flex items-center justify-center
+                    className='nav-button  border border-transparent rounded-lg order-last cursor-pointer h-fit flex items-center justify-center
                      hover:opacity-[0.8] translate-y-6 '>
 
-                    <div className={`flex cursor-pointer flex-col  items-center w-[3.7rem] h-[3.7rem] `}>
+                    <div className={`flex cursor-pointer flex-col  items-center w-[3.1rem] h-[3.1rem] `}>
                         <div className={`translate-y-4 relative humberger ${isOpen ? 'open' : ''}`} id="menu-btn">
                             <span className='top'></span>
                             <span className="middle"></span>
@@ -53,7 +58,7 @@ function NavMenu() {
 
                 </button>
 
-                <div className={`nav-items translate-y-5 justify-center  gap-10 
+                <div className={`nav-items translate-y-10 justify-center  gap-10 
                     ${isHeaderPresent ? 'flex ' : 'hidden'}`}>
 
                     <div>
@@ -82,21 +87,12 @@ function NavMenu() {
 
                                             ''
 
-                                        // <div className='opacity-0 border rounded-md text-[.9rem]'>
-                                        //     <div className='absolute w-full h-full z-40'></div>
-                                        //     <ZodiacSignList />
-                                        // </div>
-
                                     }
 
 
                                 </div>
                             </div>
-                            {/* <div className={`relative zod-card  ${isZodiacListOpen ? 'zod-card-open' : 'hidden'} mt-2`}>
-                            <div className=''>
-                                <ZodiacSignList />
-                            </div>
-                        </div> */}
+              
 
                         </div>
 
