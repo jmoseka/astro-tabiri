@@ -4,7 +4,7 @@
 }
 
 .header-present {
-  background: rgba(4, 22, 41, 0.99);
+  /* background: rgba(4, 22, 41, 0.93); */
   height: 100vh;
   width: 100%;
   z-index: 10;
@@ -19,8 +19,21 @@
   @apply border;
 }
 
+.zod-link {
+  @apply border rounded-lg border-darkSecondMainColor dark:border-lightSecondMainColor;
+}
+
+.nav-menu-link {
+  @apply uppercase hover:opacity-[0.8];
+  letter-spacing: 0.04rem;
+}
+
+.zodiac-list-cont {
+  @apply border border-transparent rounded-lg overflow-hidden;
+}
+
 .humberger {
-  width: 1.6rem;
+  width: 1.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +43,7 @@
 .humberger .top,
 .humberger .bottom,
 .humberger .middle {
-  @apply absolute bg-darkGold;
+  @apply absolute;
   display: block;
   top: 0;
   left: 0;
@@ -77,16 +90,8 @@
   overflow: hidden;
 }
 
-.zod-card:hover {
-  display: flex;
-}
-
 .zod-btn-container {
   flex: 1;
-}
-
-.z-negative {
-  z-index: -1;
 }
 
 @media (max-width: 1000px) {
@@ -96,7 +101,6 @@
 }
 
 @media (max-width: 526px) {
-
   /* for the nav menu */
   .nav-menu {
     @apply flex-col gap-14;
@@ -107,8 +111,13 @@
   .zodiac-signs {
   }
 
-
-  .nav-items  {
+  .nav-items {
     @apply flex-col w-fit mx-auto;
+  }
+}
+
+@media (max-width: 180px) {
+  .header {
+    min-width: 190px;
   }
 }

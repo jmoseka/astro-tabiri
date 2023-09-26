@@ -14,6 +14,7 @@ import NavMenu from "../NavMenu/nav-menu";
 
 const AboutZodiac = () => {
     const [isMode, setIsMode] = useState(false)
+    const [closeHeader, setCloseHeader] = useState(false);
     const location = useLocation();
     const { name } = location.state;
 
@@ -22,13 +23,16 @@ const AboutZodiac = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        console.log(name);
+
+        setCloseHeader(true)
         dispatch(fetchZodiacSign(name))
+        window.scrollTo(0, 0);
+     
     }, [dispatch, name])
 
     // fetch data from config store
     const data = useSelector((state) => state.predictionData)
-    console.log(data);
+
 
     const { strengths, weaknesses, about, career, love, health, man, woman, relationship } = data;
 
@@ -66,40 +70,48 @@ const AboutZodiac = () => {
 
             <div className="mx-8 block md:flex md:gap-6 ">
 
-                <nav className="md:block order-last">
+                <nav className="md:block order-last relative">
 
-                    <button type="button " onClick={() => toggleDarkLightMode()} className="z-10 modeBtn fixed text-[1.6rem] top-8 left-[4rem] cursor-pointer">
+                    <button type="button " onClick={() => toggleDarkLightMode()} className="z-50 modeBtn fixed text-[1.6rem] top-8 left-[4rem] cursor-pointer">
                         {
                             isMode ? <BsFillMoonFill className="icon text-darkTextGold dark:text-lightYellow" /> : <BsFillSunFill className="icon text-darkTextGold dark:text-lightYellow" />
                         }
                     </button>
 
-                    <div className="block md:hidden relative bg-pink-500" >
+                   
+                        <div className="block md:hidden relative aboutzodiac-nav" >
 
-                        <NavMenu />
-                    </div>
+                            <NavMenu aboutHeader={closeHeader} />
+
+                        </div>
+
+            
 
 
-                    <div className="hidden sticky top-4 md:flex flex-col gap-3 bg-lightSecondMainColor dark:bg-darkSecondMainColor md:mt-8">
-                        <div className='p-2 text-darkTextGold dark:text-lightYellow hover:text-yellow'>
+
+
+                    <aside className="hidden sticky top-4 md:flex flex-col gap-3 bg-lightSecondMainColor dark:bg-darkSecondMainColor md:mt-8">
+                        <div className='p-2 text-darkTextGold dark:text-lightYellow hover:font-bold'>
                             <Link to="/home">Daily Horoscope</Link>
                         </div>
                         <div className="border-b mx-6"></div>
-                        
-                            <ZodiacSignList />
-                        
-                    </div>
+
+                        <div className="aboutzodiac-signlist">
+                            <ZodiacSignList className='bg-lightSecondMainColor' />
+
+                        </div>
+
+
+
+                    </aside>
 
                 </nav>
 
                 <div className="about-main w-full relative ">
 
-
                     <div className="flex flex-col gap-6 sticky top-24 px-2 py-4 h-fit rounded-lg sidebar-nav
                       bg-lightSecondMainColor dark:bg-darkSecondMainColor
                       dark:text-lightYellow text-darkTextGold">
-
-
 
 
                         <button type='button' onClick={() => scrollToSection('idabout')} className="sidebar-links">

@@ -9,6 +9,45 @@
   border-radius: 1vw;
 }
 
+.zodiacBtnMain {
+  @apply  cursor-pointer;
+}
+
+.body-prediction .header-present {
+    @apply bg-darkOverlay;
+}
+
+.body-prediction .header {
+  @apply fixed right-5;
+
+}
+
+.body-prediction .nav-button {
+  @apply translate-x-3 ;
+}
+
+.body-prediction .header {
+  @apply z-30;
+}
+
+.body-prediction .nav-items{
+  @apply text-lightYellow;
+
+}
+
+.body-prediction .top {
+  @apply bg-darkGold;
+}
+
+.body-prediction .middle {
+  @apply bg-darkGold;
+}
+
+.body-prediction .bottom {
+  @apply bg-darkGold;
+}
+
+
 .const-body {
   @apply flex flex-col items-center gap-3  h-fit
    text-lightBlue1 cursor-pointer
@@ -30,7 +69,7 @@
 }
 
 .const-title {
-  @apply text-[0.7rem] md:text-[0.6rem];
+  @apply uppercase text-[0.7rem] md:text-[0.6rem];
   letter-spacing: 0.05rem;
   text-shadow: 0 0 2vw rgba(255, 255, 255, 0.8);
 }
@@ -45,14 +84,11 @@
 
 /*NAVIGATION MENU*/
 
-
 .zod-btn {
-  @apply hover:bg-lightBlue;
   width: 100%;
   justify-content: center;
   padding: 0.5rem;
 }
-
 
 /* ///// */
 
@@ -61,9 +97,9 @@
   font-family: "Oleo Script", cursive;
   background-image: linear-gradient(
     90deg,
-    rgba(106, 90, 20, 1) 0%,
-    rgba(251, 221, 89, 1) 45%,
-    rgba(152, 135, 60, 1) 77%
+    hsla(48, 50%, 49%, 1) 22%,
+    hsla(48, 97%, 73%, 1) 50%,
+    hsla(48, 56%, 53%, 1) 79%
   );
   text-shadow: 0 0 2vw rgba(255, 255, 255, 0.1);
   -webkit-background-clip: text; /* For webkit-based browsers like Chrome and Safari */
@@ -78,37 +114,34 @@
 }
 
 .horoscope-btn-container {
+  @apply py-2;
   font-family: "Inter Tight", sans-serif;
+}
+
+.horoscope-board-btn-active {
+  @apply text-[#b0993b];
 }
 
 .horoscope-board-btn {
   @apply rounded-md text-textLightGold py-[0.3rem]  px-3;
-  /* border-style: solid;
-  border-width: 1px; */
-  /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, */
-  /* rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
   box-shadow: rgba(252, 218, 84, 0.15) 1.3px 1.4px 2.4px;
-  /* border-image: linear-gradient(90deg, #0c4982, #0f6cbf, #0b467b); */
-  /* border-image-slice: 1; */
 }
-/* 
-.horoscope-board-btn:hover {
-  /* box-shadow: 0 0 6px rgba(99, 99, 99, 0.7); */
-/* box-shadow: none;
-  border: 1px solid rgba(252,218,84, 0.85) */
-/* } */
 
-.active-horoscope-btn {
-  @apply rounded-md text-[#fef8de] py-[0.3rem] text-[.87rem] px-3 bg-[#645824];
+.horoscope-board-btn:hover {
+  box-shadow: 0 0 6px rgba(99, 99, 99, 0.7);
 }
+
+/* .active-horoscope-btn {
+  @apply rounded-md text-[#ffeea1] py-[0.3rem] text-[.87rem] px-3 bg-[#645824];
+} */
 
 .horoscope-board-btn:active {
-  border-color: #ccfdfd;
+  border-color: #ffeea1;
   box-shadow: 0 0 6px #456788;
 }
 
 .animation-container {
-  @apply mt-8;
+  @apply mt-10;
 }
 
 @media (max-width: 1000px) {
@@ -138,11 +171,11 @@
   }
 
   .zodiac-prediction-container {
-    @apply flex justify-center h-[10rem];
+    @apply flex justify-center h-[8rem];
   }
 
   .zodiac-prediction {
-    @apply text-[.95rem] px-2 ;
+    @apply text-[.95rem] px-2;
     display: flex;
     flex-grow: 1; /* Allow the container to grow and take available space */
     /* Add borders or styling as needed */
@@ -154,7 +187,20 @@
   }
 }
 
+@media (max-width: 700px) {
+  .zodiac-prediction-container {
+    @apply flex justify-center h-[10rem];
+  }
+}
+
 @media (max-width: 500px) {
+  .const-body-container-start {
+    @apply justify-start;
+  }
+  .const-body-container-end {
+    @apply justify-end;
+  }
+
   .const-title {
     @apply text-[0.6rem];
   }
@@ -194,5 +240,17 @@
 
   .animation-container {
     @apply mt-10;
+  }
+}
+
+@media(max-width: 313px) {
+  .zodiac-title {
+    line-height: 3rem;
+  }
+}
+
+@media(max-width: 290px) {
+  .body-prediction {
+    min-width: 290px;
   }
 }
