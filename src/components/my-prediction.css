@@ -35,15 +35,15 @@
 
 }
 
-.body-prediction .top {
+#body-prediction .top {
   @apply bg-darkGold;
 }
 
-.body-prediction .middle {
+#body-prediction .middle {
   @apply bg-darkGold;
 }
 
-.body-prediction .bottom {
+#body-prediction .bottom {
   @apply bg-darkGold;
 }
 

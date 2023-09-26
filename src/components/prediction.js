@@ -111,7 +111,7 @@ function Prediction() {
 
 
   return (
-    <div className="body-prediction body-gradient-bg   md:h-screen mx-auto w-full">
+    <div id='body-prediction' className="body-prediction body-gradient-bg   md:h-screen mx-auto w-full">
       <NavMenu />
 
 
