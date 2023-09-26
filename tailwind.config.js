@@ -11,6 +11,8 @@ module.exports = {
       backgroundImage: {
         'darkMainColor': 'linear-gradient(to right top, #020b1d, #061223, #081828, #081d2e, #092234, #0c2335, #0f2436, #122537, #162333, #19202f, #1b1e2b, #1c1c27)',
         'lightMainColor': 'linear-gradient(to right top, #e6e7e8, #e2e4e6, #dde0e3, #d9dde1, #d4dade, #d5dade, #d5dadf, #d6dadf, #dbdee2, #e0e1e5, #e5e5e7, #e9e9ea)',
+        'lightZodLisCont': ' linear-gradient(to right top, #020917, #07111d, #0a1724, #0b1c2a, #0b2131, #0d2232, #0f2333, #112434, #152130, #171e2b, #181b27, #181822)',
+        'darkZodLisCont': 'linear-gradient(to right top, #ccced2, #cdcfd4, #cdd1d6, #ced2d7, #ced4d9, #cfd4d9, #cfd5da, #d0d5da, #d1d4d9, #d2d3d7, #d2d3d6, #d2d2d4)',
       },
       // backgroundImage: {
       //   'darkMainColor': 'linear-gradient(to right top, #020b1d, #061223, #081828, #081d2e, #092234, #0c2335, #0f2436, #122537, #162333, #19202f, #1b1e2b, #1c1c27)'

@@ -51,7 +51,7 @@ function NavMenu() {
             setPropFromChild(false)
         }
      
-    }, [propFromChild])
+    }, [isCircleOpen, isHeaderPresent, isOpen, isOverlayOpen, propFromChild])
 
  
 

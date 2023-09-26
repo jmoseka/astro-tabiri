@@ -39,26 +39,11 @@
 }
 
 .aboutzodiac-nav .zod-btn {
- @apply text-darkTextGold dark:text-lightYellow;
+ @apply text-lightYellow dark:text-darkTextGold;
 }
 
 .aboutzodiac-nav .zodiac-list-cont {
-  @apply text-darkTextGold dark:text-lightYellow;
-  background-image: linear-gradient(
-    to right top,
-    #6d8492,
-    #6c808d,
-    #6b7b88,
-    #6a7783,
-    #69737e,
-    #6a727c,
-    #6b717b,
-    #6c7079,
-    #6f727b,
-    #72747c,
-    #75767e,
-    #78787f
-  );
+  @apply bg-lightZodLisCont dark:bg-darkZodLisCont ;
 }
 
 .humberger .top,
