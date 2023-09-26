@@ -20,7 +20,7 @@
 }
 
 .zod-link {
-  @apply border rounded-lg;
+  @apply border rounded-lg border-darkSecondMainColor dark:border-lightSecondMainColor;
 }
 
 .nav-menu-link {

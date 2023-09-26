@@ -67,13 +67,13 @@ function NavMenu() {
 
                 <button onClick={() => dropMenu()} typeof='button' id='nav-btn'
                     className='nav-button  border border-transparent rounded-lg order-last cursor-pointer h-fit flex items-center justify-center
-                     hover:opacity-[0.8] translate-y-6 '>
+                      group translate-y-6 '>
 
                     <div className={`flex cursor-pointer flex-col  items-center w-[3.1rem] h-[3.1rem] `}>
                         <div className={`translate-y-4 relative humberger ${isOpen ? 'open' : ''}`} id="menu-btn">
-                            <span className='top'></span>
-                            <span className="middle"></span>
-                            <span className="bottom"></span>
+                            <span className='top group-hover:bg-gold60'></span>
+                            <span className="middle group-hover:bg-gold60"></span>
+                            <span className="bottom group-hover:bg-gold60"></span>
                         </div>
                     </div>
 
@@ -119,7 +119,7 @@ function NavMenu() {
 
                     </div>
 
-                    <div className='py-1 hover:opacity-[0.9]'>
+                    <div className='py-1 hover:text-darkActive dark:hover:text-lightActive'>
                         <Link className='nav-menu-link uppercase' to="/home">Daily Horoscope</Link>
                     </div>
 

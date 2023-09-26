@@ -99,7 +99,7 @@
 
   /*Sidebar styling*/
   .modeBtn {
-    @apply text-[1.4rem] left-[0.5rem];
+    @apply text-[1.47rem] translate-y-2 left-[0.5rem];
   }
 
   .sidebar-nav {
@@ -118,4 +118,18 @@
   .zodiac-p {
     @apply text-[0.98rem];
   }
+}
+
+@media (max-width: 550px) {
+  .zodiac-card {
+    @apply px-[1.5rem]
+  }
+
+}
+
+@media (max-width: 380px) {
+  .zodiac-card {
+    @apply px-[1rem]
+  }
+
 }
