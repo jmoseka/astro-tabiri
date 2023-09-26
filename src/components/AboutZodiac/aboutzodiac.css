@@ -56,7 +56,7 @@
 }
 
 .sidebar-links {
-  @apply tracking-wide capitalize flex flex-col items-center justify-center gap-1 cursor-pointer;
+  @apply tracking-wide capitalize flex flex-col items-center justify-center gap-1 cursor-pointer ;
 }
 
 .sidebar-links-icon {
