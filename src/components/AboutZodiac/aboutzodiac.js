@@ -23,7 +23,7 @@ const AboutZodiac = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        console.log(name);
+
         setCloseHeader(true)
         dispatch(fetchZodiacSign(name))
         window.scrollTo(0, 0);
@@ -32,7 +32,7 @@ const AboutZodiac = () => {
 
     // fetch data from config store
     const data = useSelector((state) => state.predictionData)
-    console.log(data);
+
 
     const { strengths, weaknesses, about, career, love, health, man, woman, relationship } = data;
 

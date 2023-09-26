@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom';
 
-const ZodiacSignList = () => {
+const ZodiacSignList = (props) => {
+
+    const sendDataToParent = (data) => {
+        props.onPropToParent(data);
+      };
 
 
     return (
@@ -28,16 +32,22 @@ const ZodiacSignList = () => {
             <div className='zod-btn-container flex flex-col items-start '>
 
                 <Link className='zod-btn' to="/home/scorpio"
+                onClick={()=>sendDataToParent(true)}
                     state={{ name: 'scorpio'}}>Scorpio</Link>
                 <Link className='zod-btn' to="/home/leo"
+                onClick={()=>sendDataToParent(true)}
                     state={{ name: 'leo' }}>Leo</Link>
                 <Link className='zod-btn' to="/home/libra"
+                onClick={()=>sendDataToParent(true)}
                     state={{ name: 'libra' }}>Libra</Link>
                 <Link className='zod-btn' to="/home/taurus"
+                onClick={()=>sendDataToParent(true)}
                     state={{ name: 'taurus' }}>Taurus</Link>
                 <Link className='zod-btn' to="/home/sagittarius"
+                onClick={()=>sendDataToParent(true)}
                     state={{ name: 'sagittarius' }}>Sagittarius</Link>
                 <Link className='zod-btn' to="/home/aquarius"
+                onClick={()=>sendDataToParent(true)}
                     state={{ name: 'aquarius' }}>Aquarius</Link>
 
             </div>

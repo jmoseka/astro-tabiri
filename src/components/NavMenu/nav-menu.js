@@ -4,23 +4,22 @@ import './nav-menu.css'
 import { Link } from 'react-router-dom';
 import ZodiacSignList from '../ZodiacSignList/zodiacSignList';
 
-function NavMenu({aboutHeader}) {
+function NavMenu() {
 
-    console.log(aboutHeader);
+
 
     const [isCircleOpen, setIsCircleOpen] = useState(false);
     const [isHeaderPresent, setIsHeaderPresent] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const [isOverlayOpen, setIsOverlayOpen] = useState(false);
     const [isZodiacListOpen, setIsZodiacListOpen] = useState(false);
-    // const [isPointerEnable, setIsPointerEnable] = useState(false);
+    const [propFromChild, setPropFromChild] = useState(false);
 
-    useEffect(() => {
-        if(aboutHeader === false) {
-            console.log(aboutHeader);
-        
-        }
-    }, [aboutHeader])
+  // Function to receive the prop from ZodList
+  const handlePropFromChild = (prop) => {
+    setPropFromChild(prop);
+  };
+    // const [isPointerEnable, setIsPointerEnable] = useState(false);
 
     const dropMenu = () => {
         setIsCircleOpen(!isCircleOpen)
@@ -33,6 +32,28 @@ function NavMenu({aboutHeader}) {
         }
 
     }
+
+    useEffect(() => {
+        setPropFromChild(propFromChild);
+
+        if(propFromChild) {
+
+            // DROP MENU REPEATED FUNCTION
+            setIsCircleOpen(!isCircleOpen)
+            setIsHeaderPresent(!isHeaderPresent)
+            setIsOpen(!isOpen);
+            setIsOverlayOpen(!isOverlayOpen);
+    
+            if (isOpen === false) {
+                setIsZodiacListOpen(false)
+            }
+
+            setPropFromChild(false)
+        }
+     
+    }, [propFromChild])
+
+ 
 
     const displayZodiac = () => {
         setIsZodiacListOpen(!isZodiacListOpen);
@@ -80,7 +101,7 @@ function NavMenu({aboutHeader}) {
                                     {
                                         isZodiacListOpen ?
                                             <div className='text-[.9rem]  zodiac-list-cont'>
-                                                <ZodiacSignList />
+                                                <ZodiacSignList onPropToParent={handlePropFromChild} />
                                             </div>
 
                                             :
