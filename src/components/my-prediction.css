@@ -34,6 +34,9 @@
   @apply text-lightYellow;
 
 }
+#body-prediction .zodiac-list-cont {
+  @apply bg-darkZodLisCont ;
+}
 
 #body-prediction .top {
   @apply bg-darkGold;
