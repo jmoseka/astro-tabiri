@@ -4,6 +4,7 @@ import Prediction from './components/prediction';
 import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import AboutZodiac from './components/AboutZodiac/aboutzodiac';
+import PageAnimation from './components/PageAnimation/pageAnimation';
 // import {ReactComponent as Virgo} from './SVG/virgo.svg';
 
 
@@ -21,6 +22,7 @@ function App() {
       <BrowserRouter>
         <div className='max-w-[1800px] h-fit mx-auto'>
           <div className={`h-screen w-full relative`}>
+            <PageAnimation />
 
             <Routes>
               <Route path="*" element={<Prediction />}></Route>

@@ -1,0 +1,50 @@
+
+
+.star {
+  position: absolute;
+  background: #fff;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #fff;
+  animation: twinkle 1s linear infinite;
+}
+
+.star:nth-child(1) {
+  top: 20%;
+  left: 10%;
+}
+
+.star:nth-child(2) {
+  top: 60%;
+  left: 70%;
+}
+
+.star:nth-child(3) {
+  top: 40%;
+  left: 30%;
+}
+
+@keyframes twinkling {
+  0% {
+    background: linear-gradient(transparent, transparent 70%, #000 70%, #000);
+  }
+  50% {
+    background: linear-gradient(transparent, transparent 70%, #000 70%, #000);
+  }
+  100% {
+    background: linear-gradient(transparent, transparent 70%, #000 70%, #000);
+  }
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
