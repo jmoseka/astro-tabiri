@@ -1,15 +1,10 @@
-
-
 .star {
   background: #fff;
   width: 2px;
   height: 2px;
   border-radius: 50%;
   background: #fff;
-
 }
-
-
 
 @keyframes twinkling {
   0% {
@@ -49,11 +44,42 @@
 
 */
 
-@keyframes animMovingStar {
+.comet {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  animation: cometAnimation 5s linear forwards;
+}
+
+@keyframes cometAnimation {
   0% {
-    top: 0;
+    transform: translate(0, 0);
+    opacity: 1;
+    stroke-dashoffset: -227.62;
   }
   100% {
-    top: 100%;
+    stroke-dashoffset: -227.62;
+    transform: translate(40vw, 60vh);
+    opacity: 0;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -227.62;
+  }
+}
+
+@keyframes animMovingStar {
+  0% {
+    top: 98.8%;
+  }
+  100% {
+    top: 0;
   }
 }
