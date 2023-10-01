@@ -1,29 +1,15 @@
 
 
 .star {
-  position: absolute;
   background: #fff;
   width: 2px;
   height: 2px;
   border-radius: 50%;
   background: #fff;
-  animation: twinkle 1s linear infinite;
+
 }
 
-.star:nth-child(1) {
-  top: 20%;
-  left: 10%;
-}
 
-.star:nth-child(2) {
-  top: 60%;
-  left: 70%;
-}
-
-.star:nth-child(3) {
-  top: 40%;
-  left: 30%;
-}
 
 @keyframes twinkling {
   0% {
@@ -46,5 +32,28 @@
   }
   100% {
     opacity: 0;
+  }
+}
+/*
+@keyframes animMovingStar {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-2000px);
+    }
+}
+
+
+
+
+*/
+
+@keyframes animMovingStar {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
   }
 }
