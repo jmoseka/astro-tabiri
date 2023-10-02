@@ -50,8 +50,8 @@ module.exports = {
         // light and darkmode color group
 
 
-        lightSecondMainColor: '#F7F7F8',
-        darkTextGold: '#2F2B1A',
+        lightSecondMainColor: 'rgba(168, 169, 169, 0.2)',
+        darkTextGold: 'rgb(35, 32, 22)',
         lightOverlay: 'rgba(231, 235, 237, 0.87)',
         lightBtnOverlay: 'rgba(50, 44, 18, 0.47)',
 

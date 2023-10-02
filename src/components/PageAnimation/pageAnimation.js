@@ -2,7 +2,7 @@ import './pageAnimation.css';
 const PageAnimation = () => {
   const divElements = [];
   const movingSmallStars = [];
-  const movingAverageStars = [];
+
 
   const randomNumber = () => {
     let result = Math.floor(Math.random() * 101);
@@ -10,10 +10,6 @@ const PageAnimation = () => {
     return result;
   }
 
-  const movingSeconds = () => {
-    const result = Math.floor(Math.random() * 6);
-    return result.toString();
-  }
 
 
 
@@ -74,7 +70,6 @@ const PageAnimation = () => {
       <div className="starry-night  h-screen w-full relative">
         {divElements}
         {movingSmallStars}
-        <div className='h-5 w-5 bg-orange-800 comet'></div>
  
 
       </div>

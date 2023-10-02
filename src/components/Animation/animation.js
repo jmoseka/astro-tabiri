@@ -14,7 +14,7 @@ const Animation = () => {
                 </div>
             </div>
 
-            <div className=' translate-y-16 text-sm text-textLightGold'>
+            <div className=' translate-y-16 loading-text text-sm text-textLightGold'>
                 Loading...
             </div>
 

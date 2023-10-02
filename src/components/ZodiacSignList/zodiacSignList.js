@@ -34,6 +34,7 @@ const ZodiacSignList = (props) => {
                 <Link className='zod-btn' to="/home/scorpio"
                 onClick={()=>sendDataToParent(true)}
                     state={{ name: 'scorpio'}}>Scorpio</Link>
+                    
                 <Link className='zod-btn' to="/home/leo"
                 onClick={()=>sendDataToParent(true)}
                     state={{ name: 'leo' }}>Leo</Link>
