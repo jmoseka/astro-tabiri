@@ -78,11 +78,6 @@
   transform: translateX(-50%);
 }
 
-.zod-card-open {
-  /* @apply md:absolute md:-translate-x-1/2;
-  left: 50%;
-  display: flex; */
-}
 
 .zod-card {
   @apply rounded-lg bg-white text-base text-strongBlue;
@@ -108,7 +103,8 @@
   #nav-btn {
     @apply self-end order-first;
   }
-  .zodiac-signs {
+  .zodiac-signs .humberger {
+    width: 1.5rem;
   }
 
   .nav-items {

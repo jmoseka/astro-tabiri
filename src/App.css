@@ -1,10 +1,11 @@
-
-
+.html {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
 
 .App {
   text-align: center;
   font-weight: 400;
-  font-family: 'Inter Tight', sans-serif;
+  font-family: "Inter Tight", sans-serif;
 }
 
 .App-logo {
@@ -15,8 +16,6 @@
 .App-logo:hover {
   fill: red;
 }
-
-
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -49,8 +48,56 @@
 }
 
 .body-gradient-bg {
-  background-image: linear-gradient(to right bottom, #020b1d, #041021, #051525, #05182a, #041c2e, #071d2f, #091d2f, #0c1e30, #111c2d, #141a2a, #171826, #181623);
+  /* background-image: linear-gradient(to right bottom, #020b1d, #041021, #051525, #05182a, #041c2e, #071d2f, #091d2f, #0c1e30, #111c2d, #141a2a, #171826, #181623);*/
   /* background-image: linear-gradient(to right bottom, #022134, #091f31, #0f1c2f, #131a2b, #161828, #151726, #151524, #141422, #111221, #0d1020, #080e1e, #020b1d); */
+  background: hsla(203, 69%, 14%, 1);
+
+  background: radial-gradient(
+    circle,
+    hsla(203, 69%, 14%, 1) 0%,
+    hsla(206, 74%, 12%, 1) 7%,
+    hsla(211, 80%, 10%, 1) 26%,
+    hsla(212, 79%, 9%, 1) 31%,
+    hsla(212, 82%, 9%, 1) 40%,
+    hsla(213, 82%, 9%, 1) 44%,
+    hsla(214, 81%, 8%, 1) 53%,
+    hsla(215, 81%, 8%, 1) 63%,
+    hsla(216, 80%, 8%, 1) 79%,
+    hsla(217, 84%, 7%, 1) 92%,
+    hsla(220, 87%, 6%, 1) 100%
+  );
+
+  background: -moz-radial-gradient(
+    circle,
+    hsla(203, 69%, 14%, 1) 0%,
+    hsla(206, 74%, 12%, 1) 7%,
+    hsla(211, 80%, 10%, 1) 26%,
+    hsla(212, 79%, 9%, 1) 31%,
+    hsla(212, 82%, 9%, 1) 40%,
+    hsla(213, 82%, 9%, 1) 44%,
+    hsla(214, 81%, 8%, 1) 53%,
+    hsla(215, 81%, 8%, 1) 63%,
+    hsla(216, 80%, 8%, 1) 79%,
+    hsla(217, 84%, 7%, 1) 92%,
+    hsla(220, 87%, 6%, 1) 100%
+  );
+
+  background: -webkit-radial-gradient(
+    circle,
+    hsla(203, 69%, 14%, 1) 0%,
+    hsla(206, 74%, 12%, 1) 7%,
+    hsla(211, 80%, 10%, 1) 26%,
+    hsla(212, 79%, 9%, 1) 31%,
+    hsla(212, 82%, 9%, 1) 40%,
+    hsla(213, 82%, 9%, 1) 44%,
+    hsla(214, 81%, 8%, 1) 53%,
+    hsla(215, 81%, 8%, 1) 63%,
+    hsla(216, 80%, 8%, 1) 79%,
+    hsla(217, 84%, 7%, 1) 92%,
+    hsla(220, 87%, 6%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0B2A3D", endColorstr="#082236", GradientType=1 );
 }
 
 .overlay {
@@ -58,6 +105,52 @@
   height: 100%;
   z-index: 3;
   background: rgba(4, 22, 41, 0.95);
-  
+
   position: absolute;
 }
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+  }
+  @keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+  } 
+
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+    @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }

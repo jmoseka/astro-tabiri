@@ -44,14 +44,15 @@ module.exports = {
         textLightGold: '#fdf1bd',
         darkGold: '#b0993b',
         btnBgColor: '#7e6d2a',
+        cardDarkGold: 'rgb(118 102 36)',
 
         darkGoldOverlay: 'rgba(176, 153, 59, 0.2)',
 
         // light and darkmode color group
 
 
-        lightSecondMainColor: '#F7F7F8',
-        darkTextGold: '#2F2B1A',
+        lightSecondMainColor: 'rgba(168, 169, 169, 0.2)',
+        darkTextGold: 'rgb(40 35 21)',
         lightOverlay: 'rgba(231, 235, 237, 0.87)',
         lightBtnOverlay: 'rgba(50, 44, 18, 0.47)',
 
@@ -59,7 +60,7 @@ module.exports = {
         darkSecondMainColor: 'rgba(2, 11, 29, 0.2)',
         darkOverlay: 'rgba(2, 11, 29, 0.87)',
         darkBtnOverlay: 'rgba(2, 11, 29, 0.37)',
-        lightYellow: '#fef8de',
+        lightYellow: 'rgb(227 219 181)',
         lightTextGold: '#fef8de'
 
       },

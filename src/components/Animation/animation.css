@@ -7,15 +7,8 @@
   position: relative;
   box-sizing: border-box;
   opacity: .5;
-  /* box-shadow: 0 0 2px #061925 inset; */
-
-  /* transform: rotate(45deg) skew(20deg);
-  perspective: 1000px; */
 }
 
-/* box-shadow: 12px 12px 2px #061925 inset;
-border: 1px solid #4e5461;
-*/
 
 .loader-1 {
   animation: rotation 2s linear infinite;

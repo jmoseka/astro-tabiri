@@ -1,3 +1,5 @@
+
+
 ::-webkit-scrollbar {
   width: 0.3rem; /* THIS WILL RESET THE DEFAULT SCORLLBAR STYLING */
   height: 0.3rem;
@@ -33,6 +35,9 @@
 .body-prediction .nav-items{
   @apply text-lightYellow;
 
+}
+#body-prediction .zodiac-list-cont {
+  @apply bg-darkZodLisCont ;
 }
 
 #body-prediction .top {
@@ -93,7 +98,7 @@
 /* ///// */
 
 .zodiac-title {
-  @apply text-[2.2rem] md:text-[2.7rem];
+  @apply text-[2.4rem] md:text-[2.7rem];
   font-family: "Oleo Script", cursive;
   background-image: linear-gradient(
     90deg,
@@ -123,17 +128,15 @@
 }
 
 .horoscope-board-btn {
-  @apply rounded-md text-textLightGold py-[0.3rem]  px-3;
+  @apply text-[0.8rem]  rounded-lg text-textLightGold py-[0.3rem]  px-3;
   box-shadow: rgba(252, 218, 84, 0.15) 1.3px 1.4px 2.4px;
+  letter-spacing: 0.05rem;
 }
 
 .horoscope-board-btn:hover {
   box-shadow: 0 0 6px rgba(99, 99, 99, 0.7);
 }
 
-/* .active-horoscope-btn {
-  @apply rounded-md text-[#ffeea1] py-[0.3rem] text-[.87rem] px-3 bg-[#645824];
-} */
 
 .horoscope-board-btn:active {
   border-color: #ffeea1;
@@ -151,8 +154,6 @@
     flex-direction: column;
   }
 
-  .horoscope-board {
-  }
 
   .constelation {
     @apply w-[3.4rem] h-[3.4rem];
@@ -163,11 +164,7 @@
 
 @media (max-width: 768px) {
   .horoscope-board {
-    @apply mb-8;
-  }
-
-  .horoscope-board-btn {
-    @apply text-[.95rem];
+    @apply mb-8 mt-3;
   }
 
   .zodiac-prediction-container {

@@ -119,8 +119,8 @@ function NavMenu() {
 
                     </div>
 
-                    <div className='py-1 hover:text-darkActive dark:hover:text-lightActive'>
-                        <Link className='nav-menu-link uppercase' to="/home">Daily Horoscope</Link>
+                    <div className='py-1 hover:opacity-[0.8] dark:hover:text-lightActive'>
+                        <Link onClick={()=>dropMenu()} className='nav-menu-link uppercase' to="/">Daily Horoscope</Link>
                     </div>
 
 
