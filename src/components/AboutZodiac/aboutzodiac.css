@@ -45,7 +45,7 @@
 }
 
 #aboutzodiac-nav .bottom {
-  @apply bg-darkOverlay dark:bg-lightOverlay;
+  @apply bg-darkOverlay dark:bg-lightYellow;
 }
 
 .aboutzodiac-signlist .zod-btn {
