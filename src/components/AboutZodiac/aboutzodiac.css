@@ -109,9 +109,6 @@
     grid-template-columns: 1fr;
   }
 
-  .zodiac-card {
-  }
-
   /*Sidebar styling*/
   .modeBtn {
     @apply text-[1.47rem] translate-y-2 left-[0.5rem];
