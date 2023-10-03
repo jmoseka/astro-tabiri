@@ -112,8 +112,11 @@
   }
 }
 
-@media (max-width: 180px) {
+@media (max-width: 300px) {
   .header {
-    min-width: 190px;
+    min-width: 300px;
+  }
+  .nav-menu {
+    width: 100%;
   }
 }

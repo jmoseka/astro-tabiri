@@ -49,7 +49,7 @@ const PageAnimation = () => {
         <div
           className={`w-[2.2px] h-[2.2px] bg-white absolute`}
           style={myStyles}
-          key={i}
+          key={i+animationDelay+i}
         ></div>
       );
     }
@@ -84,7 +84,7 @@ const PageAnimation = () => {
 
 
   return (
-    <div className="absolute h-screen w-full">
+    <div className="absolute  w-full">
       <div className="starry-night  h-screen w-full relative">
         {divElements}
         {movingSmallStars}

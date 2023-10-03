@@ -143,3 +143,9 @@
     @apply px-[1rem];
   }
 }
+
+@media (max-width: 300px) {
+  .aboutzodiac {
+    min-with: 300px;
+  }
+}

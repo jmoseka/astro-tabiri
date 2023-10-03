@@ -93,7 +93,7 @@ const AboutZodiac = () => {
 
 
     return (
-        <div className="h-fit w-full mx-auto fadeIn bg-lightMainColor  dark:bg-darkMainColor">
+        <div className="aboutzodiac  h-fit w-screen  mx-auto fadeIn bg-lightMainColor dark:bg-darkMainColor">
 
             {
                 findZodiac(name) === false ?
@@ -106,8 +106,8 @@ const AboutZodiac = () => {
                             </div>
                         </div>
                         :
-                        <div className="mx-8 block md:flex md:gap-6 bg-lightMainColor  dark:bg-darkMainColor ">
-                           <div className="absolute h-screen w-screen">
+                        <div className="mx-8 block md:flex md:gap-6 bg-lightMainColor dark:bg-darkMainColor ">
+                           <div className="w-full fixed">
                            <PageAnimation />
                            </div>
 

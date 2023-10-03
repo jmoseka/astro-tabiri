@@ -18,7 +18,7 @@ function App() {
 
 
   return (
-    <div className="App relative h-fit w-screen">
+    <div className="App  relative h-fit w-screen">
       <BrowserRouter>
         <div className='max-w-[1800px] h-fit mx-auto'>
           <div className={`h-screen w-full relative`}>
