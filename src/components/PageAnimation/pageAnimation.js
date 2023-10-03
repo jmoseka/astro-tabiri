@@ -11,9 +11,6 @@ const PageAnimation = () => {
   }
 
 
-
-
-
   const movingStars = () => {
     for (let i = 0; i < 30; i++) {
       const animationDelay = `${Math.random() * 25}s`;

@@ -44,6 +44,7 @@ module.exports = {
         textLightGold: '#fdf1bd',
         darkGold: '#b0993b',
         btnBgColor: '#7e6d2a',
+        cardDarkGold: 'rgb(118 102 36)',
 
         darkGoldOverlay: 'rgba(176, 153, 59, 0.2)',
 
