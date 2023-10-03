@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import './aboutzodiac.css'
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
@@ -16,9 +16,14 @@ import Animation from "../Animation/animation";
 const AboutZodiac = () => {
     const [isMode, setIsMode] = useState(true)
     const [closeHeader, setCloseHeader] = useState(false);
-    const location = useLocation();
-    const { name } = location.state;
+
+
+
+    const { name } = useParams();
     const dispatch = useDispatch();
+
+
+    
 
     useEffect(() => {
         console.log(name);

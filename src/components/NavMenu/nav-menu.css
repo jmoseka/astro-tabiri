@@ -109,6 +109,9 @@
     @apply self-end order-first;
   }
   .zodiac-signs {
+    .humberger {
+      width: 1.5rem;
+    }
   }
 
   .nav-items {
