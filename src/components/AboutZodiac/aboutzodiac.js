@@ -12,16 +12,39 @@ import ZodiacSignList from "../ZodiacSignList/zodiacSignList";
 import { Link } from 'react-router-dom';
 import NavMenu from "../NavMenu/nav-menu";
 import Animation from "../Animation/animation";
+import NoPageFound from "../NoPageFound/noPageFound";
 
 const AboutZodiac = () => {
     const [isMode, setIsMode] = useState(true)
     const [closeHeader, setCloseHeader] = useState(false);
-
-
-
     const { name } = useParams();
     const dispatch = useDispatch();
 
+
+    const zodiacSigns = [
+        "aries",
+        "taurus",
+        "gemini",
+        "cancer",
+        "leo",
+        "virgo",
+        "libra",
+        "scorpio",
+        "sagittarius",
+        "capricorn",
+        "aquarius",
+        "pisces",
+      ];
+
+      function findZodiac(sign) {
+        const lowercaseSign = sign.toLowerCase();
+      
+        if (zodiacSigns.includes(lowercaseSign)) {
+          return true
+        } else {
+          return false;
+        }
+      }
 
     
 
@@ -72,12 +95,16 @@ const AboutZodiac = () => {
         <div className="h-fit w-full mx-auto bg-lightMainColor  dark:bg-darkMainColor">
 
             {
+                findZodiac(name) === false ? 
+                <NoPageFound />
+                :
                 about === undefined ?
                     <div className="h-screen w-screen aboutzodiac-Loader absolute bg-lightMainColor  dark:bg-darkMainColor">
                         <div className='mt-36'>
                             <Animation />
                         </div>
-                    </div> :
+                    </div>
+                     :
                     <div className="mx-8 block md:flex md:gap-6 ">
 
                         <nav className="md:block order-last relative">
@@ -89,8 +116,8 @@ const AboutZodiac = () => {
                             </button>
 
 
-                            <div className="block md:hidden relative aboutzodiac-nav" >
-
+                            <div id="aboutzodiac-nav" className="block md:hidden relative aboutzodiac-nav" >
+ 
                                 <NavMenu aboutHeader={closeHeader} />
 
                             </div>

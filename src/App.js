@@ -26,8 +26,7 @@ function App() {
 
             <Routes>
               <Route path="*" element={<Prediction />}></Route>
-              <Route path="/home" element={<Prediction />}></Route>
-              <Route path="/home/:name" element={<AboutZodiac />}></Route>
+              <Route path="/:name" element={<AboutZodiac />}></Route>
 
             </Routes>
 

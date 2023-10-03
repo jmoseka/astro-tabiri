@@ -36,15 +36,15 @@
   @apply z-40;
 }
 
-.aboutzodiac-nav .top {
-  @apply bg-darkOverlay dark:bg-lightOverlay;
+#aboutzodiac-nav .top {
+  @apply bg-darkOverlay dark:bg-lightYellow;
 }
 
-.aboutzodiac-nav .middle {
-  @apply bg-darkOverlay dark:bg-lightOverlay;
+#aboutzodiac-nav .middle {
+  @apply bg-darkOverlay dark:bg-lightYellow;
 }
 
-.aboutzodiac-nav .bottom {
+#aboutzodiac-nav .bottom {
   @apply bg-darkOverlay dark:bg-lightOverlay;
 }
 
