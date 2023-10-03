@@ -33,6 +33,27 @@ const PageAnimation = () => {
       );
     }
 
+    for (let i = 0; i < 7; i++) {
+      const animationDelay = `${Math.random() * 14}s`;
+      const myStyles = {
+        top: `${randomNumber()}%`,
+        left: `${randomNumber()}%`,
+        animation: `animMovingStar 40s linear infinite`,
+        animationDelay: animationDelay,
+
+      };
+
+      // Add random animation delays
+
+      movingSmallStars.push(
+        <div
+          className={`w-[2.2px] h-[2.2px] bg-white absolute`}
+          style={myStyles}
+          key={i}
+        ></div>
+      );
+    }
+
   }
 
   const twinkleStar = () => {
@@ -67,7 +88,7 @@ const PageAnimation = () => {
       <div className="starry-night  h-screen w-full relative">
         {divElements}
         {movingSmallStars}
- 
+
 
       </div>
     </div>
