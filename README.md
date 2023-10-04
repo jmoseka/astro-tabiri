@@ -3,8 +3,8 @@
 Astrology is a practice that involves studying the positions and movements of the planets, stars, and other celestial objects to understand their influence on human affairs. It has been practiced for centuries and is still popular today, especially among young people.
 
 Astro-Tabiri is a web application that provides users with daily horoscopes and zodiac information. It is tailored for astrology enthusiasts and curious individuals who want to enjoy personalized daily horoscope predictions and gain deep insights into their zodiac sign's traits, compatibility, and more.
-The horoscope predicition is fetched from [horoscope.com](horoscope.com) using web scrapping and zodiac information is got from an API
 
+It provides users with daily horoscope readings through data scraping from [horoscope.com](horoscope.com) and gathers comprehensive zodiac information via an API.
 
 ### 🔴 [LIVE LINK](https://astrotabiri.netlify.app/)
 
