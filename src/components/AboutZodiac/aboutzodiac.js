@@ -106,10 +106,10 @@ const AboutZodiac = () => {
                             </div>
                         </div>
                         :
-                        <div className="mx-8 block md:flex md:gap-6 bg-lightMainColor dark:bg-darkMainColor ">
-                           <div className="w-full fixed">
-                           <PageAnimation />
-                           </div>
+                        <div className="mx-8 aboutzodiac-main block md:flex md:gap-6 bg-lightMainColor dark:bg-darkMainColor ">
+                            <div className="w-full fixed">
+                                <PageAnimation />
+                            </div>
 
                             <nav className="md:block order-last relative">
 
