@@ -43,7 +43,6 @@ const PageAnimation = () => {
 
       };
 
-      // Add random animation delays
 
       movingSmallStars.push(
         <div
