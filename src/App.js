@@ -18,7 +18,7 @@ function App() {
 
 
   return (
-    <div className="App body-gradient-bg flex flex-col justify-center relative h-fit w-screen">
+    <div className="App body-gradient-bg flex flex-col items-center justify-center relative h-fit w-screen">
       <BrowserRouter>
         <div className='max-w-[1800px] h-fit'>
           <div className={`h-screen w-full relative`}>
