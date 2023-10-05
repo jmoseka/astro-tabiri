@@ -5,11 +5,12 @@ import cheerio from "cheerio";
 export function webscrapper(no, category) {
 
   let apiUrl = ''
-  const careerUrl = `https://app.zenscrape.com/api/v1/get?apikey=c5074390-41e6-11ee-94ea-b935f1a20514&url=https://www.horoscope.com/us/horoscopes/${category}/horoscope-${category}-daily-today.aspx?sign=${no}`
-  const loveUrl = `https://app.zenscrape.com/api/v1/get?apikey=c5074390-41e6-11ee-94ea-b935f1a20514&url=https://www.horoscope.com/us/horoscopes/${category}/horoscope-${category}-daily-today.aspx?sign=${no}`
-  const moneyUrl = `https://app.zenscrape.com/api/v1/get?apikey=c5074390-41e6-11ee-94ea-b935f1a20514&url=https://www.horoscope.com/us/horoscopes/${category}/horoscope-${category}-weekly.aspx?sign=${no}`
-  const healthUrl = `https://app.zenscrape.com/api/v1/get?apikey=c5074390-41e6-11ee-94ea-b935f1a20514&url=https://www.horoscope.com/us/horoscopes/${category}/horoscope-${category}-daily-today.aspx?sign=${no}`
-  const generalUrl = `https://app.zenscrape.com/api/v1/get?apikey=c5074390-41e6-11ee-94ea-b935f1a20514&url=https://www.horoscope.com/us/horoscopes/${category}/horoscope-${category}-daily-today.aspx?sign=${no}`
+  const api = '354cd130-6350-11ee-8142-63b626a2887f'
+  const careerUrl = `https://app.zenscrape.com/api/v1/get?apikey=${api}&url=https://www.horoscope.com/us/horoscopes/${category}/horoscope-${category}-daily-today.aspx?sign=${no}`
+  const loveUrl = `https://app.zenscrape.com/api/v1/get?apikey=${api}&url=https://www.horoscope.com/us/horoscopes/${category}/horoscope-${category}-daily-today.aspx?sign=${no}`
+  const moneyUrl = `https://app.zenscrape.com/api/v1/get?apikey=${api}&url=https://www.horoscope.com/us/horoscopes/${category}/horoscope-${category}-weekly.aspx?sign=${no}`
+  const healthUrl = `https://app.zenscrape.com/api/v1/get?apikey=${api}&url=https://www.horoscope.com/us/horoscopes/${category}/horoscope-${category}-daily-today.aspx?sign=${no}`
+  const generalUrl = `https://app.zenscrape.com/api/v1/get?apikey=${api}&url=https://www.horoscope.com/us/horoscopes/${category}/horoscope-${category}-daily-today.aspx?sign=${no}`
 
   switch (category) {
     case 'love':
