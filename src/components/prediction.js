@@ -127,7 +127,7 @@ function Prediction() {
           <div className="horoscope-board  
             md:hidden ">
             <div className='flex flex-col'>
-              <p className='zodiac-title fadeIn'>{dailyZodiacSign}</p>
+              <p className='zodiac-title zoomIn'>{dailyZodiacSign}</p>
 
               <div >
                 <div className={` gap-2 horoscope-btn-container  ${horoscopeChoices ? 'flex justify-center flex-wrap' : 'hidden'}`}
