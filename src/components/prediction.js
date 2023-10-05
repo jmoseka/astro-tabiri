@@ -39,14 +39,13 @@ function Prediction() {
   const general = 'general'
 
 
-  const [dailyPrediction, setdailyPrediction] = useState('Are you curious about what the stars have in store for you today? Powered by data from the trusted source, Horoscope.com, our website is designed to provide you with insightful and personalized horoscope predictions to help you navigate life\'s ups and downs. A daily guide to understanding your emotions, relationships, and career prospects.');
+  const [dailyPrediction, setdailyPrediction] = useState('Are you curious about what the stars have in store for you today? Powered by data from the trusted source, Horoscope.com, this website is designed to provide you with insightful and personalized horoscope predictions to help you navigate life\'s ups and downs. A daily guide to understanding your emotions, relationships, and career prospects.');
   const [dailyZodiacSign, setDailyZodiacSign] = useState('Your Zodiac Forecast');
   const [horscopeIndex, setHoroscopeIndex] = useState(0);
   const [horoscopeChoices, setHoroscopeChoices] = useState(false);
   const [activeHoroscopeBtn, setActiveHoroscopeBtn] = useState(general);
   const [isLoading, setIsLoading] = useState(false);
 
-  // const [disableBtn, setDisableBtn] = useState(false)
 
 
 
@@ -134,8 +133,9 @@ function Prediction() {
                 <div className={` gap-2 horoscope-btn-container  ${horoscopeChoices ? 'flex justify-center flex-wrap' : 'hidden'}`}
 
                 >
-                  <button onClick={() => displayHoroscopeOption('general')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'general' ? 'bg-cardDarkGold' : 'bg-transparent'}`}>Horoscope</button>
+                  
                   <button onClick={() => displayHoroscopeOption('career')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'career' ? 'bg-cardDarkGold' : 'bg-transparent'}`}>Career</button>
+                  <button onClick={() => displayHoroscopeOption('general')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'general' ? 'bg-cardDarkGold' : 'bg-transparent'}`}>Horoscope</button>
                   <button onClick={() => displayHoroscopeOption('money')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'money' ? 'bg-cardDarkGold' : 'bg-transparent'}`}>Money</button>
                   <button onClick={() => displayHoroscopeOption('wellness')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'wellness' ? 'bg-cardDarkGold' : 'bg-transparent'}`}>Health</button>
                   <button onClick={() => displayHoroscopeOption('love')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'love' ? 'bg-cardDarkGold' : 'bg-transparent'}`}>Love</button>
@@ -320,8 +320,9 @@ function Prediction() {
                   <div className={`gap-2 horoscope-btn-container  ${horoscopeChoices ? 'flex justify-center flex-wrap' : 'hidden'}`}
 
                   >
-                    <button onClick={() => displayHoroscopeOption('general')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'general' ? 'bgcardDarkGoldd' : 'bg-transparent'}`}>Horoscope</button>
+                    
                     <button onClick={() => displayHoroscopeOption('career')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'career' ? 'bg-cardDarkGold' : 'bg-transparent'}`}>Career</button>
+                    <button onClick={() => displayHoroscopeOption('general')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'general' ? 'bg-cardDarkGold' : 'bg-transparent'}`}>Horoscope</button>
                     <button onClick={() => displayHoroscopeOption('money')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'money' ? 'bg-cardDarkGold' : 'bg-transparent'}`}>Money</button>
                     <button onClick={() => displayHoroscopeOption('wellness')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'wellness' ? 'bg-cardDarkGold' : 'bg-transparent'}`}>Health</button>
                     <button onClick={() => displayHoroscopeOption('love')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'love' ? 'bg-cardDarkGold' : 'bg-transparent'}`}>Love</button>

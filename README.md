@@ -10,7 +10,7 @@ It provides users with daily horoscope readings through data scraping from [horo
 
 
 ## Problem Statement
-In the post-COVID-19 era, astrology has become increasingly popular, particularly among Millennials and Gen z. This trend is characterized by an increasing demand for easily accessible astrology-related content. The challenge lies in the overwhelming nature of the information available websites, making it difficult for users to find specific content related to their zodiac signs and general horoscope predictions.
+In the post-COVID-19 era, astrology has become increasingly popular, particularly among Millennials and Gen z. This trend is characterized by an increasing demand for easily accessible astrology-related content. The challenge lies in the overwhelming nature of the information available on websites, making it difficult for users to find specific content related to their zodiac signs and general horoscope predictions.
 
 ## Solution
 
@@ -53,9 +53,9 @@ $ npm install
 ```
 
 ### Open page in browser
-Open with live server
 ```bash
-$ open index.html
+$ npm start
+
 ```
 
 ## Author
