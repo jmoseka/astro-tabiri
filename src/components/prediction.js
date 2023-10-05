@@ -124,7 +124,7 @@ function Prediction() {
 
           {/* horscope board */}
 
-          <div className="horoscope-board
+          <div className="horoscope-board  zoomIn
             md:hidden ">
             <div className='flex flex-col'>
               <p className='zodiac-title fadeIn'>{dailyZodiacSign}</p>
@@ -309,7 +309,7 @@ function Prediction() {
 
             {/* horscope board */}
 
-            <div className="horoscope-board hidden -translate-y-4
+            <div className="horoscope-board  zoomIn hidden -translate-y-4
             md:block md:col-span-4 ">
 
 
