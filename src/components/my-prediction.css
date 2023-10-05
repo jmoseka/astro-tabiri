@@ -98,8 +98,8 @@
 /* ///// */
 
 .zodiac-title {
-  @apply text-[2.4rem] md:text-[2.7rem];
-  font-family: "Oleo Script", cursive;
+  @apply text-[2.4rem] md:text-[2.7rem] font-oleo ;
+
   background-image: linear-gradient(
     90deg,
     hsla(48, 50%, 49%, 1) 22%,

@@ -18,6 +18,7 @@ module.exports = {
       //   'darkMainColor': 'linear-gradient(to right top, #020b1d, #061223, #081828, #081d2e, #092234, #0c2335, #0f2436, #122537, #162333, #19202f, #1b1e2b, #1c1c27)'
       // },
       fontFamily: {
+        oleo: ['"Oleo Script"', 'cursive'],
         sans: ['Barlow Semi Condensed', 'sans-serif'],
       },
 
