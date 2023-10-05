@@ -1,5 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .darkMainColor {
+    background-image: linear-gradient(to right top, #020b1d, #071425, #091b2d, #0a2135, #0b283e, #0f293f, #132b41, #162c42, #1b283c, #1d2536, #1e2130, #1e1e2a);
+  }
+}
+
+@font-face {
+  font-family: 'Oleo Script';
+  src: url('./fonts/OleoScript-Bold.ttf') format('truetype'); 
+  font-weight: bold; /* Specify the font weight */
+}
+
+@font-face {
+  font-family: 'Oleo Script';
+  src: url('./fonts/OleoScript-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,3 +39,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+

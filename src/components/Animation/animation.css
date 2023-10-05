@@ -1,0 +1,87 @@
+.loader {
+  width: 70px;
+  height: 35px;
+  border: 1px solid #fef5cd;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  opacity: .5;
+}
+
+
+.loader-1 {
+  animation: rotation 2s linear infinite;
+  
+}
+
+.loader-3 {
+  width: 30px;
+  height: 30px;
+  animation: fastRotation .8s linear infinite;
+}
+
+.loader-2 {
+  animation: oppositeRotation 10s linear infinite;
+}
+
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 8px;
+  height: 8px;
+  background: #fef5cd;
+
+  transform: translate(-50%, 100%);
+  border-radius: 50%;
+}
+
+/* Add animation for the glow effect */
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 10px #2c2c43;
+  }
+  50% {
+    box-shadow: 0 0 20px #2c2c43, 0 0 30px #2c2c43, 0 0 40px #2c2c43;
+  }
+  100% {
+    box-shadow: 0 0 10px #2c2c43;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes oppositeRotation {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes fastRotation {
+  0% {
+    transform: rotate(360deg);
+    
+  }
+  50% {
+    height: 25px;
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

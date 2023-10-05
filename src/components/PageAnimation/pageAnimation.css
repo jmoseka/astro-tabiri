@@ -1,0 +1,41 @@
+.star {
+  background: #fff;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+@keyframes twinkling {
+  0% {
+    background: linear-gradient(transparent, transparent 70%, #000 70%, #000);
+  }
+  50% {
+    background: linear-gradient(transparent, transparent 70%, #000 70%, #000);
+  }
+  100% {
+    background: linear-gradient(transparent, transparent 70%, #000 70%, #000);
+  }
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@keyframes animMovingStar {
+  0% {
+    top: 98.8%;
+  }
+  100% {
+    top: 0;
+  }
+}

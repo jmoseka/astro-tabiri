@@ -3,11 +3,26 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import store from './Redux/configureStore';
+import 'url';
+
+// import {createStore} from 'redux';
+
+
+
+// store
+//action - name of action .ie increment
+//Reducer - describe how action transform from one state to next state , modify store based on checkking action
+//dispath - dispatch action to reducer and reducer will determine what action to take and store get update
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <Provider store={store} >
+        
+        <App />
+      </Provider>
   </React.StrictMode>
 );
 
