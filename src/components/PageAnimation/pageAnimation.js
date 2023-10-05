@@ -26,7 +26,7 @@ const PageAnimation = () => {
 
       movingSmallStars.push(
         <div
-          className={`w-[1px] h-[1px] bg-white absolute`}
+          className={`w-[1px] h-[1px] bg-lightBlueMain absolute`}
           style={myStyles}
           key={i}
         ></div>
@@ -47,9 +47,9 @@ const PageAnimation = () => {
 
       movingSmallStars.push(
         <div
-          className={`w-[2.2px] h-[2.2px] bg-white absolute`}
+          className={`w-[2.2px] h-[2.2px] bg-lightBlueMain absolute`}
           style={myStyles}
-          key={i}
+          key={i+animationDelay+i}
         ></div>
       );
     }
@@ -84,7 +84,7 @@ const PageAnimation = () => {
 
 
   return (
-    <div className="absolute h-screen w-full">
+    <div className="absolute  w-full">
       <div className="starry-night  h-screen w-full relative">
         {divElements}
         {movingSmallStars}

@@ -34,6 +34,7 @@ module.exports = {
         lightBlue2: '#b3b4b8',
         blue: '#041925',
         yellow: '#FCDA54',
+        lightBlueMain: "#b6c2c8",
 
         gold60: '#645824',
         darkActive: '#322c12',
