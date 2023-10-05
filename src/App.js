@@ -18,9 +18,9 @@ function App() {
 
 
   return (
-    <div className="App  relative h-fit w-screen">
+    <div className="App body-gradient-bg dark: relative h-fit w-screen">
       <BrowserRouter>
-        <div className='max-w-[1800px] h-fit mx-auto'>
+        <div className='max-w-[1800px] h-fit'>
           <div className={`h-screen w-full relative`}>
             <PageAnimation />
 
