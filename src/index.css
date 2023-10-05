@@ -8,18 +8,6 @@
   }
 }
 
-@font-face {
-  font-family: 'Oleo Script';
-  src: url('./fonts/OleoScript-Bold.ttf') format('truetype'); 
-  font-weight: bold; /* Specify the font weight */
-}
-
-@font-face {
-  font-family: 'Oleo Script';
-  src: url('./fonts/OleoScript-Regular.ttf') format('truetype'); 
-  font-weight: normal;
-}
-
 html {
   box-sizing: border-box;
 }
