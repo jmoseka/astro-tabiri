@@ -14,9 +14,6 @@ module.exports = {
         'lightZodLisCont': 'linear-gradient(to right top, #1b2334, #1a2739, #172a3f, #122e44, #0b3249)',
         'darkZodLisCont': 'linear-gradient(to right top, #ccced2, #cdcfd4, #cdd1d6, #ced2d7, #ced4d9, #cfd4d9, #cfd5da, #d0d5da, #d1d4d9, #d2d3d7, #d2d3d6, #d2d2d4)',
       },
-      // backgroundImage: {
-      //   'darkMainColor': 'linear-gradient(to right top, #020b1d, #061223, #081828, #081d2e, #092234, #0c2335, #0f2436, #122537, #162333, #19202f, #1b1e2b, #1c1c27)'
-      // },
       fontFamily: {
         oleo: ['"Oleo Script"', 'cursive'],
         sans: ['Barlow Semi Condensed', 'sans-serif'],
@@ -51,14 +48,11 @@ module.exports = {
         darkGoldOverlay: 'rgba(176, 153, 59, 0.2)',
 
         // light and darkmode color group
-
-
         lightSecondMainColor: 'rgba(168, 169, 169, 0.2)',
         darkTextGold: 'rgb(40 35 21)',
         lightOverlay: 'rgba(231, 235, 237, 0.87)',
         lightBtnOverlay: 'rgba(50, 44, 18, 0.47)',
 
-        // darkMainColor: '#0A2D42',
         darkSecondMainColor: 'rgba(2, 11, 29, 0.2)',
         darkOverlay: 'rgba(2, 11, 29, 0.87)',
         darkBtnOverlay: 'rgba(2, 11, 29, 0.37)',
