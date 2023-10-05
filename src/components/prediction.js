@@ -320,7 +320,7 @@ function Prediction() {
                   <div className={`gap-2 horoscope-btn-container  ${horoscopeChoices ? 'flex justify-center flex-wrap' : 'hidden'}`}
 
                   >
-                    
+
                     <button onClick={() => displayHoroscopeOption('career')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'career' ? 'bg-cardDarkGold' : 'bg-transparent'}`}>Career</button>
                     <button onClick={() => displayHoroscopeOption('general')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'general' ? 'bg-cardDarkGold' : 'bg-transparent'}`}>Horoscope</button>
                     <button onClick={() => displayHoroscopeOption('money')} type='button' className={`horoscope-board-btn ${activeHoroscopeBtn === 'money' ? 'bg-cardDarkGold' : 'bg-transparent'}`}>Money</button>
