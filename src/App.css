@@ -6,14 +6,13 @@
   font-family: 'Oleo Script';
   src: url('fonts/OleoScript-Bold.ttf') format('truetype'); 
   font-weight: bold; /* Specify the font weight */
-  font-display: swap; 
 }
 
 @font-face {
   font-family: 'Oleo Script';
   src: url('fonts/OleoScript-Regular.ttf') format('truetype'); 
   font-weight: normal;
-  font-display: swap; 
+
 }
 
 .App {
