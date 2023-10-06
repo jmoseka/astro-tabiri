@@ -141,6 +141,9 @@
 }
 
 @media (min-width: 1400px) {
+  .main-grid{
+    @apply mt-[8rem];
+  }
   .constelation {
     @apply w-[3.6rem] h-[3.6rem];
   }
