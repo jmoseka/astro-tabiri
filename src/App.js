@@ -5,17 +5,9 @@ import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import AboutZodiac from './components/AboutZodiac/aboutzodiac';
 import PageAnimation from './components/PageAnimation/pageAnimation';
-// import {ReactComponent as Virgo} from './SVG/virgo.svg';
 
 
 function App() {
-  // const [overlayOpen, setOverlayOpen] = useState(false);
-  // const [overlayClicked, setOverlayClicked] = useState(false)
-
-  // const handleOverlayClick = () => {
-  //   setOverlayClicked(!overlayClicked);
-  //   setOverlayOpen(!overlayOpen);
-
 
   return (
     <div className="App body-gradient-bg relative h-fit w-screen">
