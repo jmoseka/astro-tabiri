@@ -270,7 +270,7 @@ function Prediction() {
                   <Cancer className='constelation  group-hover:opacity-[0.8]' />
                   <div>
                     <p className='const-title  group-hover:opacity-[0.8]'>cancer</p>
-                    <p className='const-date'>Aug 23 - Sept 23</p>
+                    <p className='const-date'>{horoMap[`key${4}`].value2}</p>
                   </div>
                 </button>
               </div>
@@ -285,7 +285,7 @@ function Prediction() {
                   <Taurus className='constelation group-hover:opacity-[0.8]' />
                   <div>
                     <p className='const-title  group-hover:opacity-[0.8]'>taurus</p>
-                    <p className='const-date'>Aug 23 - Sept 23</p>
+                    <p className='const-date'>{horoMap[`key${2}`].value2}</p>
                   </div>
                 </button>
               </div>
