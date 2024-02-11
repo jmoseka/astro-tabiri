@@ -6,19 +6,17 @@
   display: inline-block;
   position: relative;
   box-sizing: border-box;
-  opacity: .5;
+  opacity: 0.5;
 }
-
 
 .loader-1 {
   animation: rotation 2s linear infinite;
-  
 }
 
 .loader-3 {
   width: 30px;
   height: 30px;
-  animation: fastRotation .8s linear infinite;
+  animation: fastRotation 0.8s linear infinite;
 }
 
 .loader-2 {
@@ -26,7 +24,7 @@
 }
 
 .loader::after {
-  content: "";
+  content: '';
   box-sizing: border-box;
   position: absolute;
   left: 0;
@@ -45,7 +43,10 @@
     box-shadow: 0 0 10px #2c2c43;
   }
   50% {
-    box-shadow: 0 0 20px #2c2c43, 0 0 30px #2c2c43, 0 0 40px #2c2c43;
+    box-shadow:
+      0 0 20px #2c2c43,
+      0 0 30px #2c2c43,
+      0 0 40px #2c2c43;
   }
   100% {
     box-shadow: 0 0 10px #2c2c43;
@@ -75,7 +76,6 @@
 @keyframes fastRotation {
   0% {
     transform: rotate(360deg);
-    
   }
   50% {
     height: 25px;

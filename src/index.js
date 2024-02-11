@@ -9,8 +9,6 @@ import 'url';
 
 // import {createStore} from 'redux';
 
-
-
 // store
 //action - name of action .ie increment
 //Reducer - describe how action transform from one state to next state , modify store based on checkking action
@@ -19,11 +17,10 @@ import 'url';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <Provider store={store} >
-        
-        <App />
-      </Provider>
-  </React.StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function

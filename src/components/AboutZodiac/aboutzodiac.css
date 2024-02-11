@@ -9,14 +9,16 @@
 }
 
 .aboutzodiac-Loader .loading-text {
-  @apply text-darkTextGold dark:text-lightYellow
+  @apply text-darkTextGold dark:text-lightYellow;
 }
 
 .about-main {
   @apply gap-8 w-full py-1 px-1;
   display: grid;
   grid-template-columns: 0fr 1fr;
-  transition: background-color 0.5s ease, color 2s ease;
+  transition:
+    background-color 0.5s ease,
+    color 2s ease;
 }
 
 .aboutzodiac-nav .header-present {

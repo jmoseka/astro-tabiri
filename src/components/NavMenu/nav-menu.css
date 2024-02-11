@@ -78,7 +78,6 @@
   transform: translateX(-50%);
 }
 
-
 .zod-card {
   @apply rounded-lg bg-white text-base text-strongBlue;
   width: fit-content;

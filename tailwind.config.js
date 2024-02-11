@@ -2,17 +2,19 @@
 module.exports = {
   darkMode: 'class',
 
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
 
   theme: {
     extend: {
       backgroundImage: {
-        'darkMainColor': 'linear-gradient(to right top, #020b1d, #061223, #081828, #081d2e, #092234, #0c2335, #0f2436, #122537, #162333, #19202f, #1b1e2b, #1c1c27)',
-        'lightMainColor': 'linear-gradient(to right top, #e6e7e8, #e2e4e6, #dde0e3, #d9dde1, #d4dade, #d5dade, #d5dadf, #d6dadf, #dbdee2, #e0e1e5, #e5e5e7, #e9e9ea)',
-        'lightZodLisCont': 'linear-gradient(to right top, #1b2334, #1a2739, #172a3f, #122e44, #0b3249)',
-        'darkZodLisCont': 'linear-gradient(to right top, #ccced2, #cdcfd4, #cdd1d6, #ced2d7, #ced4d9, #cfd4d9, #cfd5da, #d0d5da, #d1d4d9, #d2d3d7, #d2d3d6, #d2d2d4)',
+        darkMainColor:
+          'linear-gradient(to right top, #020b1d, #061223, #081828, #081d2e, #092234, #0c2335, #0f2436, #122537, #162333, #19202f, #1b1e2b, #1c1c27)',
+        lightMainColor:
+          'linear-gradient(to right top, #e6e7e8, #e2e4e6, #dde0e3, #d9dde1, #d4dade, #d5dade, #d5dadf, #d6dadf, #dbdee2, #e0e1e5, #e5e5e7, #e9e9ea)',
+        lightZodLisCont:
+          'linear-gradient(to right top, #1b2334, #1a2739, #172a3f, #122e44, #0b3249)',
+        darkZodLisCont:
+          'linear-gradient(to right top, #ccced2, #cdcfd4, #cdd1d6, #ced2d7, #ced4d9, #cfd4d9, #cfd5da, #d0d5da, #d1d4d9, #d2d3d7, #d2d3d6, #d2d2d4)',
       },
       fontFamily: {
         oleo: ['"Oleo Script"', 'cursive'],
@@ -20,7 +22,7 @@ module.exports = {
       },
 
       gridTemplateRows: {
-        '10': 'repeat(10, minmax(0, 1fr))',
+        10: 'repeat(10, minmax(0, 1fr))',
       },
 
       colors: {
@@ -32,7 +34,7 @@ module.exports = {
         lightBlue2: '#b3b4b8',
         blue: '#041925',
         yellow: '#FCDA54',
-        lightBlueMain: "#b6c2c8",
+        lightBlueMain: '#b6c2c8',
 
         gold60: '#645824',
         darkActive: '#322c12',
@@ -57,13 +59,8 @@ module.exports = {
         darkOverlay: 'rgba(2, 11, 29, 0.87)',
         darkBtnOverlay: 'rgba(2, 11, 29, 0.37)',
         lightYellow: 'rgb(227 219 181)',
-        lightTextGold: '#fef8de'
-
+        lightTextGold: '#fef8de',
       },
     },
-  }
-
-
-
-}
-
+  },
+};

@@ -1,43 +1,40 @@
 // import cheerio  from "cheerio";
-import axios from "axios";
-import cheerio from "cheerio";
+import axios from 'axios';
+import cheerio from 'cheerio';
 
 export function webscrapper(no, category) {
-
-  let apiUrl = ''
-  const api = '354cd130-6350-11ee-8142-63b626a2887f'
-  const careerUrl = `https://app.zenscrape.com/api/v1/get?apikey=${api}&url=https://www.horoscope.com/us/horoscopes/${category}/horoscope-${category}-daily-today.aspx?sign=${no}`
-  const loveUrl = `https://app.zenscrape.com/api/v1/get?apikey=${api}&url=https://www.horoscope.com/us/horoscopes/${category}/horoscope-${category}-daily-today.aspx?sign=${no}`
-  const moneyUrl = `https://app.zenscrape.com/api/v1/get?apikey=${api}&url=https://www.horoscope.com/us/horoscopes/${category}/horoscope-${category}-weekly.aspx?sign=${no}`
-  const healthUrl = `https://app.zenscrape.com/api/v1/get?apikey=${api}&url=https://www.horoscope.com/us/horoscopes/${category}/horoscope-${category}-daily-today.aspx?sign=${no}`
-  const generalUrl = `https://app.zenscrape.com/api/v1/get?apikey=${api}&url=https://www.horoscope.com/us/horoscopes/${category}/horoscope-${category}-daily-today.aspx?sign=${no}`
+  let apiUrl = '';
+  const api = '354cd130-6350-11ee-8142-63b626a2887f';
+  const careerUrl = `https://app.zenscrape.com/api/v1/get?apikey=${api}&url=https://www.horoscope.com/us/horoscopes/${category}/horoscope-${category}-daily-today.aspx?sign=${no}`;
+  const loveUrl = `https://app.zenscrape.com/api/v1/get?apikey=${api}&url=https://www.horoscope.com/us/horoscopes/${category}/horoscope-${category}-daily-today.aspx?sign=${no}`;
+  const moneyUrl = `https://app.zenscrape.com/api/v1/get?apikey=${api}&url=https://www.horoscope.com/us/horoscopes/${category}/horoscope-${category}-weekly.aspx?sign=${no}`;
+  const healthUrl = `https://app.zenscrape.com/api/v1/get?apikey=${api}&url=https://www.horoscope.com/us/horoscopes/${category}/horoscope-${category}-daily-today.aspx?sign=${no}`;
+  const generalUrl = `https://app.zenscrape.com/api/v1/get?apikey=${api}&url=https://www.horoscope.com/us/horoscopes/${category}/horoscope-${category}-daily-today.aspx?sign=${no}`;
 
   switch (category) {
     case 'love':
       apiUrl = loveUrl;
-      break
+      break;
     case 'career':
       apiUrl = careerUrl;
-      break
+      break;
     case 'money':
       apiUrl = moneyUrl;
-      break
+      break;
     case 'health':
       apiUrl = healthUrl;
-      break
+      break;
     default:
       apiUrl = generalUrl;
-      break
+      break;
   }
 
   const options = {
-    url: apiUrl
-
+    url: apiUrl,
   };
 
-
   return axios(options)
-    .then(response => {
+    .then((response) => {
       if (response.status === 200) {
         const responseText = response.data;
 
@@ -55,10 +52,7 @@ export function webscrapper(no, category) {
         return description;
       }
     })
-    .catch(error => {
+    .catch((error) => {
       console.error('Error:', error);
     });
-
 }
-
-

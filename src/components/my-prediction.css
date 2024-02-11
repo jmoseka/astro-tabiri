@@ -114,7 +114,7 @@
 
 .horoscope-btn-container {
   @apply py-2;
-  font-family: "Inter Tight", sans-serif;
+  font-family: 'Inter Tight', sans-serif;
 }
 
 .horoscope-board-btn-active {
@@ -141,7 +141,7 @@
 }
 
 @media (min-width: 1400px) {
-  .main-grid{
+  .main-grid {
     @apply mt-[8rem];
   }
   .constelation {
