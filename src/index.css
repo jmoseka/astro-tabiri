@@ -4,21 +4,34 @@
 
 @layer utilities {
   .darkMainColor {
-    background-image: linear-gradient(to right top, #020b1d, #071425, #091b2d, #0a2135, #0b283e, #0f293f, #132b41, #162c42, #1b283c, #1d2536, #1e2130, #1e1e2a);
+    background-image: linear-gradient(
+      to right top,
+      #020b1d,
+      #071425,
+      #091b2d,
+      #0a2135,
+      #0b283e,
+      #0f293f,
+      #132b41,
+      #162c42,
+      #1b283c,
+      #1d2536,
+      #1e2130,
+      #1e1e2a
+    );
   }
 }
 
 @font-face {
   font-family: 'Oleo Script';
-  src: url('../public/fonts/OleoScript-Bold.ttf'); 
+  src: url('../public/fonts/OleoScript-Bold.ttf');
   font-weight: bold; /* Specify the font weight */
 }
 
 @font-face {
   font-family: 'Oleo Script';
-  src: url('../public/fonts/OleoScript-Regular.ttf'); 
+  src: url('../public/fonts/OleoScript-Regular.ttf');
   font-weight: normal;
-
 }
 
 html {
@@ -40,5 +53,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-

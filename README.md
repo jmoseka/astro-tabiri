@@ -8,8 +8,8 @@ It provides users with daily horoscope readings through data scraping from [horo
 
 ### 🔴 [LIVE LINK](https://astrotabiri.netlify.app/)
 
-
 ## Problem Statement
+
 In the post-COVID-19 era, astrology has become increasingly popular, particularly among Millennials and Gen z. This trend is characterized by an increasing demand for easily accessible astrology-related content. The challenge lies in the overwhelming nature of the information available on websites, making it difficult for users to find specific content related to their zodiac signs and general horoscope predictions.
 
 ## Solution
@@ -17,6 +17,7 @@ In the post-COVID-19 era, astrology has become increasingly popular, particularl
 Astro-tabiri is a simple web application that caters to users who are looking for two primary things: learning about their zodiac signs and receiving general horoscope predictions. Astro-tabiri offers an easy-to-navigate experience, providing precisely what the majority of astrology enthusiasts seek.
 
 ### Benefits of Astro-tabiri Web App
+
 1. Streamlined Astrology Information: It implifies the complex world of astrology by providing easy access to zodiac information and general horoscope predictions in one place.
 
 2. User-Friendly Experience: The web app is designed for straightforward navigation, ensuring that users can quickly find the information they seek without any unnecessary complexity.
@@ -26,7 +27,6 @@ Astro-tabiri is a simple web application that caters to users who are looking fo
 4. Focused Content: Astro-tabiri caters to a specific niche of astrology enthusiasts who are primarily interested in learning about their zodiac signs and receiving general horoscope predictions.
 
 5. Introduction to Astrology: It serves as an excellent entry point for individuals new to astrology, offering clear and concise information without overwhelming them with jargon.
-
 
 <hr>
 
@@ -53,6 +53,7 @@ $ npm install
 ```
 
 ### Open page in browser
+
 ```bash
 $ npm start
 
