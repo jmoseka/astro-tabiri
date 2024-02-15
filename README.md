@@ -65,9 +65,19 @@ $ npm start
 
 - GitHub: [@jmoseka](https://github.com/jmoseka)
 
-## 🤝 Contributing
+## 🤝 Contribution
 
-Contributions, issues and feature requests are welcome!
+👤 **Daniel Asakpa**
+
+[@danielasakpa](https://github.com/danielaskpa)
+
+- Enhanced User Interaction:
+  When someone clicks on a Zodiac Button, only that button is highlighted with an opacity of 100%. This visual feedback improves user interaction, making it clear which Zodiac Button was clicked.
+  Code Readability and Developer Experience:
+
+- Refactoring the code by separating components makes it easy to read and understand. This not only enhances the current codebase but also facilitates future contributions from developers looking to contribute to the project.
+
+  [feat: Enhancement: Add active effect to Zodiac Buttons, separate components and fix displayHoroscope usage](https://github.com/jmoseka/astro-tabiri/pull/17)
 
 ## Show your support
 
